@@ -6,9 +6,9 @@ urlpatterns = [
 
     path('private-banking/', views.privatebanking, name='privatebanking'),
 
-    path('investment-solutions/', views.investmensolutions, name='investmensolutions'),
+    path('investment-solutions/', views.investmentsolutions, name='investmentsolutions'),
     path('advisory-solutions', views.advisorysolutions, name='advisorysolutions'),
-    path('discretionarymandates', views.discretionarymandates, name='discretionarymandates'),
+    path('discretionary-mandates', views.discretionarymandates, name='discretionarymandates'),
     path('alternative-and-private-market-investment', views.alternativeandprivatemarketinvestment, name='alternativeandprivatemarketinvestment'),
     path('advanced-investment-solutions', views.advancedinvestmentsolutions, name='advancedinvestmentsolutions'),
 
@@ -32,7 +32,7 @@ urlpatterns = [
 
     path('asset-management', views.assetmanagement, name='assetmanagement'),
     path('investment-process', views.investmentprocess, name='investmentprocess'),
-    path('resposible-investing', views.resposibleinvesting, name='resposibleinvesting'),
+    path('responsible-investing', views.responsibleinvesting, name='responsibleinvesting'),
 
     path('insights', views.insights, name='insights'),
 
@@ -61,8 +61,15 @@ urlpatterns = [
 
     path('investors', views.investors, name='investors'),
 
+    path('financial-results', views.financialresults, name='financialresults'),
+    path('finanacial-calender-and-events', views.finanacialcalenderandevents, name='finanacialcalenderandevents'),
+    path('presentations', views.presentations, name='presentations'),
+    path('share-information', views.shareinformation, name='shareinformation'),
+    path('annual-generalmeeting', views.annualgeneralmeeting, name='annualgeneralmeeting'),
     path('ratingsandinstruments', views.ratingsandinstruments, name='ratingsandinstruments'),
     path('analyst-coverage', views.analystcoverage, name='analystcoverage'),
     path('share-repurchase', views.sharerepurchase, name='sharerepurchase'),
+
+    path('contact', views.contact, name='contact'),
 
 ]

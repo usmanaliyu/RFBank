@@ -10,7 +10,7 @@ def home(request):
 def privatebanking(request):
     return render(request,'private-banking.html')
 
-def investmensolutions(request):
+def investmentsolutions(request):
     return render (request,'investment-solutions.html')
 def advisorysolutions(request):
     return render(request,'private-banking/investment-solutions/advisory-solutions.html')
@@ -59,7 +59,7 @@ def assetmanagement(request):
     return render(request,'asset-management.html')
 def investmentprocess(request):
     return render(request,'asset-management/investment-process.html')
-def resposibleinvesting(request):
+def responsibleinvesting(request):
     return render(request,'asset-management/responsible-investing.html')
 
 ######### INSIGHT ##########
@@ -111,6 +111,17 @@ def sustainability(request):
 def investors(request):
     return render(request,'investors.html')
 
+
+def financialresults(request):
+    return render(request,'investors/financial-results.html')
+def finanacialcalenderandevents(request):
+    return render(request,'investors/financial-calendar-and-events')
+def presentations(request):
+    return render(request,'investors/presentations.html')
+def shareinformation(request):
+    return render(request,'investors/share-information.html')
+def annualgeneralmeeting(request):
+    return render(request,'investors/annual-general-meeting.html')
 def ratingsandinstruments(request):
     return render(request,'investors/rating-and-instruments.html')
 def analystcoverage(request):

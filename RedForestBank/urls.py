@@ -20,5 +20,8 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('RedForest.urls'))
+
+    path('', include(('RedForest.urls','RedForest'), namespace='RedForest'))
+
+
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
