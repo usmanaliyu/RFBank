@@ -1,0 +1,1466 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no">
+<title>Security - EFG International</title>
+<meta property="og:site_name" content="EFG"/>
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@efgint"/>
+<meta property="og:title" content="Security - EFG International"/>
+<meta name="twitter:title" content="Security - EFG International"/>
+<meta property="og:description" content="Find out more about the security of our eBanking platform and how we ensure your wealth is protected through privacy, digital certificates and identity verification."/>
+<meta property="og:url" content="https://www.efginternational.com/private-banking/ebanking/security.html"/>
+<meta property="og:image" content="https://www.efginternational.com/.resources/efg-templating-light/webresources/images/logo-print.jpg"/>
+<meta name="twitter:image" content="https://www.efginternational.com/.resources/efg-templating-light/webresources/images/logo-print.jpg"/>
+<meta property="og:image:width" content="123" />
+<meta property="og:image:height" content="56" />
+<meta property="og:locale" content="English" />
+<meta itemprop="name" content="EFG">
+<meta itemprop="description" content="Find out more about the security of our eBanking platform and how we ensure your wealth is protected through privacy, digital certificates and identity verification.">
+<meta name="description" content="Find out more about the security of our eBanking platform and how we ensure your wealth is protected through privacy, digital certificates and identity verification." />
+<link rel="shortcut icon" href="/.resources/efg-templating-light/webresources/favicon.ico" />
+<link rel="alternate" href="https://www.efginternational.com/private-banking/ebanking/security.html" hreflang="x-default" />
+<link rel="alternate" hreflang="it" href="https://www.efginternational.com/it/private-banking/ebanking/security.html" />
+<link rel="alternate" hreflang="de" href="https://www.efginternational.com/de/private-banking/ebanking/security.html" />
+<link rel="alternate" hreflang="fr" href="https://www.efginternational.com/fr/private-banking/ebanking/security.html" />
+<link rel="alternate" hreflang="en" href="https://www.efginternational.com/private-banking/ebanking/security.html" />
+<link rel="canonical" href="https://www.efginternational.com/private-banking/ebanking/security.html">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="/.resources/efg-revamp/webresources/js/all.min~2023-02-23-16-49-18-000~cache.js" />
+<link rel="stylesheet" type="text/css" href="/.resources/efg-revamp/webresources/css/style.min~2023-02-23-16-49-12-000~cache.css" media="all" />
+<script src="/.resources/efg-revamp/webresources/js/vendor/jquery-3.6.0.min~2023-02-23-16-49-18-000~cache.js"></script>
+<script src="https://maps.google.com/maps/api/js?language=en&key=AIzaSyBmU-6CWKzXhBhXyYtivmCqd9htg_JXyfE"></script>
+<script>
+function isBrowserMobile() {
+var mobile = (/mobile|android|iphone|ipad|ipod|blackberry|mini|iemobile|opera mobi|opera mobile|palmos|webos|googlebot-mobile|windows phone|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+return mobile;
+}
+//https://www.npmjs.com/package/@googlemaps/markerclustererplus
+var startPoint = "";
+var contacts = new Array();
+var clusterStyles = [
+{
+textColor: 'black',
+className: 'markerCluster',
+url: '/.resources/efg-templating-light/webresources/images/googleMaps/markerclusterer/m1.png',
+height: 55,
+width: 55,
+textSize: 15,
+textLineHeight: 50,
+fontStyle: 'normal',
+fontWeight: 'normal',
+fontFamily: 'open_sanssemibold, Arial, sans-serif'
+}
+];
+var mcOptions = { zoomOnClick: true, maxZoom: 15, styles: clusterStyles};
+var customIcons = {
+default: {
+icon: new google.maps.MarkerImage("/.resources/efg-revamp/webresources/img/marker.png", new google.maps.Size(55, 55), new google.maps.Point(0, 0), new google.maps.Point(27, 55))
+}
+};
+</script>
+<script>
+$(function() {
+$('a[href^="mailto:"]').click(function() {
+gtag('event', 'conversion', {'send_to': 'AW-436197703/zDU2CMLM8-ECEMey_88B'});
+});
+});
+</script>
+<!-- OneTrust Cookies Consent Notice start for www.efginternational.com -->
+<script type="text/javascript" src=https://cdn.cookielaw.org/consent/22cab20f-d2ff-4dcb-8725-e5fa4acdee1a/OtAutoBlock.js ></script>
+<script src=https://cdn.cookielaw.org/scripttemplates/otSDKStub.js type="text/javascript" charset="UTF-8" data-domain-script="22cab20f-d2ff-4dcb-8725-e5fa4acdee1a" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end for www.efginternational.com -->
+<!-- Matomo -->
+<script type="text/javascript">
+var _paq = window._paq = window._paq || [];
+_paq.push([function() {
+var self = this;
+function getOriginalVisitorCookieTimeout() {
+var now = new Date(),
+nowTs = Math.round(now.getTime() / 1000),
+visitorInfo = self.getVisitorInfo();
+var createTs = parseInt(visitorInfo[2]);
+var cookieTimeout = 33696000; // 13 mois en secondes
+var originalTimeout = createTs + cookieTimeout - nowTs;
+return originalTimeout;
+}
+this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
+}]);
+/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+var u="//analytics.efginternational.com/";
+_paq.push(['setTrackerUrl', u+'matomo.php']);
+_paq.push(['setSiteId', '3']);
+var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+})();
+</script>
+<!-- End Matomo Code -->
+<!-- Matomo Tag Manager -->
+<script type="text/javascript">
+var _mtm = window._mtm = window._mtm || [];
+_mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+g.type='text/javascript'; g.async=true; g.src='https://analytics.efginternational.com/js/container_FrpEO9BV.js'; s.parentNode.insertBefore(g,s);
+</script>
+<!-- End Matomo Tag Manager -->
+<!-- Global site tag (gtag.js) - Google Ads: 436197703 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-436197703"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-436197703');
+</script>
+<!--
+Event snippet for EFG_Bank_Pageview [type:Visit][subtype:Pageview] on https://www.efgbank.com: Please do not remove.
+Place this snippet on pages with events you’re tracking.
+Creation date: 11/03/2021
+-->
+<script>
+gtag('event', 'conversion', {
+'allow_custom_scripts': true,
+'send_to': 'DC-9412433/visit/pageview+standard'
+});
+</script>
+<noscript>
+<img src="https://ad.doubleclick.net/ddm/activity/src=9412433;type=visit;cat=pageview;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1?" width="1" height="1" alt=""/>
+</noscript>
+<!-- End of event snippet: Please do not remove -->
+<!-- Microsoft ADS -->
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"56337733"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+<!-- Linkedin -->
+<script type="text/javascript">
+_linkedin_partner_id = "2779930";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2779930&fmt=gif" />
+</noscript>
+<meta name="google-site-verification" content="TjkMWuNF0uQdxhxb2YLRSc59BK0Kqiq4KDcOrvmqRXA" />
+</head>
+<body data-context-path="" class="">
+<div class="content-wrapper">
+<header class="header">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<a href="#mobile-menu" class="mobile-btn d-xl-none"><i class="icon-efg-menu"></i>Menu</a>
+<div class="header-logo">
+<a href="/"><img src="/doc/jcr:20d2bbea-fd6a-43bb-b7cc-da5d05ae1020/logo-efg.svg/lang:en/logo-efg.svg" alt="EFG" /></a>
+</div>
+<nav class="header-nav d-none d-xl-block">
+<ul>
+<li class="active">
+<a href="/private-banking.html" title="PRIVATE BANKING">Private Banking</a>
+<a class="icon-efg-triangle-down d-none"></a>
+<div class="submenu">
+<ul>
+<li class="sub">
+<a href="/private-banking/investment-solutions.html" title="INVESTMENT SOLUTIONS">
+Investment Solutions
+</a>
+<span class="d-none"></span>
+</li>
+<li class="sub">
+<a href="/private-banking/wealth-services.html" title="WEALTH SERVICES">
+Wealth Services
+</a>
+<span class="d-none"></span>
+</li>
+<li class="">
+<a href="/private-banking/credit-and-financing.html" title="CREDIT AND FINANCING">
+Credit and Financing
+</a>
+<span class="d-none"></span>
+</li>
+<li class="">
+<a href="/private-banking/banking-services.html" title="BANKING SERVICES">
+Banking services
+</a>
+<span class="d-none"></span>
+</li>
+<li class="">
+<a href="/private-banking/independent-asset-managers.html" title="INDEPENDENT ASSET MANAGERS">
+Independent Asset Managers
+</a>
+<span class="d-none"></span>
+</li>
+<li class="active sub">
+<a class="text-transform-none" href="/private-banking/ebanking.html" class="txt-bronze" title="eBanking">
+eBanking
+</a>
+<span class="d-none"></span>
+</li>
+</ul>
+<div>
+<ul>
+<li class="">
+<a href="/private-banking/investment-solutions/advisory-solutions.html" title="ADVISORY SOLUTIONS">Advisory Solutions</a>
+</li>
+<li class="">
+<a href="/private-banking/investment-solutions/discretionary-mandates.html" title="DISCRETIONARY MANDATES">Discretionary Mandates</a>
+</li>
+<li class="">
+<a href="/private-banking/investment-solutions/alternative-and-private-market-investments.html" title="ALTERNATIVE & PRIVATE MARKET INVESTMENTS">Alternative & private market investments</a>
+</li>
+<li class="">
+<a href="/private-banking/investment-solutions/advanced-investment-solutions.html" title="ADVANCED INVESTMENT SOLUTIONS">Advanced Investment Solutions</a>
+</li>
+</ul>
+<ul>
+<li class="">
+<a href="/private-banking/wealth-services/wealth-solutions.html" title="WEALTH SOLUTIONS">Wealth Solutions</a>
+</li>
+<li class="">
+<a href="/private-banking/wealth-services/wealth-planning.html" title="WEALTH PLANNING">Wealth Planning</a>
+</li>
+<li class="">
+<a href="/private-banking/wealth-services/fund-services.html" title="FUND SERVICES">Fund Services</a>
+</li>
+<li class="">
+<a href="/private-banking/wealth-services/trust-services.html" title="TRUST SERVICES">Trust Services</a>
+</li>
+</ul>
+<ul>
+<li class="">
+<a href="/private-banking/ebanking/efg-mobile-banking.html" title="EFG BANKING">EFG Banking</a>
+</li>
+<li class="">
+<a href="/private-banking/ebanking/efg-access.html" title="EFG ACCESS">EFG access</a>
+</li>
+<li class="active">
+<a href="/private-banking/ebanking/security.html" class="txt-bronze" title="SECURITY">Security</a>
+</li>
+<li class="">
+<a href="/private-banking/ebanking/documentation.html" title="DOCUMENTATION">Documentation</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="/asset-management.html" title="ASSET MANAGEMENT">Asset Management</a>
+<a class="icon-efg-triangle-down d-none"></a>
+<div class="submenu">
+<ul>
+<li class="">
+<a href="/asset-management/investment-process.html" title="INVESTMENT PROCESS">
+Investment process
+</a>
+<span class="d-none"></span>
+</li>
+<li class="">
+<a target="_blank" href="/asset-management/new-capital-funds.html" title="NEW CAPITAL FUNDS">
+New Capital Funds<i class="icon-efg-external-link ms-2"></i>
+</a>
+<span class="d-none"></span>
+</li>
+<li class="">
+<a href="/asset-management/responsible-investing.html" title="RESPONSIBLE INVESTING">
+Responsible investing
+</a>
+<span class="d-none"></span>
+</li>
+</ul>
+<div>
+</div>
+</div>
+</li>
+<li>
+<a href="/insights.html" title="INSIGHTS">Insights</a>
+</li>
+<li>
+<a href="/about.html" title="ABOUT">About</a>
+<a class="icon-efg-triangle-down d-none"></a>
+<div class="submenu">
+<ul>
+<li class="">
+<a href="/about/our-philosophy.html" title="OUR PHILOSOPHY">
+Our philosophy
+</a>
+<span class="d-none"></span>
+</li>
+<li class="">
+<a href="/about/our-history.html" title="OUR HISTORY">
+Our history
+</a>
+<span class="d-none"></span>
+</li>
+<li class="sub">
+<a href="/about/our-organization.html" title="OUR ORGANISATION">
+Our organisation
+</a>
+<span class="d-none"></span>
+</li>
+<li class="">
+<a href="/about/our-locations.html" title="OUR LOCATIONS">
+Our locations
+</a>
+<span class="d-none"></span>
+</li>
+<li class="sub">
+<a href="/about/our-sponsorships.html" title="OUR SPONSORSHIPS">
+Our sponsorships
+</a>
+<span class="d-none"></span>
+</li>
+<li class="">
+<a href="/about/careers.html" title="CAREERS">
+Careers
+</a>
+<span class="d-none"></span>
+</li>
+<li class="">
+<a href="/about/sustainability.html" title="SUSTAINABILITY">
+Sustainability
+</a>
+<span class="d-none"></span>
+</li>
+</ul>
+<div>
+<ul>
+<li class="">
+<a href="/about/our-organization/board-of-directors.html" title="BOARD OF DIRECTORS ">Board of Directors </a>
+</li>
+<li class="">
+<a href="/about/our-organization/executive-committee.html" title="EXECUTIVE COMMITTEE">Executive committee</a>
+</li>
+<li class="">
+<a href="/about/our-organization/global-business-committee.html" title="GLOBAL BUSINESS COMMITTEE">Global business committee</a>
+</li>
+<li class="">
+<a href="/about/our-organization/auditor.html" title="AUDITOR">Auditor</a>
+</li>
+<li class="">
+<a href="/about/our-organization/regulations.html" title="REGULATIONS">Regulations</a>
+</li>
+</ul>
+<ul>
+<li class="">
+<a href="/about/our-sponsorships/sailing.html" title="SAILING">Sailing</a>
+</li>
+<li class="">
+<a href="/about/our-sponsorships/jazz.html" title="JAZZ">Jazz</a>
+</li>
+<li class="">
+<a href="/about/our-sponsorships/arts-and-lifestyle.html" title="ARTS & LIFESTYLE">Arts & Lifestyle</a>
+</li>
+<li class="">
+<a href="/about/our-sponsorships/talent-development.html" title="TALENT DEVELOPMENT">Talent Development</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="/media.html" title="MEDIA">Media</a>
+</li>
+<li>
+<a href="/investors.html" title="INVESTORS">Investors</a>
+<a class="icon-efg-triangle-down d-none"></a>
+<div class="submenu">
+<ul>
+<li class="">
+<a href="/investors/financial-results.html" title="FINANCIAL RESULTS">
+Financial results
+</a>
+<span class="d-none"></span>
+</li>
+<li class="">
+<a href="/investors/financial-calendar-and-events.html" title="FINANCIAL CALENDAR AND EVENTS">
+Financial calendar and events
+</a>
+<span class="d-none"></span>
+</li>
+<li class="">
+<a href="/investors/presentations.html" title="PRESENTATIONS">
+Presentations
+</a>
+<span class="d-none"></span>
+</li>
+<li class="">
+<a href="/investors/share-information.html" title="SHARE INFORMATION">
+Share Information
+</a>
+<span class="d-none"></span>
+</li>
+<li class="">
+<a href="/investors/annual-general-meeting.html" title="ANNUAL GENERAL MEETING">
+Annual General Meeting
+</a>
+<span class="d-none"></span>
+</li>
+<li class="">
+<a href="/investors/rating-and-instruments.html" title="RATINGS AND INSTRUMENTS">
+Ratings and instruments
+</a>
+<span class="d-none"></span>
+</li>
+<li class="">
+<a href="/investors/analyst-coverage.html" title="ANALYST COVERAGE">
+Analyst coverage
+</a>
+<span class="d-none"></span>
+</li>
+<li class="">
+<a href="/investors/share-repurchase.html" title="SHARE REPURCHASE">
+Share repurchase
+</a>
+<span class="d-none"></span>
+</li>
+</ul>
+<div>
+</div>
+</div>
+</li>
+<li>
+<a href="/contact.html" title="CONTACT">Contact</a>
+</li>
+<li>
+<a href="/errors.html" title=""></a>
+</li>
+</ul>
+</nav>
+<div class="header-meta">
+<div class="header-search">
+<a href="/search.html" class="search-btn"><i class="icon-efg-search"></i>Search</a>
+</div>
+<a href="#" class="group-btn d-none d-xl-block">
+<ul>
+<li>
+Global
+</li>
+<li class="text-uppercase">en</li>
+</ul>
+</a>
+<a href="https://ebanking.efginternational.com/" target="_blank" class="btn d-none d-xl-block" title="eBanking"><i class="icon-efg-bank"></i>eBanking</a>
+</div>
+</div>
+</div>
+</div>
+<div class="group-layer d-none d-xl-block">
+<div class="container">
+<div class="row">
+<a href="#" class="btn group-layer-close">Close</a>
+<div class="col-7">
+<div class="group-customization">
+<div>
+<h3>Personalise your content</h3>
+<p>Let us know where you’re located so we can tailor our information to make your experience more relevant.</p>
+</div>
+<form class="form-change-site">
+<fieldset>
+<div>
+<div class="form-field select site-country">
+<select name="content_experience_country" id="content_experience_country">
+<optgroup label="Countries">
+<option value="" selected>Global</option>
+<option value="CH">Switzerland</option>
+<option value="GB">United Kingdom</option>
+<option value="LU">Luxembourg</option>
+<option value="MC">Monaco</option>
+<option value="US">United States</option>
+<option value="BS">Bahamas</option>
+<option value="KY">Cayman Islands</option>
+<option value="LI">Liechtenstein</option>
+<option value="CY">Cyprus</option>
+<option value="HK">Hong Kong</option>
+<option value="SG">Singapore</option>
+</optgroup>
+<optgroup label="Group">
+<option value="https://www.efgha.com ">Harris Allday</option>
+<option value="https://www.newcapitalfunds.com">New Capital Funds</option>
+<option value="https://www.shawandpartners.com.au">Shaw and Partners </option>
+</optgroup>
+</select>
+</div>
+<div class="form-field select site-language">
+<select name="content_experience_lang" id="content_experience_lang">
+<option value="/private-banking/ebanking/security.html" selected> English </option><option value="/de/private-banking/ebanking/security.html"> Deutsch </option><option value="/fr/private-banking/ebanking/security.html"> Français </option><option value="/it/private-banking/ebanking/security.html"> Italiano </option> </select>
+</div>
+</div>
+<button type="submit" class="btn btn-square">Submit<i class="icon-efg-line-arrow-right"></i></button>
+</fieldset>
+</form>
+</div>
+</div>
+<div class="col-5">
+<div class="group-contant">
+<h6>Your regional contact:</h6>
+<div class="address">
+<ul>
+<li><i class="icon-efg-pin"></i>EFG Bank AG<br>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</li>
+<li><i class="icon-efg-phone"></i>+41 44 226 17 17 </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="main-content">
+<section class="hero-main">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<nav class="breadcrumb">
+<ul>
+<li><a href="/">Homepage</a></li>
+<li><a href="/private-banking.html">Private Banking</a></li>
+<li><a href="/private-banking/ebanking.html">eBanking</a></li>
+<li><span>Security</span></li>
+</ul>
+</nav>
+<nav class="breadcrumb-mobile">
+<a href="#"><i class="icon-efg-breadcrumb"></i><span>Security</span><i class="icon-efg-arrow-down"></i></a>
+<div>
+<ul>
+<li><a href="/">Homepage</a></li>
+<li><a href="/private-banking.html">Private Banking</a></li>
+<li><a href="/private-banking/ebanking.html">eBanking</a></li>
+<li><span>Security</span></li>
+</ul>
+<a href="#" class="btn close">Close</a>
+</div>
+</nav>
+</div>
+</div>
+<div class="row">
+<div class="col-12">
+<div class="hero-content lazyload" data-sizes="auto"
+data-bgset="/doc/jcr:3e54412f-f80b-42da-ae41-6a6f93cd335f/Security_Security_1680x541_72dpi.png/lang:en/Security_Security_1680x541_72dpi.png [(max-width: 991px)] | /doc/jcr:3e54412f-f80b-42da-ae41-6a6f93cd335f/Security_Security_1680x541_72dpi.png/lang:en/Security_Security_1680x541_72dpi.png [(max-width: 1599px)] | /doc/jcr:3e54412f-f80b-42da-ae41-6a6f93cd335f/Security_Security_1680x541_72dpi.png/lang:en/Security_Security_1680x541_72dpi.png"
+>
+<div>
+<h1>Security Information</h1>
+<p>Giving you the confidence that your wealth is protected</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="">
+<div class="container">
+<div class="row section-headline">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<h2>Keeping your wealth safe</h2>
+<p class="indent">We&#039;re committed to offering you a secure and private online banking experience that you can enjoy, knowing that your information is protected and that you have a safe environment in which to conduct transactions. This requires a diligent approach to enforcing our security measures, as well as a constant evolution in our protection strategies in response to technological change and emerging threats. In this ever-changing environment, we work in partnership with you to protect your online activities.</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<article class="text-article">
+<h3>What we’re doing to protect you</h3>
+<p>Our IT professionals work constantly to stay ahead of online threats, taking advantage of the most advanced technologies and established procedures to protect your data and financial assets. In addition, we offer a number of layers of protection:</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<article class="text-article">
+<h3>Privacy</h3>
+<p>Your personal and financial information are safely stored and all communications with the eBanking platform are encrypted using SSL 128 bit state-of-the-art algorithms. This ensures the confidentiality of your data from EFG systems to your browser. We also offer the SecureMail service, allowing you to exchange securely emails and documents with your Client Relationship Officer (CRO).</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<article class="text-article">
+<h3> Digital certificates</h3>
+<p>The EFG eBanking website uses extended validity (EV) certificates to prove its identity to visitors. Such certificates require extensive verification, and provide the highest level of confidence about the authenticity of a website.<br />
+<br />
+<a href="https://www.ebas.ch/en/" target="_blank">How to check a certificate</a></p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<article class="text-article">
+<h3>Identity verification</h3>
+<p>For added safety, EFG eBanking requires two levels of authentication to provide access to your eBanking account and to confirm your transactions:</p>
+<ul>
+<li>Your traditional username/password credentials.</li>
+<li>An electronically generated one-time password. This will prevent unauthorised access in the event that your username/password are disclosed.</li>
+</ul>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<article class="text-article">
+<h3>Account lock out and session time out</h3>
+<p>To protect your account from password guessing, an account will be locked out if an incorrect password (or token code) is entered four times consecutively. You will then have to contact your CRO to reactivate it. In addition, you will be automatically disconnected from your eBanking session after 20 minutes of inactivity, to prevent anyone else from accessing your account in case you leave your computer unattended.</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<article class="text-article">
+<h3>What you can do to protect yourself</h3>
+<p>There are a number of things you can do to protect your data and improve your online banking experience:</p>
+<picture class="image position-relative">
+<source data-srcset="/.imaging/mte/efg-revamp/670x500/dam/efg/EFG_2021/Batch-3/Security/Security_What_You_Can_Do_1396x600_72dpi.png/jcr:content/Security_What_You_Can_Do_1396x600_72dpi.png" media="(max-width: 575px)">
+<source data-srcset="/.imaging/mte/efg-revamp/1376x776/dam/efg/EFG_2021/Batch-3/Security/Security_What_You_Can_Do_1396x600_72dpi.png/jcr:content/Security_What_You_Can_Do_1396x600_72dpi.png" media="(max-width: 991px)">
+<source data-srcset="/.imaging/mte/efg-revamp/1096x520/dam/efg/EFG_2021/Batch-3/Security/Security_What_You_Can_Do_1396x600_72dpi.png/jcr:content/Security_What_You_Can_Do_1396x600_72dpi.png" media="(max-width: 1599px)">
+<source data-srcset="/.imaging/mte/efg-revamp/1354x600/dam/efg/EFG_2021/Batch-3/Security/Security_What_You_Can_Do_1396x600_72dpi.png/jcr:content/Security_What_You_Can_Do_1396x600_72dpi.png">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/1354x600/dam/efg/EFG_2021/Batch-3/Security/Security_What_You_Can_Do_1396x600_72dpi.png/jcr:content/Security_What_You_Can_Do_1396x600_72dpi.png" width="1392" height="617" class="lazyload" alt="What you can do to protect yourself" />
+</picture>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<article class="text-article">
+<h3>Website identity</h3>
+<p>Most of us have received an email purporting to be from a financial institution, exhorting us to click on a link to log-in to our online banking account, reset our password, and so on. It is usually pretty clear that these are phony. However, bogus websites can be more difficult to spot, as they often look exactly like their legitimate counterparts. You can make sure of website authenticity by looking at the address and by checking the certificate. The real web address, in fact, is not necessarily the one shown in the hyperlink which could redirect you to a website that has nothing to do with the real eBanking site. For this reason, you should never follow any link to access our eBanking and you should manually enter the address https://ebanking.efginternational.com in your browser or save it in your bookmark. Once you have entered the right address, it is also critical to verify the certificate. A valid certificate will in fact show you the real entity associated with the website you are connected to, and it will ensure that only that entity will be able to decrypt the exchanged information. There may be some differences in how browsers show that a certificate is valid (a closed padlock, address highlighted in green, etc.). The pictures below show how EFG eBanking certificate information is displayed in some widely used browsers.</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<article class="text-article">
+<h3>Antivirus</h3>
+<p>Malicious software can infect your computer in many ways. Viruses can be in email attachments or USB sticks; they can hide themselves in valid programs; or you can simply get infected by opening a web page within your browser. In most cases, antivirus software can provide protection; however, it is critical to keep it up to date with the latest virus definitions. Computer viruses are created on a daily basis, and the most dangerous attacks often draw on the most recent developments. Make sure your antivirus software is active and configured for automatic updates. In addition to &#39;real-time&#39; protection, it should also be configured to perform a full scan of your computer on a regular basis.</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<article class="text-article">
+<h3>Anti-spyware</h3>
+<p>Spyware is a type of programme that records information about your online behaviour, often to generate market research data but also sometimes to obtain personal information, passwords, credit card numbers and so on. In most cases they are downloaded and installed as part of a legitimate program without the user&#39;s knowledge. As spyware behaves in a different way from viruses, many antivirus tools are not effective in detecting them. It is therefore a good idea to install specific anti-spyware software.</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<article class="text-article">
+<h3>Suspicious emails and attachments</h3>
+<p>Emails are a common method of carrying out scams or propagating viruses. You should always exercise care when opening a suspicious email and, should you have any doubt about the legitimacy of the message, avoid clicking on any link or downloading any attachment. Note that you should also be cautious when receiving an email from a person that you know, as it is very easy to forge the sender of an address in an email. Common sense is often the best means to spot a fraudulent message in those cases.</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<article class="text-article">
+<h3>Patches and security updates</h3>
+<p>While viruses are intentionally developed for malicious activities, software vulnerabilities and bugs are defects involuntarily left by developers in an application or an operating system. Just like viruses, vulnerabilities might open doors for ill-intentioned people interested in your data. And just like viruses, new vulnerabilities are being discovered every day. This is why it is critical that you keep your operating system and your applications up to date by installing the latest patches and security updates. Many systems and applications offer an automatic updates feature and it is generally advisable to enable it.</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<article class="text-article">
+<h3>Account privileges</h3>
+<p>Most of the day-to-day activities performed on a computer (surfing, running programmes or applications, and so on) do not require administrative privileges and can be safely carried out with a &#39;standard&#39; account with limited privileges. Moreover, the impact of a virus or malware is generally much higher if executed by an administrative account and it would affect all the users on the system. For this reason, you should always try use a standard account and only log in as administrator when it is necessary (for example to install a new programme).</p>
+<p><a href="https://www.ebas.ch/en/" target="_blank">More about limited user rights</a></p>
+<p>&nbsp;</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<article class="text-article">
+<h3>Secure wireless networks</h3>
+<p>Wireless networks offer a great opportunity for anybody in your neighbourhood to enter your network and potentially eavesdrop on your communications or access the data in your computer. In addition, any activity performed by a device connected to your wireless network would appear to be done by you - and in many countries you may be held legally responsible for it. Securing your wireless connection is imperative, and you should never assume that your neighbourhood are safe as some directional antennas are able to intercept your WIFI signal from miles away. You should never use an &#39;open&#39; access point and never use weak authentication/encryption such as WEP which can be easily broken in a few minutes. You should use more robust algorithm, such as WPA2, with a very complex access code. Please refer to the vendor of your wireless equipment for instructions on how to enable WPA2.</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<article class="text-article">
+<h3>Secure session and log out</h3>
+<p>Internet browsers often store data concerning your session. To minimise this to potential unauthorised access, you should start a new browser window for any eBanking session and close all other web pages while you are connected to your account. You should also avoid accessing your account from public places like internet cafes or kiosks, as you will lack control about what information is retained and where. To correctly terminate your session you should not simply close the browser. Instead, you should use the &#39;log out&#39; button, and possibly clear the cache of your browser.</p>
+<p><a href="https://www.ebas.ch/en/" target="_blank">How to clear the web browser&#39;s cache</a></p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<article class="text-article">
+<p>Probably the most important advice of all is to exercise care and common sense. Online banking is not so different from any other financial activity, where a sense of caution should protect you against threats. There are many sites on the internet giving technical or practical information in relation to areas such as what antivirus to use; how to apply security updates; or how to remember a complex password. Many useful information can be found, for example, on the following web sites:</p>
+<ul>
+<li><a href="https://www.ebankingbutsecure.ch/en/" target="_blank">https://www.ebankingbutsecure.ch/en/</a></li>
+<li><a href="https://www.financialfraudaction.org.uk/consumer/advice/protect-your-onlinemobile-banking/" target="_blank">https://www.financialfraudaction.org.uk/consumer/advice/protect-your-onlinemobile-banking/</a></li>
+<li><a href="https://www.ncsc.admin.ch/ncsc/en/home.html" target="_blank">https://www.ncsc.admin.ch/ncsc/en/home.html</a></li>
+</ul>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<article class="text-article">
+<h3>What should I be aware of when using Biometric Authentication service?</h3>
+<p>For security reasons, do not use jailbroken or rooted mobile devices. Upon the successful registration of the &ldquo;Biometric Authentication&rdquo; service on your mobile devices, any fingerprint or Face ID that being stored on your mobile device can be used for the purpose of the &ldquo;Biometric Authentication&rdquo; service. You must ensure that only your fingerprint or Face ID is stored on your mobile devices, and ensure the security of the security codes as well as the passwords or codes that you can use to store your fingerprint or Face ID and register the &ldquo;Biometric Authentication&rdquo; service on your mobile devices. You can cancel the &ldquo;Biometric Authentication&rdquo; service by disabling the option of Biometric Authentication Login via &quot;Setting&quot; after logging in Mobile Banking. Please note that after you cancel the &ldquo;Biometric Authentication&rdquo; service, your fingerprint or Face ID will be continuously stored on your designated mobile devices. You may consider cancelling the data at your own decision. If your fingerprint or Face ID record of your designated mobile devices has been changed, you are required to input your original pin code for the next login. Once successful, you can continue to use the &ldquo;Biometric Authentication&rdquo; service. You must not use &ldquo;Biometric Authentication&rdquo; if you have reasonable belief that other people may share identical or very similar biometric credentials of you. For instance, you must not use facial recognition for authentication purpose if you have identical twin or triplet siblings. You must not use &ldquo;Biometric Authentication&rdquo; if the biometric credentials you use are or will be undergoing rapid development or change.</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+<article class="text-article">
+<h3>Cyber criminals take advantage of coronavirus fears</h3>
+<p>As worries about the coronavirus mount, cybercriminals are racing to capitalise with online scams, attempting to gain access to personal data and computer systems. They are using calls, text messages and emails to trick users into parting with confidential information. To complicate matters, a large number of legitimate coronavirus-related emails are circulating right now, making it easier for malicious content to pass undetected. Criminals are taking advantage of our need for information, knowing we are more likely to overlook things we would notice in calmer times. Now is a time for extreme vigilance.</p>
+<h3>How to avoid getting scammed</h3>
+<ul>
+<li>Think before you click. The best thing users can do to protect themselves is simply to slow down. If something doesn&rsquo;t seem right about an email, just delete it, preferably before you open it.</li>
+<li>Examine the link. Before you click on a link, try hovering your mouse over it. This will reveal the full address, which can expose signs of fraud. Misspellings in URLs are another good tip-off to a fake website.</li>
+<li>Don&rsquo;t assume that a website is legitimate just because its URL starts with &ldquo;https.&rdquo; Criminals like to use encryption, too.</li>
+<li>Don&rsquo;t open suspicious attachments. They may contain malware. And you should never type confidential information into a form attached to an email. The sender may be able to track the information you enter.</li>
+<li>Guard your financial information. Be wary of emails asking for account numbers, credit card details, wire transfers, and failed transactions. There&rsquo;s no reason to share such information via message or an unsecure site.</li>
+<li>Turn on auto updates. This goes for your computer, smartphone and tablets. Up-to-date antivirus software goes a long way toward stopping malware.If you receive any suspicious communication that claims to originate from EFG, notify us immediately. Apart from the standard authentication process when you contact our service desk, EFG will never ask you to disclose credentials or personal information in either email or telephone conversations.</li>
+</ul>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section class="overlying">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="contact-box">
+<div class="content">
+<h3>Need help with eBanking? Get in touch</h3>
+<p>Having problems with our eBanking service? Get in touch with our technical team.</p>
+<div class="text-article mt-base"><p><strong>eBanking for clients:</strong>&nbsp;<br />
+Monday-Friday 8:00 - 18:00 CET<br />
+Phone: +41 800 334 334</p>
+<p>To find a local free phone number for your country please view our <a href="/contact/international-directory.html">international directory</a></p>
+<p><strong>eBanking for Independent Asset Managers</strong>:&nbsp;<br />
+Monday-Friday 8:00 - 18:30 CET<br />
+Phone:&nbsp;+41 58 809 3999</p>
+</div>
+</div>
+<div class="image lazyload" data-sizes="auto" data-bgset="/doc/jcr:b2187847-ff3d-4152-b61f-43a15ee9fa61/need_help_690x640.jpg/lang:en/need_help_690x640.jpg [(max-width: 1599px)] | /doc/jcr:b2187847-ff3d-4152-b61f-43a15ee9fa61/need_help_690x640.jpg/lang:en/need_help_690x640.jpg"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bkg-dark mt-0 pt-more">
+<div class="container">
+<div class="row section-headline">
+<div class="col-12 col-lg-10 mx-auto text-md-center">
+<h2>Discover more</h2>
+<p>From investing to finance, find out how our services can help you protect and grow your wealth today.</p>
+</div>
+</div>
+<div class="row teaser-wrapper">
+<div class="col-12 col-lg-4">
+<article class="teaser bottom">
+<a href="/private-banking/investment-solutions.html" title="Discretionary and advisory services that help you to find the right combination of investments for you">
+<span class="label">Investment Solutions</span>
+<picture class="image">
+<source data-srcset="/.imaging/mte/efg-revamp/548x280/dam/efg/private-banking/investment-solutions/Investment_Solutions_Bar_Image_1680x541_72dpi.png/jcr:content/Investment_Solutions_Bar_Image_1680x541_72dpi.png">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/private-banking/investment-solutions/Investment_Solutions_Bar_Image_1680x541_72dpi.png/jcr:content/Investment_Solutions_Bar_Image_1680x541_72dpi.png" width="548" height="280" class="lazyload" alt="Discretionary and advisory services that help you to find the right combination of investments for you" />
+</picture>
+<div class="content">
+<h4>Discretionary and advisory services that help you to find the right combination of investments for you</h4>
+<span class="link-btn">Learn more </span>
+</div>
+</a>
+</article>
+</div>
+<div class="col-12 col-lg-4">
+<article class="teaser bottom">
+<a href="/private-banking/wealth-services.html" title="Solutions to help you protect, structure and plan your wealth for the long term.">
+<span class="label">Wealth Services </span>
+<picture class="image">
+<source data-srcset="/.imaging/mte/efg-revamp/548x280/dam/efg/private-banking/PrivateClients_HEADER_GettyImages-1210790993_Desktop_1920x680px_72dpi.jpg/jcr:content/PrivateClients_HEADER_GettyImages-1210790993_Desktop_1920x680px_72dpi.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/private-banking/PrivateClients_HEADER_GettyImages-1210790993_Desktop_1920x680px_72dpi.jpg/jcr:content/PrivateClients_HEADER_GettyImages-1210790993_Desktop_1920x680px_72dpi.jpg" width="548" height="280" class="lazyload" alt="Solutions to help you protect, structure and plan your wealth for the long term." />
+</picture>
+<div class="content">
+<h4>Solutions to help you protect, structure and plan your wealth for the long term.</h4>
+<span class="link-btn">Learn more</span>
+</div>
+</a>
+</article>
+</div>
+<div class="col-12 col-lg-4">
+<article class="teaser bottom">
+<a href="/private-banking/credit-and-financing.html" title=" Flexible financing solutions to support investment, both home and abroad.">
+<span class="label">Credit and Financing</span>
+<picture class="image">
+<source data-srcset="/.imaging/mte/efg-revamp/548x280/dam/efg/private-banking/crediti-financing-chosen1920x680.jpg/jcr:content/crediti-financing-chosen1920x680.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/private-banking/crediti-financing-chosen1920x680.jpg/jcr:content/crediti-financing-chosen1920x680.jpg" width="548" height="280" class="lazyload" alt=" Flexible financing solutions to support investment, both home and abroad." />
+</picture>
+<div class="content">
+<h4> Flexible financing solutions to support investment, both home and abroad.</h4>
+<span class="link-btn">Learn more</span>
+</div>
+</a>
+</article>
+</div>
+</div>
+</div>
+</section>
+</div>
+<footer class="footer">
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-8 col-xl-6 offset-xl-3 order-lg-2">
+<nav class="footer-nav">
+<div>
+<h6><a title="About EFG International" href="/about.html" title="About EFG International" class="txt-bronze text-decoration-none">About EFG International</a></h6>
+<ul class="list-unstyled">
+<li><a href="/about/our-philosophy.html" title="Our philosophy">Our philosophy</a></li>
+<li><a href="/about/our-history.html" title="Our history">Our history</a></li>
+<li><a href="/about/our-organization.html" title="Our organisation">Our organisation</a></li>
+<li><a href="/about/our-locations.html" title="Our locations">Our locations</a></li>
+<li><a href="/about/our-sponsorships.html" title="Our sponsorships">Our sponsorships</a></li>
+<li><a href="/about/careers.html" title="Careers">Careers</a></li>
+<li><a href="/about/sustainability.html" title="Sustainability">Sustainability</a></li>
+</ul>
+</div>
+<div>
+<h6><a title="Private Banking" href="/private-banking.html" title="Private Banking" class="txt-bronze text-decoration-none">Private Banking</a></h6>
+<ul class="list-unstyled">
+<li><a href="/private-banking/investment-solutions.html" title="Investment Solutions">Investment Solutions</a></li>
+<li><a href="/private-banking/wealth-services.html" title="Wealth Services">Wealth Services</a></li>
+<li><a href="/private-banking/credit-and-financing.html" title="Credit and Financing">Credit and Financing</a></li>
+<li><a href="/private-banking/banking-services.html" title="Banking services">Banking services</a></li>
+<li><a href="/private-banking/independent-asset-managers.html" title="Independent Asset Managers">Independent Asset Managers</a></li>
+<li><a href="/private-banking/ebanking.html" title="eBanking">eBanking</a></li>
+</ul>
+</div>
+<div>
+<h6><a title="Asset Management" href="/asset-management.html" title="Asset Management" class="txt-bronze text-decoration-none">Asset Management</a></h6>
+<ul class="list-unstyled">
+<li><a href="/asset-management/investment-process.html" title="Investment process">Investment process</a></li>
+<li><a target="_blank" href="/asset-management/new-capital-funds.html" title="New Capital Funds">New Capital Funds<i class="icon-efg-external-link ms-2"></i></a></li>
+<li><a href="/asset-management/responsible-investing.html" title="Responsible investing">Responsible investing</a></li>
+</ul>
+</div>
+</nav>
+<div class="footer-customization d-none d-lg-block">
+<h6>Personalise your content:</h6>
+<form class="form-change-site">
+<fieldset>
+<div>
+<div class="form-field select site-country">
+<select name="footer_experience_country" id="footer_experience_country">
+<optgroup label="Countries">
+<option value="" selected>Global</option>
+<option value="CH">Switzerland</option>
+<option value="GB">United Kingdom</option>
+<option value="LU">Luxembourg</option>
+<option value="MC">Monaco</option>
+<option value="US">United States</option>
+<option value="BS">Bahamas</option>
+<option value="KY">Cayman Islands</option>
+<option value="LI">Liechtenstein</option>
+<option value="CY">Cyprus</option>
+<option value="HK">Hong Kong</option>
+<option value="SG">Singapore</option>
+</optgroup>
+<optgroup label="Group">
+<option value="https://www.efgha.com ">Harris Allday</option>
+<option value="https://www.newcapitalfunds.com">New Capital Funds</option>
+<option value="https://www.shawandpartners.com.au">Shaw and Partners </option>
+</optgroup>
+</select>
+</div>
+<div class="form-field select site-language">
+<select name="footer_experience_lang" id="footer_experience_lang">
+<option value="/private-banking/ebanking/security.html" selected> English </option><option value="/de/private-banking/ebanking/security.html"> Deutsch </option><option value="/fr/private-banking/ebanking/security.html"> Français </option><option value="/it/private-banking/ebanking/security.html"> Italiano </option> </select>
+</div>
+</div>
+<button type="submit" class="btn btn-square">Submit<i class="icon-efg-line-arrow-right"></i></button>
+</fieldset>
+</form>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg-8 col-xl-6 offset-xl-3 order-md-3 d-lg-none">
+<div class="footer-customization">
+<h6>Personalise your content:</h6>
+<form class="form-change-site">
+<fieldset>
+<div>
+<div class="form-field select site-country">
+<select name="footer_m_experience_country" id="footer_m_experience_country">
+<optgroup label="Countries">
+<option value="" selected>Global</option>
+<option value="CH">Switzerland</option>
+<option value="GB">United Kingdom</option>
+<option value="LU">Luxembourg</option>
+<option value="MC">Monaco</option>
+<option value="US">United States</option>
+<option value="BS">Bahamas</option>
+<option value="KY">Cayman Islands</option>
+<option value="LI">Liechtenstein</option>
+<option value="CY">Cyprus</option>
+<option value="HK">Hong Kong</option>
+<option value="SG">Singapore</option>
+</optgroup>
+<optgroup label="Group">
+<option value="https://www.efgha.com ">Harris Allday</option>
+<option value="https://www.newcapitalfunds.com">New Capital Funds</option>
+<option value="https://www.shawandpartners.com.au">Shaw and Partners </option>
+</optgroup>
+</select>
+</div>
+<div class="form-field select site-language">
+<select name="footer_m_experience_lang" id="footer_m_experience_lang">
+<option value="/private-banking/ebanking/security.html" selected> English </option><option value="/de/private-banking/ebanking/security.html"> Deutsch </option><option value="/fr/private-banking/ebanking/security.html"> Français </option><option value="/it/private-banking/ebanking/security.html"> Italiano </option> </select>
+</div>
+</div>
+<button type="submit" class="btn btn-square">Submit<i class="icon-efg-line-arrow-right"></i></button>
+</fieldset>
+</form>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-3 order-md-2 order-lg-1">
+<div class="footer-company">
+<div class="footer-logo"><img src="/doc/jcr:a3f9cea6-cae5-4222-a9e2-f38739ed5ecd/logo-efg-footer.svg/lang:en/logo-efg-footer.svg" alt="EFG" /></div>
+<h6>Our headquarters:</h6>
+<div class="address">
+<p>EFG International AG<br>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</p>
+<ul>
+<li><i class="icon-efg-phone me-2"></i><a href="tel:+41 44 226 18 50" class="phone">+41 44 226 18 50</a></li>
+</ul>
+</div>
+<ul class="social">
+<ul class="social">
+<li><a title="Linkedin" href="https://www.linkedin.com/company/efg-bank/" target="_blank"><i class="icon-efg-social-linkedin"></i></a></li>
+<li><a title="Twitter" href="https://www.twitter.com/efgint" target="_blank"><i class="icon-efg-social-twitter"></i></a></li>
+<li><a title="Facebook" href="https://www.facebook.com/EFGInternational" target="_blank"><i class="icon-efg-social-facebook"></i></a></li>
+</ul>
+</ul>
+<h6 data-country-site="">Your regional contact:</h6>
+<div class="address">
+<p>EFG Bank AG<br>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</p>
+<ul>
+<li><i class="icon-efg-phone me-2"></i><a href="tel:+41 44 226 17 17 " class="phone">+41 44 226 17 17 </a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="row footer-bottom">
+<div class="col-12 col-xl-6">
+<p>EFG International AG - All rights reserved. <img src="/.resources/efg-design/webresources/icone/copyright.svg" style="width: 12px !important;"> 2023</p>
+</div>
+<div class="col-12 col-xl-6">
+<nav class="footer-bottom-nav">
+<ul class="d-block">
+<li><a href="/contact.html" title="Contact us">Contact us</a></li>
+<li><a href="/legal.html" title="Legal">Legal</a></li>
+<li><a href="/disclaimer.html" title="Disclaimer">Disclaimer</a></li>
+<li><a href="/data-privacy-documents.html" title="Data Privacy">Data Privacy</a></li>
+<li><a href="/legal/cookie-policy.html" title="Cookie settings">Cookie settings</a></li>
+</ul>
+</nav>
+</div>
+<div class="col-12 mt-4">
+<p class="txt-text-2 mt-2 fw-normal">
+<span class="efg-note">Certain product, services and information on this EFG website may not be available for residents and/or nationals of certain jurisdictions and countries. Viewers are asked to consult the sales restrictions relating to product and services for further information.</span>
+</p>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<a href="#" class="mobile-menu-close"><i class="icon-efg-close"></i>Close</a>
+<a href="/search.html" class="mobile-search"></a>
+<div class="group-layer-mobile d-xl-none">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="group-customization">
+<div>
+<h3>Personalise your content</h3>
+<p>Let us know where you’re located so we can tailor our information to make your experience more relevant.</p>
+</div>
+<form class="form-change-site">
+<fieldset>
+<div>
+<div class="form-field select site-country">
+<select name="content_experience_country_m" id="content_experience_country_m">
+<optgroup label="Countries">
+<option value="" selected>Global</option>
+<option value="CH">Switzerland</option>
+<option value="GB">United Kingdom</option>
+<option value="LU">Luxembourg</option>
+<option value="MC">Monaco</option>
+<option value="US">United States</option>
+<option value="BS">Bahamas</option>
+<option value="KY">Cayman Islands</option>
+<option value="LI">Liechtenstein</option>
+<option value="CY">Cyprus</option>
+<option value="HK">Hong Kong</option>
+<option value="SG">Singapore</option>
+</optgroup>
+<optgroup label="Group">
+<option value="https://www.efgha.com ">Harris Allday</option>
+<option value="https://www.newcapitalfunds.com">New Capital Funds</option>
+<option value="https://www.shawandpartners.com.au">Shaw and Partners </option>
+</optgroup>
+</select>
+</div>
+<div class="form-field select site-language">
+<select name="content_experience_lang_m" id="content_experience_lang_m">
+<option value="/private-banking/ebanking/security.html" selected> English </option><option value="/de/private-banking/ebanking/security.html"> Deutsch </option><option value="/fr/private-banking/ebanking/security.html"> Français </option><option value="/it/private-banking/ebanking/security.html"> Italiano </option> </select>
+</div>
+</div>
+<button type="submit" class="btn btn-square">Submit<i class="icon-efg-line-arrow-right"></i></button>
+</fieldset>
+</form>
+</div>
+</div>
+<div class="col-12">
+<div class="group-contant">
+<h6>Your regional contact:</h6>
+<ul>
+<li><i class="icon-efg-pin"></i>EFG Bank AG<br>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</li>
+<li><i class="icon-efg-phone"></i>+41 44 226 17 17 </li>
+</ul>
+<a href="#" class="btn group-layer-close">Close</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav style="display:none;" id="mobile-menu" data-country="Global" data-lang="EN" data-meta-btn="eBanking" data-meta-href="https://ebanking.efginternational.com/">
+<div>
+<ul>
+<li class="active sub">
+<a href="/private-banking.html" title="PRIVATE BANKING">
+Private Banking
+</a>
+<ul>
+<li class="sub">
+<a href="/private-banking/investment-solutions.html" title="INVESTMENT SOLUTIONS">
+Investment Solutions
+</a>
+<ul>
+<li class="">
+<a href="/private-banking/investment-solutions/advisory-solutions.html" title="ADVISORY SOLUTIONS">
+Advisory Solutions
+</a>
+</li>
+<li class="">
+<a href="/private-banking/investment-solutions/discretionary-mandates.html" title="DISCRETIONARY MANDATES">
+Discretionary Mandates
+</a>
+</li>
+<li class="">
+<a href="/private-banking/investment-solutions/alternative-and-private-market-investments.html" title="ALTERNATIVE & PRIVATE MARKET INVESTMENTS">
+Alternative & private market investments
+</a>
+</li>
+<li class="">
+<a href="/private-banking/investment-solutions/advanced-investment-solutions.html" title="ADVANCED INVESTMENT SOLUTIONS">
+Advanced Investment Solutions
+</a>
+</li>
+</ul>
+</li>
+<li class="sub">
+<a href="/private-banking/wealth-services.html" title="WEALTH SERVICES">
+Wealth Services
+</a>
+<ul>
+<li class="">
+<a href="/private-banking/wealth-services/wealth-solutions.html" title="WEALTH SOLUTIONS">
+Wealth Solutions
+</a>
+</li>
+<li class="">
+<a href="/private-banking/wealth-services/wealth-planning.html" title="WEALTH PLANNING">
+Wealth Planning
+</a>
+</li>
+<li class="">
+<a href="/private-banking/wealth-services/fund-services.html" title="FUND SERVICES">
+Fund Services
+</a>
+</li>
+<li class="">
+<a href="/private-banking/wealth-services/trust-services.html" title="TRUST SERVICES">
+Trust Services
+</a>
+</li>
+</ul>
+</li>
+<li class="">
+<a href="/private-banking/credit-and-financing.html" title="CREDIT AND FINANCING">
+Credit and Financing
+</a>
+</li>
+<li class="">
+<a href="/private-banking/banking-services.html" title="BANKING SERVICES">
+Banking services
+</a>
+</li>
+<li class="">
+<a href="/private-banking/independent-asset-managers.html" title="INDEPENDENT ASSET MANAGERS">
+Independent Asset Managers
+</a>
+</li>
+<li class="active sub">
+<a class="text-transform-none" href="/private-banking/ebanking.html" title="eBanking">
+eBanking
+</a>
+<ul>
+<li class="">
+<a href="/private-banking/ebanking/efg-mobile-banking.html" title="EFG BANKING">
+EFG Banking
+</a>
+</li>
+<li class="">
+<a href="/private-banking/ebanking/efg-access.html" title="EFG ACCESS">
+EFG access
+</a>
+</li>
+<li class="active ">
+<a href="/private-banking/ebanking/security.html" title="SECURITY">
+Security
+</a>
+</li>
+<li class="">
+<a href="/private-banking/ebanking/documentation.html" title="DOCUMENTATION">
+Documentation
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="sub">
+<a href="/asset-management.html" title="ASSET MANAGEMENT">
+Asset Management
+</a>
+<ul>
+<li class="">
+<a href="/asset-management/investment-process.html" title="INVESTMENT PROCESS">
+Investment process
+</a>
+</li>
+<li class="">
+<a target="_blank" href="/asset-management/new-capital-funds.html" title="NEW CAPITAL FUNDS">
+New Capital Funds<i class="icon-efg-external-link ms-2"></i>
+</a>
+</li>
+<li class="">
+<a href="/asset-management/responsible-investing.html" title="RESPONSIBLE INVESTING">
+Responsible investing
+</a>
+</li>
+</ul>
+</li>
+<li class="">
+<a href="/insights.html" title="INSIGHTS">
+Insights
+</a>
+</li>
+<li class="sub">
+<a href="/about.html" title="ABOUT">
+About
+</a>
+<ul>
+<li class="">
+<a href="/about/our-philosophy.html" title="OUR PHILOSOPHY">
+Our philosophy
+</a>
+</li>
+<li class="">
+<a href="/about/our-history.html" title="OUR HISTORY">
+Our history
+</a>
+</li>
+<li class="sub">
+<a href="/about/our-organization.html" title="OUR ORGANISATION">
+Our organisation
+</a>
+<ul>
+<li class="">
+<a href="/about/our-organization/board-of-directors.html" title="BOARD OF DIRECTORS ">
+Board of Directors
+</a>
+</li>
+<li class="">
+<a href="/about/our-organization/executive-committee.html" title="EXECUTIVE COMMITTEE">
+Executive committee
+</a>
+</li>
+<li class="">
+<a href="/about/our-organization/global-business-committee.html" title="GLOBAL BUSINESS COMMITTEE">
+Global business committee
+</a>
+</li>
+<li class="">
+<a href="/about/our-organization/auditor.html" title="AUDITOR">
+Auditor
+</a>
+</li>
+<li class="">
+<a href="/about/our-organization/regulations.html" title="REGULATIONS">
+Regulations
+</a>
+</li>
+</ul>
+</li>
+<li class="">
+<a href="/about/our-locations.html" title="OUR LOCATIONS">
+Our locations
+</a>
+</li>
+<li class="sub">
+<a href="/about/our-sponsorships.html" title="OUR SPONSORSHIPS">
+Our sponsorships
+</a>
+<ul>
+<li class="">
+<a href="/about/our-sponsorships/sailing.html" title="SAILING">
+Sailing
+</a>
+</li>
+<li class="">
+<a href="/about/our-sponsorships/jazz.html" title="JAZZ">
+Jazz
+</a>
+</li>
+<li class="">
+<a href="/about/our-sponsorships/arts-and-lifestyle.html" title="ARTS & LIFESTYLE">
+Arts & Lifestyle
+</a>
+</li>
+<li class="">
+<a href="/about/our-sponsorships/talent-development.html" title="TALENT DEVELOPMENT">
+Talent Development
+</a>
+</li>
+</ul>
+</li>
+<li class="">
+<a href="/about/careers.html" title="CAREERS">
+Careers
+</a>
+</li>
+<li class="">
+<a href="/about/sustainability.html" title="SUSTAINABILITY">
+Sustainability
+</a>
+</li>
+</ul>
+</li>
+<li class="">
+<a href="/media.html" title="MEDIA">
+Media
+</a>
+</li>
+<li class="sub">
+<a href="/investors.html" title="INVESTORS">
+Investors
+</a>
+<ul>
+<li class="">
+<a href="/investors/financial-results.html" title="FINANCIAL RESULTS">
+Financial results
+</a>
+</li>
+<li class="">
+<a href="/investors/financial-calendar-and-events.html" title="FINANCIAL CALENDAR AND EVENTS">
+Financial calendar and events
+</a>
+</li>
+<li class="">
+<a href="/investors/presentations.html" title="PRESENTATIONS">
+Presentations
+</a>
+</li>
+<li class="">
+<a href="/investors/share-information.html" title="SHARE INFORMATION">
+Share Information
+</a>
+</li>
+<li class="">
+<a href="/investors/annual-general-meeting.html" title="ANNUAL GENERAL MEETING">
+Annual General Meeting
+</a>
+</li>
+<li class="">
+<a href="/investors/rating-and-instruments.html" title="RATINGS AND INSTRUMENTS">
+Ratings and instruments
+</a>
+</li>
+<li class="">
+<a href="/investors/analyst-coverage.html" title="ANALYST COVERAGE">
+Analyst coverage
+</a>
+</li>
+<li class="">
+<a href="/investors/share-repurchase.html" title="SHARE REPURCHASE">
+Share repurchase
+</a>
+</li>
+</ul>
+</li>
+<li class="">
+<a href="/contact.html" title="CONTACT">
+Contact
+</a>
+</li>
+<li class="">
+<a href="/errors.html" title="">
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<script>
+$(function() {
+$('#mobile-menu').show();
+});
+</script>
+<div class="profile-panel-wrapper">
+<div class="profile-panel">
+<a href="#" class="close">Close</a>
+<div id="profile-panel-user"></div>
+</div>
+<span></span>
+</div>
+<div class="form-panel-wrapper">
+<div class="form-panel px-0">
+<a href="#" class="close">Close</a>
+<div class="px-0">
+<div class="content pb-0">
+<iframe id="form-panel-page" class="w-100" style="height: 1000px;" src="" allowtransparency="true" frameborder="0"></iframe>
+</div>
+</div>
+</div>
+<span></span>
+</div>
+<script src="/.resources/efg-revamp/webresources/js/iframeResizer.min~2023-02-23-16-49-18-000~cache.js"></script>
+<script src="/.resources/efg-revamp/webresources/js/all.min~2023-02-23-16-49-18-000~cache.js"></script>
+<script>
+$(function() {
+$( ".site-country select" ).change(function() {
+var value = $(this).val();
+if ($(this).val().indexOf("http") > -1 ) {
+$(this).closest("form").find(".site-language, button").hide();
+window.open(value);
+} else {
+$(this).closest("form").find(".site-language, button").show();
+var selectId = $(this).closest("form").find(".site-language select").attr("id");
+var button = $(this).closest("form").find("button");
+button.attr("disabled", "disabled");
+$.ajax( {
+type: "GET",
+url: "/en/Global/private-banking/ebanking/security.html?ajaxMode=true&ajaxAction=countryLanguage&currentCountry=&country=" + value + "&name=" + selectId,
+cache: false,
+success: function(response) {
+$("#" + selectId).select2('destroy');
+var dropdownParent = $("#" + selectId).parent();
+dropdownParent.html(response);
+$("#" + selectId).select2({
+minimumResultsForSearch:Infinity,
+dropdownPosition: 'below',
+dropdownParent: dropdownParent
+});
+button.removeAttr("disabled");
+}
+});
+return false;
+}
+});
+$(".form-change-site").submit(function() {
+var url = $(this).find(".site-language select").val();
+var country = $(this).find(".site-country select").val();
+$.ajax( {
+type: "GET",
+url: "/en/Global/private-banking/ebanking/security.html?ajaxMode=true&ajaxAction=setCountry&country=" + country,
+cache: false,
+success: function(response) {
+window.location = url;
+}
+});
+return false;
+});
+});
+</script>
+</body>
+</html>
