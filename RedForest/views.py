@@ -11,7 +11,7 @@ def privatebanking(request):
     return render(request,'private-banking.html')
 
 def investmentsolutions(request):
-    return render (request,'investment-solutions.html')
+    return render (request,'private-banking/investment-solutions.html')
 def advisorysolutions(request):
     return render(request,'private-banking/investment-solutions/advisory-solutions.html')
 def discretionarymandates(request):
