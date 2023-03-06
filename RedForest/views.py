@@ -115,7 +115,7 @@ def investors(request):
 def financialresults(request):
     return render(request,'investors/financial-results.html')
 def finanacialcalenderandevents(request):
-    return render(request,'investors/financial-calendar-and-events')
+    return render(request,'investors/financial-calendar-and-events.html')
 def presentations(request):
     return render(request,'investors/presentations.html')
 def shareinformation(request):

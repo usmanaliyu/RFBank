@@ -27,9 +27,9 @@
   <link rel="shortcut icon" href="/.resources/efg-templating-light/webresources/favicon.ico" />
 
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="preload" href="{% static 'resources/efg-revamp/webresources/js/all.min~2023-02-23-16-42-48-000~cache.js' %}" />
+  <link rel="stylesheet" href="{% static 'resources/efg-revamp/webresources/js/2023-02-23-16-42-48-000.js' %}" />
   <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" media="all" />
-  <script src="{% static 'resources/efg-revamp/webresources/js/vendor/jquery-3.6.0.min~2023-02-23-16-42-48-000~cache.js' %}"></script>
+  <script src="{% static 'resources/efg-revamp/webresources/js/vendor/2023-02-23-16-42-48-000.js' %}"></script>
   <script src="https://maps.google.com/maps/api/js?language=en&key=AIzaSyBmU-6CWKzXhBhXyYtivmCqd9htg_JXyfE"></script>
 
 
@@ -174,7 +174,7 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
 
             <a href="#mobile-menu" class="mobile-btn d-xl-none"><i class="icon-efg-menu"></i>Menu</a>
             <div class="header-logo">
-              <a href="/"><img src="/doc/jcr:20d2bbea-fd6a-43bb-b7cc-da5d05ae1020/logo-efg.svg/lang:en/logo-efg.svg" alt="EFG" /></a>
+              <a href="/"><img src="{% static 'images/logowhite.svg' %}"   alt="RFB" width="10" height="10" /></a>
 
 
             </div>
@@ -644,7 +644,7 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3 order-md-2 order-lg-1">
                   <div class="footer-company">
-                    <div class="footer-logo"><img src="/doc/jcr:a3f9cea6-cae5-4222-a9e2-f38739ed5ecd/logo-efg-footer.svg/lang:en/logo-efg-footer.svg" alt="EFG" /></div>
+                    <div class="footer-logo"><img src="{% static 'images/logored.svg' %}" alt="EFG" /></div>
                     <h6>Our headquarters:</h6>
                     <div class="address">
                       <p>EFG International AG<br>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</p>
