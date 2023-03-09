@@ -2,249 +2,237 @@
 {% load static %}
 
 {% block title %}
-RFB|
+RFB| About
 {% endblock %}
 
 {% block content %}
 <div class="main-content">
-<section class="hero-main">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<nav class="breadcrumb">
-<ul>
-<li><a href="/">Homepage</a></li>
-<li><span>About</span></li>
-</ul>
-</nav>
-<nav class="breadcrumb-mobile">
-<a href="#"><i class="icon-efg-breadcrumb"></i><span>About EFG International</span><i class="icon-efg-arrow-down"></i></a>
-<div>
-<ul>
-<li><a href="/">Homepage</a></li>
-<li><span>About</span></li>
-</ul>
-<a href="#" class="btn close">Close</a>
-</div>
-</nav>
-</div>
-</div>
-<div class="row">
-<div class="col-12">
-<div class="hero-content lazyload" data-sizes="auto"
-data-bgset="/doc/jcr:de8e1dcc-2c7f-43bf-a862-a50adfaec949/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg/lang:en/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg [(max-width: 991px)] | /doc/jcr:de8e1dcc-2c7f-43bf-a862-a50adfaec949/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg/lang:en/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg [(max-width: 1599px)] | /doc/jcr:de8e1dcc-2c7f-43bf-a862-a50adfaec949/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg/lang:en/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg"
->
-<div>
-<h1>About us</h1>
-<p>Bringing entrepreneurial thinking to Swiss private banking</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <section class="hero-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="breadcrumb">
+            <ul>
+              <li><a href="/">Homepage</a></li>
+              <li><span>About</span></li>
+            </ul>
+          </nav>
+          <nav class="breadcrumb-mobile">
+            <a href="#"><i class="icon-efg-breadcrumb"></i><span>About EFG International</span><i class="icon-efg-arrow-down"></i></a>
+            <div>
+              <ul>
+                <li><a href="/">Homepage</a></li>
+                <li><span>About</span></li>
+              </ul>
+              <a href="#" class="btn close">Close</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="hero-content lazyload" data-sizes="auto"
+          data-bgset="{% static 'images/about/bank.jpg' %}"
+          >
+          <div>
+            <h1>About us</h1>
+            <p>Bringing entrepreneurial thinking to Swiss private banking</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="">
-<div class="container">
-<div class="row section-headline">
-<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
-<h2>Introducing EFG</h2>
-<p class="indent">EFG International brings entrepreneurial thinking to Swiss private banking. <br/><br/>We&#039;ve created a new banking experience through our business model, which centres around our clients and the independent and customised advice that our Client Relationship Officers (CRO) offer. <br/><br/>Our clients benefit from our financial stability and our global reach. With our scalable multi-shore platform, we operate hubs in Switzerland, Europe, the Americas, Asia Pacific and the Middle East. <br/><br/>The unique quality of our service and advice, and the investment performance we generate for our clients, are the ultimate measure of our success.</p>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="row section-headline">
+      <div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+        <h2>Introducing EFG</h2>
+        <p class="indent">EFG International brings entrepreneurial thinking to Swiss private banking. <br/><br/>We&#039;ve created a new banking experience through our business model, which centres around our clients and the independent and customised advice that our Client Relationship Officers (CRO) offer. <br/><br/>Our clients benefit from our financial stability and our global reach. With our scalable multi-shore platform, we operate hubs in Switzerland, Europe, the Americas, Asia Pacific and the Middle East. <br/><br/>The unique quality of our service and advice, and the investment performance we generate for our clients, are the ultimate measure of our success.</p>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="bkg-light-grey overflow-hidden">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<div class="side-component full align-top">
-<div class="bkg-light-grey side-content">
-<h3>Our philosophy</h3>
-<div class="text-article mt-base"><p>We think and act like entrepreneurs. We design and deliver customised solutions that meet our clients&rsquo; individual goals and ambitions - creating a new banking experience.</p>
-</div>
-<a href="/about/our-philosophy.html" class="btn mt-20">Discover more</a>
-</div>
-<div class="side-image">
-<div class="lazyload" data-sizes="auto" data-bgset="/.imaging/mte/efg-revamp/950x463/dam/efg/EFG_2021/Asset_Management_Page/Asset_Management_About_Us_548x250_72dpi.png/jcr:content/Asset_Management_About_Us_548x250_72dpi.png"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="side-component full align-top">
+          <div class="bkg-light-grey side-content">
+            <h3>Our philosophy</h3>
+            <div class="text-article mt-base"><p>We think and act like entrepreneurs. We design and deliver customised solutions that meet our clients&rsquo; individual goals and ambitions - creating a new banking experience.</p>
+            </div>
+            <a href="{philosopy.html}" class="btn mt-20">Discover more</a>
+          </div>
+          <div class="side-image">
+            <div class="lazyload" data-sizes="auto" data-bgset="{% static 'images/about/think.jpg' %}"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <section>
-<div class="container">
-<div class="row section-headline mb-med">
-<div class="col-12 col-lg-8 col-xl-11 offset-xl-1">
-<h2>Our organisation</h2>
-</div>
-</div>
-<div class="row">
-<div class="col-12 col-xl-10 mx-auto">
-<div class="teaser-wrapper-block teaser2">
-<article class="teaser above">
-<a href="/about/our-organization.html" title="How we operate ">
-<picture class="image">
-<source data-srcset="/.imaging/mte/efg-revamp/670x600/dam/efg/about/EFG_Logo_GKR5785_200dpi.jpg/jcr:content/EFG_Logo_GKR5785_200dpi.jpg" media="(max-width: 575px)">
-<source data-srcset="/.imaging/mte/efg-revamp/670x600/dam/efg/about/EFG_Logo_GKR5785_200dpi.jpg/jcr:content/EFG_Logo_GKR5785_200dpi.jpg" media="(max-width: 768px)">
-<source data-srcset="/.imaging/mte/efg-revamp/538x400/dam/efg/about/EFG_Logo_GKR5785_200dpi.jpg/jcr:content/EFG_Logo_GKR5785_200dpi.jpg" media="(max-width: 1439px)">
-<source data-srcset="/.imaging/mte/efg-revamp/688x400/dam/efg/about/EFG_Logo_GKR5785_200dpi.jpg/jcr:content/EFG_Logo_GKR5785_200dpi.jpg">
-<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/688x400/dam/efg/about/EFG_Logo_GKR5785_200dpi.jpg/jcr:content/EFG_Logo_GKR5785_200dpi.jpg" width="688" height="400" class="lazyload" alt="How we operate " />
-</picture>
-<div class="content">
-<h3>How we operate </h3>
-<p>Governance and structure for efficient and effective management, in the interests of all our stakeholders.</p>
-<span class="link-btn">Learn more</span>
-</div>
-</a>
-</article>
-<article class="teaser above">
-<a href="/about/our-locations.html" title="Our locations ">
-<picture class="image">
-<source data-srcset="" media="(max-width: 575px)">
-<source data-srcset="" media="(max-width: 768px)">
-<source data-srcset="" media="(max-width: 1439px)">
-<source data-srcset="/.imaging/mte/efg-revamp/688x400/dam/efg/about/Locations/Location_HEADER_GettyImages-1215119911_Desktop_1920x680px_72dpi.jpg/jcr:content/Location_HEADER_GettyImages-1215119911_Desktop_1920x680px_72dpi.jpg">
-<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/688x400/dam/efg/about/Locations/Location_HEADER_GettyImages-1215119911_Desktop_1920x680px_72dpi.jpg/jcr:content/Location_HEADER_GettyImages-1215119911_Desktop_1920x680px_72dpi.jpg" width="688" height="400" class="lazyload" alt="Our locations " />
-</picture>
-<div class="content">
-<h3>Our locations </h3>
-<p>We combine a presence in around 40 locations with a global focus.</p>
-<span class="link-btn">Learn more</span>
-</div>
-</a>
-</article>
-<article class="teaser above">
-<a href="/about/sustainability.html" title="Our approach to sustainability">
-<picture class="image">
-<source data-srcset="" media="(max-width: 575px)">
-<source data-srcset="" media="(max-width: 768px)">
-<source data-srcset="" media="(max-width: 1439px)">
-<source data-srcset="/.imaging/mte/efg-revamp/688x400/dam/efg/about/sustainability/2023_02_21_EFG_Web_Header_Sustainability_1000x798px.jpg/jcr:content/2023_02_21_EFG_Web_Header_Sustainability_1000x798px.jpg">
-<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/688x400/dam/efg/about/sustainability/2023_02_21_EFG_Web_Header_Sustainability_1000x798px.jpg/jcr:content/2023_02_21_EFG_Web_Header_Sustainability_1000x798px.jpg" width="688" height="400" class="lazyload" alt="Our approach to sustainability" />
-</picture>
-<div class="content">
-<h3>Our approach to sustainability</h3>
-<p>Creating long-term value for all our stakeholders.</p>
-<span class="link-btn">Explore sustainability</span>
-</div>
-</a>
-</article>
-<article class="teaser above">
-<a href="/about/our-sponsorships.html" title="Our sponsorships">
-<picture class="image">
-<source data-srcset="" media="(max-width: 575px)">
-<source data-srcset="" media="(max-width: 768px)">
-<source data-srcset="" media="(max-width: 1439px)">
-<source data-srcset="/.imaging/mte/efg-revamp/688x400/dam/efg/about/Sponsorships/our_sponsorship_desktop.jpg/jcr:content/1920x680-sponsorship-no-txtjpg.jpg">
-<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/688x400/dam/efg/about/Sponsorships/our_sponsorship_desktop.jpg/jcr:content/1920x680-sponsorship-no-txtjpg.jpg" width="688" height="400" class="lazyload" alt="Our sponsorships" />
-</picture>
-<div class="content">
-<h3>Our sponsorships</h3>
-<p>Meet the partners who inspire us, share our values and our commitment.</p>
-<span class="link-btn">Learn more</span>
-</div>
-</a>
-</article>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="bkg-light-grey overflow-hidden">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<div class="side-component full align-top">
-<div class="bkg-light-grey side-content">
-<h3>Entrepreneurial thinkers ahead </h3>
-<div class="text-article mt-base"><p>Like the idea of joining a private banking team empowered to provide the most comprehensive advice and best solution for their clients?</p>
-</div>
-<a href="/about/careers.html" class="btn mt-20">Explore your future career at EFG</a>
-</div>
-<div class="side-image">
-<div class="lazyload" data-sizes="auto" data-bgset="/.imaging/mte/efg-revamp/950x463/dam/efg/about/Careers_HEADER_GettyImages-1131724309_Desktop_1920x680px_72dpi.jpg/jcr:content/Careers_HEADER_GettyImages-1131724309_Desktop_1920x680px_72dpi.jpg"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="overlying">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<div class="contact-box">
-<div class="content">
-<h3>It all starts with a conversation</h3>
-<p>Let&#039;s start ours and build something valuable today. </p>
-<a href="/modal-form.html" title="" class="btn form-panel-open">Contact us</a>
-<ul>
-<li><i class="icon-efg-pin"></i>EFG Bank AG<br>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</li>
-<li><i class="icon-efg-phone"></i>+41 44 226 17 17 </li>
-</ul>
-</div>
-<div class="image lazyload" data-sizes="auto" data-bgset="/.imaging/mte/efg-revamp/688x372/dam/efg/EFG_2021/About_Pages/About_Us/About_Us_Success_688x515_72dpi.png/jcr:content/About_Us_Success_688x515_72dpi.png [(max-width: 1599px)] | /.imaging/mte/efg-revamp/688x372/dam/efg/EFG_2021/About_Pages/About_Us/About_Us_Success_688x515_72dpi.png/jcr:content/About_Us_Success_688x515_72dpi.png"></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="bkg-dark mt-0 pt-more">
-<div class="container">
-<div class="row section-headline">
-<div class="col-12 col-lg-10 mx-auto text-md-center">
-<h2>Discover more</h2>
-<p>From expertly tailored services to investment insights, find out how EFG can help you achieve your financial goals today.</p>
-</div>
-</div>
-<div class="row teaser-wrapper">
-<div class="col-12 col-lg-4">
-<article class="teaser bottom">
-<a href="/insights.html" title="The latest trends and insights from our expert analysts">
-<span class="label">Insights</span>
-<picture class="image">
-<source data-srcset="/.imaging/mte/efg-revamp/548x280/dam/efg/homepage/Home_HEADER_2_Getty-910739402_Desktop_1190x680px_72dpi.jpg/jcr:content/Home_HEADER_2_Getty-910739402_Desktop_1190x680px_72dpi.jpg">
-<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/homepage/Home_HEADER_2_Getty-910739402_Desktop_1190x680px_72dpi.jpg/jcr:content/Home_HEADER_2_Getty-910739402_Desktop_1190x680px_72dpi.jpg" width="548" height="280" class="lazyload" alt="The latest trends and insights from our expert analysts" />
-</picture>
-<div class="content">
-<h4>The latest trends and insights from our expert analysts</h4>
-<span class="link-btn">Learn more </span>
-</div>
-</a>
-</article>
-</div>
-<div class="col-12 col-lg-4">
-<article class="teaser bottom">
-<a href="/private-banking.html" title="Comprehensive investment, wealth and credit solutions for private and institutional clients">
-<span class="label">Private Banking</span>
-<picture class="image">
-<source data-srcset="/.imaging/mte/efg-revamp/548x280/dam/efg/private-banking/wealth-1920x680.jpg/jcr:content/wealth-1920x680.jpg">
-<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/private-banking/wealth-1920x680.jpg/jcr:content/wealth-1920x680.jpg" width="548" height="280" class="lazyload" alt="Comprehensive investment, wealth and credit solutions for private and institutional clients" />
-</picture>
-<div class="content">
-<h4>Comprehensive investment, wealth and credit solutions for private and institutional clients</h4>
-<span class="link-btn">Learn more </span>
-</div>
-</a>
-</article>
-</div>
-<div class="col-12 col-lg-4">
-<article class="teaser bottom">
-<a href="/about/our-philosophy.html" title="Bringing entrepreneurial thinking to Swiss private banking">
-<span class="label">Our philosophy</span>
-<picture class="image">
-<source data-srcset="/.imaging/mte/efg-revamp/548x280/dam/efg/about/1920x680-efg-signs.jpg/jcr:content/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg">
-<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/about/1920x680-efg-signs.jpg/jcr:content/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg" width="548" height="280" class="lazyload" alt="Bringing entrepreneurial thinking to Swiss private banking" />
-</picture>
-<div class="content">
-<h4>Bringing entrepreneurial thinking to Swiss private banking</h4>
-<span class="link-btn">Learn more </span>
-</div>
-</a>
-</article>
-</div>
-</div>
-</div>
-</section>
-</div>{% endblock %}
+  <div class="container">
+    <div class="row section-headline mb-med">
+      <div class="col-12 col-lg-8 col-xl-11 offset-xl-1">
+        <h2>Our organisation</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-xl-10 mx-auto">
+        <div class="teaser-wrapper-block teaser2">
+          <article class="teaser above">
+            <a href="/about/our-organization.html" title="How we operate ">
+            
+                      <div class="content">
+                        <h3>How we operate </h3>
+                        <p>Governance and structure for efficient and effective management, in the interests of all our stakeholders.</p>
+                        <span class="link-btn">Learn more</span>
+                      </div>
+                    </a>
+                  </article>
+                  <article class="teaser above">
+                    <a href="/about/our-locations.html" title="Our locations ">
+
+                              <div class="content">
+                                <h3>Our locations </h3>
+                                <p>We combine a presence in around 40 locations with a global focus.</p>
+                                <span class="link-btn">Learn more</span>
+                              </div>
+                            </a>
+                          </article>
+                          <article class="teaser above">
+                            <a href="/about/sustainability.html" title="Our approach to sustainability">
+
+                                      <div class="content">
+                                        <h3>Our approach to sustainability</h3>
+                                        <p>Creating long-term value for all our stakeholders.</p>
+                                        <span class="link-btn">Explore sustainability</span>
+                                      </div>
+                                    </a>
+                                  </article>
+                                  <article class="teaser above">
+                                    <a href="/about/our-sponsorships.html" title="Our sponsorships">
+
+                                              <div class="content">
+                                                <h3>Our sponsorships</h3>
+                                                <p>Meet the partners who inspire us, share our values and our commitment.</p>
+                                                <span class="link-btn">Learn more</span>
+                                              </div>
+                                            </a>
+                                          </article>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </section>
+                                <section class="bkg-light-grey overflow-hidden">
+                                  <div class="container">
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <div class="side-component full align-top">
+                                          <div class="bkg-light-grey side-content">
+                                            <h3>Entrepreneurial thinkers ahead </h3>
+                                            <div class="text-article mt-base"><p>Like the idea of joining a private banking team empowered to provide the most comprehensive advice and best solution for their clients?</p>
+                                            </div>
+                                            <a href="/about/careers.html" class="btn mt-20">Explore your future career at EFG</a>
+                                          </div>
+                                          <div class="side-image">
+                                            <div class="lazyload" data-sizes="auto" data-bgset="{% static 'images/about/think.jpg' %}"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </section>
+                                <section class="overlying">
+                                  <div class="container">
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <div class="contact-box">
+                                          <div class="content">
+                                            <h3>It all starts with a conversation</h3>
+                                            <p>Let&#039;s start ours and build something valuable today.</p>
+                                            <a href="/modal-form.html" title="" class="btn form-panel-open">Contact us</a>
+                                            <ul>
+                                              <li><i class="icon-efg-pin"></i>EFG Bank AG<br>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</li>
+                                              <li><i class="icon-efg-phone"></i>+41 44 226 17 17 </li>
+                                            </ul>
+                                          </div>
+                                          <div class="image lazyload" data-sizes="auto" data-bgset="{% static 'images/homepage/contact.jpg '%}"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </section>
+                                <section class="bkg-dark mt-0 pt-more">
+                                  <div class="container">
+                                    <div class="row section-headline">
+                                      <div class="col-12 col-lg-10 mx-auto text-md-center">
+                                        <h2>Discover more</h2>
+                                        <p>From banking advice to investment insights, discover more about EFG today.</p>
+                                      </div>
+                                    </div>
+                                    <div class="row teaser-wrapper">
+                                      <div class="col-12 col-lg-4">
+                                        <article class="teaser bottom">
+                                          <a href="/media.html" title="Be in the know with the latest news and reports from EFG">
+                                            <span class="label">Media</span>
+                                            <picture class="image">
+                                              <source data-srcset="" media="(max-width: 575px)">
+                                                <source data-srcset="" media="(max-width: 991px)">
+                                                  <source data-srcset="" media="(max-width: 1599px)">
+                                                    <source data-srcset="{% static 'images/homepage/know.jpg' %}">
+                                                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/about/gettyimages-1164294780--media1920x680.jpg/jcr:content/barra-media.png" width="548" height="280" class="lazyload" alt="Be in the know with the latest news and reports from EFG" />
+                                                    </picture>
+                                                    <div class="content">
+                                                      <h4>Be in the know with the latest news and reports from EFG</h4>
+                                                      <span class="link-btn">Learn more</span>
+                                                    </div>
+                                                  </a>
+                                                </article>
+                                              </div>
+                                              <div class="col-12 col-lg-4">
+                                                <article class="teaser bottom">
+                                                  <a href="{% url 'RedForest:investors' %}" title="Services and updates for investors, shareholders and analysts">
+                                                    <span class="label">Investors</span>
+                                                    <picture class="image">
+                                                      <source data-srcset="" media="(max-width: 575px)">
+                                                        <source data-srcset="" media="(max-width: 991px)">
+                                                          <source data-srcset="" media="(max-width: 1599px)">
+                                                            <source data-srcset="{% static 'images/homepage/service.jpg' %}">
+                                                              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/investors/investors/Analyst-coverage-1920x680.jpg/jcr:content/Analyst-coverage-1920x680.jpg" width="548" height="280" class="lazyload" alt="Services and updates for investors, shareholders and analysts" />
+                                                            </picture>
+                                                            <div class="content">
+                                                              <h4>Services and updates for investors, shareholders and analysts</h4>
+                                                              <span class="link-btn">Learn more</span>
+                                                            </div>
+                                                          </a>
+                                                        </article>
+                                                      </div>
+                                                      <div class="col-12 col-lg-4">
+                                                        <article class="teaser bottom">
+                                                          <a href="{% url 'RedForest:careers' %}" title="A culture that rewards individual talent and entrepreneurial spirit">
+                                                            <span class="label">Careers</span>
+                                                            <picture class="image">
+                                                              <source data-srcset="" media="(max-width: 575px)">
+                                                                <source data-srcset="" media="(max-width: 991px)">
+                                                                  <source data-srcset="" media="(max-width: 1599px)">
+                                                                    <source data-srcset="{% static 'images/homepage/individual.jpg' %}">
+                                                                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/about/Careers_HEADER_GettyImages-1131724309_Desktop_1920x680px_72dpi.jpg/jcr:content/Careers_HEADER_GettyImages-1131724309_Desktop_1920x680px_72dpi.jpg" width="548" height="280" class="lazyload" alt="A culture that rewards individual talent and entrepreneurial spirit" />
+                                                                    </picture>
+                                                                    <div class="content">
+                                                                      <h4>A culture that rewards individual talent and entrepreneurial spirit</h4>
+                                                                      <span class="link-btn">Explore opportunities</span>
+                                                                    </div>
+                                                                  </a>
+                                                                </article>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </section>
+                                                      </div>
+
+
+                                                      {% endblock %}

@@ -19401,13 +19401,13 @@ button.swiper-pagination-bullet {
     height: 100%;
     z-index: 1;
     background: #5c6366;
-    background: linear-gradient(6deg,#120103ba 35%,rgba(51,60,64,0))
+    background: linear-gradient(6deg,#1201033b 35%,rgba(51,60,64,0))
 }
 
 @media (min-width: 1440px) {
     .hero-main .hero-content:before {
         background:#5c6366;
-        background: linear-gradient(6deg,#120103ba,rgba(51,60,64,0))
+        background: linear-gradient(6deg,#1201033b,rgba(51,60,64,0))
     }
 }
 
@@ -19968,13 +19968,13 @@ button.swiper-pagination-bullet {
     height: 100%;
     z-index: 1;
     background: #5c6366;
-    background: linear-gradient(6deg,#120103ba 60%,rgba(51,60,64,0))
+    background: linear-gradient(6deg,#1201033b 60%,rgba(51,60,64,0))
 }
 
 @media (min-width: 1440px) {
     .teaser-wrapper.insights .teaser.main a>.image:before {
         background:#5c6366;
-        background: linear-gradient(6deg,#120103ba,rgba(51,60,64,0))
+        background: linear-gradient(6deg,#1201033b,rgba(51,60,64,0))
     }
 }
 

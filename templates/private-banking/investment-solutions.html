@@ -24,7 +24,7 @@ RFB|Investment Solutions
             <div>
               <ul>
                 <li><a href="/">Homepage</a></li>
-                <li><a href="/private-banking.html">Private Banking</a></li>
+                <li><a href="{% url 'RedForest:privatebanking' %}">Private Banking</a></li>
                 <li><span>Investment Solutions</span></li>
               </ul>
               <a href="#" class="btn close">Close</a>
@@ -35,7 +35,7 @@ RFB|Investment Solutions
       <div class="row">
         <div class="col-12">
           <div class="hero-content lazyload" data-sizes="auto"
-          data-bgset="/doc/jcr:c1b1561b-3250-4647-aa70-68832fc5590e/Investment_Solutions_Bar_Image_1680x541_72dpi.png/lang:en/Investment_Solutions_Bar_Image_1680x541_72dpi.png [(max-width: 991px)] | /doc/jcr:c1b1561b-3250-4647-aa70-68832fc5590e/Investment_Solutions_Bar_Image_1680x541_72dpi.png/lang:en/Investment_Solutions_Bar_Image_1680x541_72dpi.png [(max-width: 1599px)] | /doc/jcr:c1b1561b-3250-4647-aa70-68832fc5590e/Investment_Solutions_Bar_Image_1680x541_72dpi.png/lang:en/Investment_Solutions_Bar_Image_1680x541_72dpi.png"
+          data-bgset="{% static 'images/privatebanking/investmentsolution.jpg' %} [(max-width: 991px)] | {% static 'images/privatebanking/investmentsolution.jpg' %} [(max-width: 1599px)] | {% static 'images/privatebanking/investmentsolution.jpg' %}"
           >
           <div>
             <h1>Investment Solutions</h1>
@@ -74,13 +74,7 @@ RFB|Investment Solutions
           <div class="teaser-wrapper-block teaser2">
             <article class="teaser above">
               <a href="/private-banking/investment-solutions/advisory-solutions.html" title="Advisory Solutions">
-                <picture class="image">
-                  <source data-srcset="" media="(max-width: 575px)">
-                    <source data-srcset="" media="(max-width: 768px)">
-                      <source data-srcset="" media="(max-width: 1439px)">
-                        <source data-srcset="/.imaging/mte/efg-revamp/688x400/dam/efg/private-banking/BusinessClients_HEADER_GettyImages-1188370476__Desktop_1920x680px_72dpi.jpg/jcr:content/BusinessClients_HEADER_GettyImages-1188370476__Desktop_1920x680px_72dpi.jpg">
-                          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/688x400/dam/efg/private-banking/BusinessClients_HEADER_GettyImages-1188370476__Desktop_1920x680px_72dpi.jpg/jcr:content/BusinessClients_HEADER_GettyImages-1188370476__Desktop_1920x680px_72dpi.jpg" width="688" height="400" class="lazyload" alt="Advisory Solutions" />
-                        </picture>
+
                         <div class="content">
                           <h3>Advisory Solutions</h3>
                           <p>Professional, personalised investment guidance with you in the driving seat.</p>
@@ -141,131 +135,5 @@ RFB|Investment Solutions
                                       </div>
                                     </div>
                                   </section>
-                                  <section>
-                                    <div class="container">
-                                      <div class="row">
-                                        <div class="col-12">
-                                          <div class="contact-box">
-                                            <div class="content">
-                                              <h3>It all starts with a conversation</h3>
-                                              <p>Let&#039;s start ours and build something valuable today.</p>
-                                              <a href="/modal-form.html" title="" class="btn form-panel-open">Contact us</a>
-                                              <ul>
-                                                <li><i class="icon-efg-pin"></i>EFG Bank AG<br>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</li>
-                                                <li><i class="icon-efg-phone"></i>+41 44 226 17 17 </li>
-                                              </ul>
-                                            </div>
-                                            <div class="image lazyload" data-sizes="auto" data-bgset="/.imaging/mte/efg-revamp/688x372/dam/efg/EFG_2021/Private_Banking_Pages/Advisory_Services/Advisory_Services_Time_To_Build_688x515_72dpi.png/jcr:content/Advisory_Services_Time_To_Build_688x515_72dpi.png [(max-width: 1599px)] | /.imaging/mte/efg-revamp/688x372/dam/efg/EFG_2021/Private_Banking_Pages/Advisory_Services/Advisory_Services_Time_To_Build_688x515_72dpi.png/jcr:content/Advisory_Services_Time_To_Build_688x515_72dpi.png"></div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </section>
-                                  <section class="bkg-dark">
-                                    <div class="container">
-                                      <div class="row section-headline">
-                                        <div class="col-12 col-lg-8 col-xl-7 offset-xl-1">
-                                          <h2>Expert market insights</h2>
-                                          <p>Stay ahead of the curve with news, trends and analysis from around the world.</p>
-                                        </div>
-                                        <div class="col-12 col-lg-4 col-xl-3 align-items-lg-end">
-                                          <a href="/insights.html" title="Explore further" class="btn mt-lg-0">Explore further<i class="icon-efg-line-arrow-right"></i></a>
-                                        </div>
-                                      </div>
-                                      <div class="row teaser-wrapper insights">
-                                        <div class="col-12 col-lg-8">
-                                        </div>
-                                        <div class="col-12 col-md-6 col-lg-4">
-                                        </div>
-                                        <div class="col-12 col-md-6 col-lg-4">
-                                          <article class="teaser">
-                                            <a href="/insights/2023/fomc-minutes-ongoing-interest-rate-increases-to-be-expected.html" title="FOMC Minutes: Ongoing interest rate increases to be expected">
-                                              <div class="info">
-                                                <p>
-                                                  Investment Insights
-                                                  <time class="no-cat" datetime="2023-02-28 00:00">
-                                                    28 February 2023
-                                                  </time>
-                                                </p>
-                                                <i class="icon-efg-document"></i>
-                                              </div>
-                                              <div class="content">
-                                                <h4>FOMC Minutes: Ongoing interest rate increases to be expected</h4>
-                                                <p class="truncate" data-line="2" data-min-width="120">The minutes from the Federal Open Market Committee (FOMC) meeting that took place on 31 January – 1 February and which were released on 22 February, show that FOMC members felt that a series of interest rate increases will be necessary to lower inflation to target.</p>
-                                              </div>
-                                              <div class="author">
-                                                <span style="background-image:url('/.imaging/mte/efg-revamp/160x160/dam/efg/insights/2020/YCC---a-response-to-the-corona-curveball/Steffan-Illustration-Large.jpg/jcr:content/Steffan Illustration-Large.jpg')"></span>
-                                                <p class="name">Stefan Gerlach </p>
-                                                <p>3 min read</p>
-                                              </div>
-                                            </a> </article>
-                                          </div>
-                                          <div class="col-12 col-md-6 col-lg-4 item-show-more d-none d-md-block">
-                                            <article class="teaser sm-hide">
-                                              <a href="/insights/2023/how-hawkish-is-the-fed.html" title="How hawkish is the Fed?">
-                                                <div class="info">
-                                                  <p>
-                                                    Investment Insights
-                                                    <time class="no-cat" datetime="2023-02-27 00:00">
-                                                      27 February 2023
-                                                    </time>
-                                                  </p>
-                                                  <i class="icon-efg-document"></i>
-                                                </div>
-                                                <div class="content">
-                                                  <h4>How hawkish is the Fed?</h4>
-                                                  <p class="truncate" data-line="2" data-min-width="120">The latest Federal Open Market Committee (FOMC) minutes provide a window into the Fed’s thinking at its February meeting. In this Macro Flash Note, Sam Jochim examines the implied policy bias of the Fed with the help of EFGAM’s Fed Hawkishness Indicator.</p>
-                                                </div>
-                                                <div class="author">
-                                                  <span style="background-image:url('/.imaging/mte/efg-revamp/160x160/dam/efg/insights/Authors/JB-Large.jpg/jcr:content/JB-Large.jpg')"></span>
-                                                  <p class="name">Sam Jochim</p>
-                                                  <p>4 min read</p>
-                                                </div>
-                                              </a> </article>
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-4 item-show-more d-none d-md-block">
-                                              <article class="teaser sm-hide">
-                                                <a href="/insights/2023/team-malizia-take-on-the-epic-3rd-leg-of-the-ocean-race.html" title="Team Malizia take on the epic 3rd leg of The Ocean Race">
-                                                  <div class="info">
-                                                    <p>
-                                                      Sponsorships
-                                                      <time class="no-cat" datetime="2023-02-24 00:00">
-                                                        24 February 2023
-                                                      </time>
-                                                    </p>
-                                                    <i class="icon-efg-document"></i>
-                                                  </div>
-                                                  <div class="content">
-                                                    <h4>Team Malizia take on the epic 3rd leg of The Ocean Race</h4>
-                                                    <p class="truncate" data-line="2" data-min-width="120">The record-breaking 3rd leg of The Ocean Race from Cape Town to Itajaí, Brazil starts on Sunday, 26 February 2023. Covering 12,750 nautical miles (23,613 km), it is the longest leg in the 50-year history of The Ocean Race; a one month sailing marathon that many feel will go on to define the race.</p>
-                                                  </div>
-                                                  <div class="author">
-                                                    <span style="background-image:url('/.imaging/mte/efg-revamp/160x160/dam/efg/homepage/Home_GettyImages-941690384_Desktop_530x480px_72dpi.jpg/jcr:content/EFG_Logo.png')"></span>
-                                                    <p class="name">Marketing & Communications</p>
-                                                    <p>4 min read</p>
-                                                  </div>
-                                                </a> </article>
-                                              </div>
-                                              <div class="col-12 text-center d-md-none mt-base mb-base">
-                                                <a href="#" class="btn btn-sec-dark show-more">Show more</a>
-                                              </div>
-                                              <script>
-                                              $(function() {
-                                                $( ".teaser-wrapper.insights .show-more" ).click(function() {
-                                                  $(this).closest( ".teaser-wrapper.insights" ).find( ".item-show-more" ).removeClass("d-none");
-                                                  $(this).parent().addClass("d-none");
-                                                  $(".item-show-more").truncate({
-                                                    lines: 2
-                                                  });
-                                                  $(".item-show-more p").truncate({
-                                                    lines: 2
-                                                  });
-                                                  return false;
-                                                });
-                                              });
-                                              </script>
-                                            </div>
-                                          </div>
-                                        </section>
-                                      </div>
+                                  {% include 'itstart.html' %}
                                       {% endblock %}

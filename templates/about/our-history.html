@@ -1,153 +1,83 @@
+{% extends "base.html" %}
+{% load static %}
 
+{% block title %}
+RFB|
+{% endblock %}
+
+{% block content %}
 <div class="main-content">
-<section class="hero-main">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<nav class="breadcrumb">
-<ul>
-<li><a href="/">Homepage</a></li>
-<li><a href="/about.html">About</a></li>
-<li><span>Our history</span></li>
-</ul>
-</nav>
-<nav class="breadcrumb-mobile">
-<a href="#"><i class="icon-efg-breadcrumb"></i><span>Our history</span><i class="icon-efg-arrow-down"></i></a>
-<div>
-<ul>
-<li><a href="/">Homepage</a></li>
-<li><a href="/about.html">About</a></li>
-<li><span>Our history</span></li>
-</ul>
-<a href="#" class="btn close">Close</a>
-</div>
-</nav>
-</div>
-</div>
-<div class="row">
-<div class="col-12">
-<div class="hero-content lazyload" data-sizes="auto"
-data-bgset="/doc/jcr:de8e1dcc-2c7f-43bf-a862-a50adfaec949/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg/lang:en/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg [(max-width: 991px)] | /doc/jcr:de8e1dcc-2c7f-43bf-a862-a50adfaec949/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg/lang:en/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg [(max-width: 1599px)] | /doc/jcr:de8e1dcc-2c7f-43bf-a862-a50adfaec949/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg/lang:en/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg"
->
-<div>
-<h1>Our history</h1>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <section class="hero-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="breadcrumb">
+            <ul>
+              <li><a href="/">Homepage</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><span>Our history</span></li>
+            </ul>
+          </nav>
+          <nav class="breadcrumb-mobile">
+            <a href="#"><i class="icon-efg-breadcrumb"></i><span>Our history</span><i class="icon-efg-arrow-down"></i></a>
+            <div>
+              <ul>
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><span>Our history</span></li>
+              </ul>
+              <a href="#" class="btn close">Close</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="hero-content lazyload" data-sizes="auto"
+          data-bgset="{% static 'images/about/bank.jpg' %}"
+          >
+          <div>
+            <h1>Our history</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <section>
-<div class="container">
-<div class="row">
-<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
-<article class="text-article">
-<h3>A history of entrepreneurship</h3>
-<p>Headquartered in Zurich, EFG International is a private bank offering comprehensive, first-class investment, wealth and credit solutions to private and institutional clients on a global scale.</p>
-<p>Operating in around 40 locations worldwide with a network spanning Europe, Asia Pacific, the Americas and the Middle East, EFG has around 2,700 employees including more than 650 highly experienced Client Relationship Officers.</p>
-<p>An entrepreneurial spirit has shaped EFG ever since the business was established in Zurich by the Latsis family in 1995. The EFG brand was launched in 1997. Building on our strengths as advisors with a global perspective, EFG has developed from a start-up into a leading Swiss private bank over the last 25 years. Today, we have Assets under Management totalling CHF 143.1&nbsp;billion*, a strong capital position and a highly liquid balance sheet.</p>
-<p>The acquisition and successful integration of BSI between 2016 and end-2018 respectively, represents one of the most important transformations in Swiss private banking in the last decade. With its increased size and scale, EFG has significantly improved its competitive market position, targeting profitable and sustainable growth &ndash; as outlined in our 2022 strategic plan.</p>
-<p>Listed on the SIX Swiss Exchange since 2005, EFG offers financial security and solidity. We are committed to being a leading independent partner to our clients. We combine a distinctive relationship-driven, entrepreneurial approach with a full range of wealth management services and investment solutions to achieve client satisfaction and deliver shareholder value. EFG&rsquo;s largest shareholders are EFG Bank European Financial Group (controlled by the Latsis family interests) and BTG Pactual.</p>
-<p>* As of 31 December 2022</p>
-</article>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+        <article class="text-article">
+          <h3>A history of entrepreneurship</h3>
+          <p>Headquartered in Zurich, EFG International is a private bank offering comprehensive, first-class investment, wealth and credit solutions to private and institutional clients on a global scale.</p>
+          <p>Operating in around 40 locations worldwide with a network spanning Europe, Asia Pacific, the Americas and the Middle East, EFG has around 2,700 employees including more than 650 highly experienced Client Relationship Officers.</p>
+          <p>An entrepreneurial spirit has shaped EFG ever since the business was established in Zurich by the Latsis family in 1995. The EFG brand was launched in 1997. Building on our strengths as advisors with a global perspective, EFG has developed from a start-up into a leading Swiss private bank over the last 25 years. Today, we have Assets under Management totalling CHF 143.1&nbsp;billion*, a strong capital position and a highly liquid balance sheet.</p>
+          <p>The acquisition and successful integration of BSI between 2016 and end-2018 respectively, represents one of the most important transformations in Swiss private banking in the last decade. With its increased size and scale, EFG has significantly improved its competitive market position, targeting profitable and sustainable growth &ndash; as outlined in our 2022 strategic plan.</p>
+          <p>Listed on the SIX Swiss Exchange since 2005, EFG offers financial security and solidity. We are committed to being a leading independent partner to our clients. We combine a distinctive relationship-driven, entrepreneurial approach with a full range of wealth management services and investment solutions to achieve client satisfaction and deliver shareholder value. EFG&rsquo;s largest shareholders are EFG Bank European Financial Group (controlled by the Latsis family interests) and BTG Pactual.</p>
+          <p>* As of 31 December 2022</p>
+        </article>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="bkg-light-grey overflow-hidden">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<div class="side-component full align-top">
-<div class="bkg-light-grey side-content">
-<h3>Our philosophy</h3>
-<div class="text-article mt-base"><p>We think and act like entrepreneurs. We design and deliver customised solutions that meet our clients&rsquo; individual goals and ambitions - creating a new banking experience.</p>
-</div>
-<a href="/about/our-philosophy.html" class="btn mt-20">Discover more</a>
-</div>
-<div class="side-image">
-<div class="lazyload" data-sizes="auto" data-bgset="/.imaging/mte/efg-revamp/950x463/dam/efg/EFG_2021/Asset_Management_Page/Asset_Management_About_Us_548x250_72dpi.png/jcr:content/Asset_Management_About_Us_548x250_72dpi.png"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="side-component full align-top">
+          <div class="bkg-light-grey side-content">
+            <h3>Our philosophy</h3>
+            <div class="text-article mt-base"><p>We think and act like entrepreneurs. We design and deliver customised solutions that meet our clients&rsquo; individual goals and ambitions - creating a new banking experience.</p>
+            </div>
+            <a href="/about/our-philosophy.html" class="btn mt-20">Discover more</a>
+          </div>
+          <div class="side-image">
+            <div class="lazyload" data-sizes="auto" data-bgset="{% static 'images/about/think.jpg' %}"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<section class="overlying">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<div class="contact-box">
-<div class="content">
-<h3>It all starts with a conversation</h3>
-<p>Let&#039;s start ours and build something valuable today. </p>
-<a href="/modal-form.html" title="" class="btn form-panel-open">Contact us</a>
-<ul>
-<li><i class="icon-efg-pin"></i>EFG Bank AG<br>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</li>
-<li><i class="icon-efg-phone"></i>+41 44 226 17 17 </li>
-</ul>
-</div>
-<div class="image lazyload" data-sizes="auto" data-bgset="/.imaging/mte/efg-revamp/688x372/dam/efg/EFG_2021/About_Pages/About_Us/About_Us_Success_688x515_72dpi.png/jcr:content/About_Us_Success_688x515_72dpi.png [(max-width: 1599px)] | /.imaging/mte/efg-revamp/688x372/dam/efg/EFG_2021/About_Pages/About_Us/About_Us_Success_688x515_72dpi.png/jcr:content/About_Us_Success_688x515_72dpi.png"></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="bkg-dark mt-0 pt-more">
-<div class="container">
-<div class="row section-headline">
-<div class="col-12 col-lg-10 mx-auto text-md-center">
-<h2>Discover more</h2>
-<p>From expertly tailored services to investment insights, find out how EFG can help you achieve your financial goals today.</p>
-</div>
-</div>
-<div class="row teaser-wrapper">
-<div class="col-12 col-lg-4">
-<article class="teaser bottom">
-<a href="/insights.html" title="The latest trends and insights from our expert analysts">
-<span class="label">Insights</span>
-<picture class="image">
-<source data-srcset="/.imaging/mte/efg-revamp/548x280/dam/efg/homepage/Home_HEADER_2_Getty-910739402_Desktop_1190x680px_72dpi.jpg/jcr:content/Home_HEADER_2_Getty-910739402_Desktop_1190x680px_72dpi.jpg">
-<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/homepage/Home_HEADER_2_Getty-910739402_Desktop_1190x680px_72dpi.jpg/jcr:content/Home_HEADER_2_Getty-910739402_Desktop_1190x680px_72dpi.jpg" width="548" height="280" class="lazyload" alt="The latest trends and insights from our expert analysts" />
-</picture>
-<div class="content">
-<h4>The latest trends and insights from our expert analysts</h4>
-<span class="link-btn">Learn more </span>
-</div>
-</a>
-</article>
-</div>
-<div class="col-12 col-lg-4">
-<article class="teaser bottom">
-<a href="/private-banking.html" title="Comprehensive investment, wealth and credit solutions for private and institutional clients">
-<span class="label">Private Banking</span>
-<picture class="image">
-<source data-srcset="/.imaging/mte/efg-revamp/548x280/dam/efg/private-banking/wealth-1920x680.jpg/jcr:content/wealth-1920x680.jpg">
-<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/private-banking/wealth-1920x680.jpg/jcr:content/wealth-1920x680.jpg" width="548" height="280" class="lazyload" alt="Comprehensive investment, wealth and credit solutions for private and institutional clients" />
-</picture>
-<div class="content">
-<h4>Comprehensive investment, wealth and credit solutions for private and institutional clients</h4>
-<span class="link-btn">Learn more </span>
-</div>
-</a>
-</article>
-</div>
-<div class="col-12 col-lg-4">
-<article class="teaser bottom">
-<a href="/about/our-philosophy.html" title="Bringing entrepreneurial thinking to Swiss private banking">
-<span class="label">Our philosophy</span>
-<picture class="image">
-<source data-srcset="/.imaging/mte/efg-revamp/548x280/dam/efg/about/1920x680-efg-signs.jpg/jcr:content/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg">
-<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/about/1920x680-efg-signs.jpg/jcr:content/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg" width="548" height="280" class="lazyload" alt="Bringing entrepreneurial thinking to Swiss private banking" />
-</picture>
-<div class="content">
-<h4>Bringing entrepreneurial thinking to Swiss private banking</h4>
-<span class="link-btn">Learn more </span>
-</div>
-</a>
-</article>
-</div>
-</div>
-</div>
-</section>
-</div>{% endblock %}
+{% include 'itstart.html' %}{% endblock %}

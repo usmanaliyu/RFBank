@@ -7,441 +7,364 @@ RFB|
 
 {% block content %}
 <div class="main-content">
-<section class="hero-main">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<nav class="breadcrumb">
-<ul>
-<li><a href="/">Homepage</a></li>
-<li><a href="/about.html">About</a></li>
-<li><span>Our locations</span></li>
-</ul>
-</nav>
-<nav class="breadcrumb-mobile">
-<a href="#"><i class="icon-efg-breadcrumb"></i><span>Our locations</span><i class="icon-efg-arrow-down"></i></a>
-<div>
-<ul>
-<li><a href="/">Homepage</a></li>
-<li><a href="/about.html">About</a></li>
-<li><span>Our locations</span></li>
-</ul>
-<a href="#" class="btn close">Close</a>
-</div>
-</nav>
-</div>
-</div>
-<div class="row">
-<div class="col-12">
-<div class="hero-content lazyload" data-sizes="auto"
-data-bgset="/doc/jcr:4a1cd505-05f9-47e2-9f7c-15bad8f7a25f/Location_HEADER_GettyImages-1215119911_Desktop_1920x680px_72dpi.jpg/lang:en/Location_HEADER_GettyImages-1215119911_Desktop_1920x680px_72dpi.jpg [(max-width: 991px)] | /doc/jcr:4a1cd505-05f9-47e2-9f7c-15bad8f7a25f/Location_HEADER_GettyImages-1215119911_Desktop_1920x680px_72dpi.jpg/lang:en/Location_HEADER_GettyImages-1215119911_Desktop_1920x680px_72dpi.jpg [(max-width: 1599px)] | /doc/jcr:4a1cd505-05f9-47e2-9f7c-15bad8f7a25f/Location_HEADER_GettyImages-1215119911_Desktop_1920x680px_72dpi.jpg/lang:en/Location_HEADER_GettyImages-1215119911_Desktop_1920x680px_72dpi.jpg"
->
-<div>
-<h1>Our locations</h1>
-<p>Financial services and solutions on your doorstep</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <section class="hero-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="breadcrumb">
+            <ul>
+              <li><a href="/">Homepage</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><span>Our locations</span></li>
+            </ul>
+          </nav>
+          <nav class="breadcrumb-mobile">
+            <a href="#"><i class="icon-efg-breadcrumb"></i><span>Our locations</span><i class="icon-efg-arrow-down"></i></a>
+            <div>
+              <ul>
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><span>Our locations</span></li>
+              </ul>
+              <a href="#" class="btn close">Close</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="hero-content lazyload" data-sizes="auto"
+          data-bgset="{% static 'images/about/location.jpg' %}"
+          >
+          <div>
+            <h1>Our locations</h1>
+            <p>Financial services and solutions on your doorstep</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="">
-<div class="container">
-<div class="row section-headline">
-<div class="col-12 col-lg-10 col-xxl-8 mx-auto">
-<h2>Local experts – globally</h2>
-<p class="indent">We have a presence in around 40 locations spanning every time zone from Asia Pacific to the Middle East and from Europe to the Americas. This allows us to offer our clients tailor-made Swiss private banking solutions when they need them, wherever they are located.</p>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="row section-headline">
+      <div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+        <h2>Local experts – globally</h2>
+        <p class="indent">We have a presence in around 40 locations spanning every time zone from Asia Pacific to the Middle East and from Europe to the Americas. This allows us to offer our clients tailor-made Swiss private banking solutions when they need them, wherever they are located.</p>
+      </div>
+    </div>
+  </div>
 </section><section>
-<div class="container">
-<div class="row">
-<div class="col-12 col-xl-10 mx-auto">
-<div class="map-component">
-<div class="map" id="gMap1"></div>
-<script>
-var contactsMap1 = new Array();
-$(function(){
-var jsonStr1 = "{\"lat\":\"46.0041158\",\"lng\":\"8.952514500000006\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"Via Magatti 2, Lugano\"}";
-startPoint1 = readGoogleMapPoint(jsonStr1);
-jsonStr0 = "{\"lat\":\"46.0041158\",\"lng\":\"8.952514500000006\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"Via Magatti 2, Lugano\"}";
-var contact0 = new Object();
-contact0.jsonStr = readGoogleMapPoint(jsonStr0);
-contact0.html = "<h5>EFG Bank AG<\/h5><p>Via Magatti 2 - 6900 Lugano<br>Tel. +41 58 809 31 11 / Fax +41 58 809 45 87<br><\/p>";
-contact0.icon = 'default';
-contactsMap1.push(contact0);
-jsonStr1 = "{\"lat\":\"46.2049826\",\"lng\":\"6.134895000000029\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"quai du seujet 24, geneva\"}";
-var contact1 = new Object();
-contact1.jsonStr = readGoogleMapPoint(jsonStr1);
-contact1.html = "<h5>EFG Asset Management (Switzerland) SA<\/h5><p>24 Quai du Seujet<br>P.O. Box 2391 - CH-1211 Geneva 2<br>Tel. +41 22 918 71 71<br><\/p>";
-contact1.icon = 'default';
-contactsMap1.push(contact1);
-jsonStr2 = "{\"lat\":\"47.36886\",\"lng\":\"8.53751490000002\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"Bleicherweg 8, Zurich\"}";
-var contact2 = new Object();
-contact2.jsonStr = readGoogleMapPoint(jsonStr2);
-contact2.html = "<h5>EFG Asset Management (Switzerland) SA<\/h5><p>Bleicherweg 8<br>P.O. Box 6012 - CH-8022 Zurich<br>Tel. +41 44 226 18 50<br><\/p>";
-contact2.icon = 'default';
-contactsMap1.push(contact2);
-jsonStr3 = "{\"lat\":\"45.8333652\",\"lng\":\"9.031564600000024\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"corso san gottardo 20, chiasso\"}";
-var contact3 = new Object();
-contact3.jsonStr = readGoogleMapPoint(jsonStr3);
-contact3.html = "<h5>EFG Bank AG<\/h5><p>Corso S. Gottardo 20 - CH-6830 Chiasso<br>Tel. +41 58 809 61 11 / Fax +41 58 809 62 39<br>Opening hours: 8.30-12.30, 13.30-16.30<br><\/p>";
-contact3.icon = 'default';
-contactsMap1.push(contact3);
-jsonStr4 = "{\"lat\":\"46.5178623\",\"lng\":\"6.638485299999957\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"avenue de rumine 3, Lausanne\"}";
-var contact4 = new Object();
-contact4.jsonStr = readGoogleMapPoint(jsonStr4);
-contact4.html = "<h5>EFG Bank AG<\/h5><p>3, Avenue de Rumine - CH-1005 Lausanne<br>Tel. +41 58 809 41 41 / Fax +41 58 809 41 43<br>Opening hours: 09.00-12.30, 13.30-16.30<br><\/p>";
-contact4.icon = 'default';
-contactsMap1.push(contact4);
-jsonStr6 = "{\"lat\":\"46.003899\",\"lng\":\"8.951993899999934\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"Via Canova 6, lugano\"}";
-var contact6 = new Object();
-contact6.jsonStr = readGoogleMapPoint(jsonStr6);
-contact6.html = "<h5>EFG Bank AG<\/h5><p>Via Canova 6 - 6900 Lugano<br>Tel. +41 58 809 31 11 / Fax +41 58 809 45 87<br><\/p>";
-contact6.icon = 'default';
-contactsMap1.push(contact6);
-jsonStr7 = "{\"lat\":\"47.3677763\",\"lng\":\"8.535713399999963\",\"zoom\":\"13\",\"mapTypeId\":\"roadmap\",\"address\":\"Bleicherweg 19, Zurich\"}";
-var contact7 = new Object();
-contact7.jsonStr = readGoogleMapPoint(jsonStr7);
-contact7.html = "<h5>EFG Bank AG - Administrative offices<\/h5><p>Bleicherweg 19 - CH-8002 Zurich<br>Tel. +41 58 809 81 11<br><\/p>";
-contact7.icon = 'default';
-contactsMap1.push(contact7);
-jsonStr8 = "{\"lat\":\"46.003899\",\"lng\":\"8.951994000000013\",\"zoom\":\"18\",\"mapTypeId\":\"roadmap\",\"address\":\"via Canova 6Canova 6, 6901 Lugano\"}";
-var contact8 = new Object();
-contact8.jsonStr = readGoogleMapPoint(jsonStr8);
-contact8.html = "<h5>Patrimony 1873 SA<\/h5><p>Via Canova 6 - CH-6901 Lugano<br>Tel. +41 91 912 72 72 / Fax +41 91 912 72 70<br><\/p>";
-contact8.icon = 'default';
-contactsMap1.push(contact8);
-jsonStr9 = "{\"lat\":\"47.36886\",\"lng\":\"8.53751490000002\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"Bleicherweg 8, Zurich\"}";
-var contact9 = new Object();
-contact9.jsonStr = readGoogleMapPoint(jsonStr9);
-contact9.html = "<h5>EFG Wealth Solutions Holding AG<\/h5><p>Bleicherweg 8<br>P.O. Box 6012 - CH-8022 Zurich<br>Tel. +41 44 226 17 17<br><\/p>";
-contact9.icon = 'default';
-contactsMap1.push(contact9);
-jsonStr10 = "{\"lat\":\"46.0090764\",\"lng\":\"8.953699599999936\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"Viale Stefano Franscini 8, lugano\"}";
-var contact10 = new Object();
-contact10.jsonStr = readGoogleMapPoint(jsonStr10);
-contact10.html = "<h5>EFG Bank AG<\/h5><p>Viale Stefano Franscini 8 - 6900 Lugano<br>Tel. +41 58 809 31 11 / Fax +41 58 809 45 87<br>Opening hours: Business hours: 08.30-16.30\nCounter service: 08.30-12.30, 14.00-16.30<br><\/p>";
-contact10.icon = 'default';
-contactsMap1.push(contact10);
-jsonStr11 = "{\"lat\":\"46.1692764\",\"lng\":\"8.795594800000003\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"piazza grande 7, locarno\"}";
-var contact11 = new Object();
-contact11.jsonStr = readGoogleMapPoint(jsonStr11);
-contact11.html = "<h5>EFG Bank AG<\/h5><p>Piazza Grande 7 - CH-6600 Locarno<br>Tel. +41 58 809 63 11 / Fax +41 58 809 63 08<br>Opening hours: 08.30-12.00, 13.30-16.30<br><\/p>";
-contact11.icon = 'default';
-contactsMap1.push(contact11);
-jsonStr12 = "{\"lat\":\"46.2049826\",\"lng\":\"6.134895000000029\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"quai du Seujet 24, geneva\"}";
-var contact12 = new Object();
-contact12.jsonStr = readGoogleMapPoint(jsonStr12);
-contact12.html = "<h5>EFG Bank AG<\/h5><p>24 Quai du Seujet<br>P.O. Box 2391 - CH-1211 Geneva 2<br>Tel. +41 22 918 71 71<br>Opening hours: Business hours: 08.30-18.00\nCounter service: 08.30-12.30, 14.00-16.30<br><\/p>";
-contact12.icon = 'default';
-contactsMap1.push(contact12);
-jsonStr13 = "{\"lat\":\"47.36886\",\"lng\":\"8.53751490000002\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"Bleicherweg 8, zurich\"}";
-var contact13 = new Object();
-contact13.jsonStr = readGoogleMapPoint(jsonStr13);
-contact13.html = "<h5>EFG Bank AG<\/h5><p>Bleicherweg 8<br>P.O. Box 6012 - CH-8022 Zurich<br>Tel. +41 44 226 17 17 <br>Opening hours: 08.00-18.00<br><\/p>";
-contact13.icon = 'default';
-contactsMap1.push(contact13);
-jsonStr14 = "{\"lat\":\"47.36886\",\"lng\":\"8.53751490000002\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"Bleicherweg 8, Zuerich\"}";
-var contact14 = new Object();
-contact14.jsonStr = readGoogleMapPoint(jsonStr14);
-contact14.html = "<h5>EFG International AG<\/h5><p>Bleicherweg 8<br>P.O. Box 6012 - CH-8022 Zurich<br>Tel. +41 44 226 18 50<br><a target=\"_blank\" href=\"http://www.efginternational.com\">www.efginternational.com<\/a><br><\/p>";
-contact14.icon = 'default';
-contactsMap1.push(contact14);
-try {
-craeteGMap("gMap1", startPoint1, contactsMap1, true, true, true);
-} catch (err){
-alert ("Check GoogleMap parameters: " + err.description);
-}
-$( window ).resize(function() {
-craeteGMap("gMap1", startPoint1, contactsMap1, true, true, true);
-});
-});
-</script>
-<div class="content">
-<div>
-<h3>EFG Bank AG</h3><ul class="side-contact"><li><i class="icon-efg-pin"></i>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</li><li><i class="icon-efg-phone"></i><a href="tel:+41442261717" class="phone">+41 44 226 17 17 </a></li><li><i class="icon-efg-time"></i>Business hours: 08.00-18.00</li></ul>
-<a target="_black" class="btn" href="https://www.google.com/maps?f=d&dirflg=d&daddr=EFG Bank AG@47.36886,8.53751490000002" title="Get directions" class="btn">Get directions<i class="icon-efg-line-arrow-right"></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section><section>
-<div class="container">
-<div class="row">
-<div class="col-12 col-lg-10 mx-auto">
-<div class="accordion-location">
-<div class="open">
-<a href="#" class="accordion-location-head">Switzerland</a>
-<div class="accordion-location-content" style="display: block;">
-<ul class="location-link">
-<li>
-<a href="/about/our-locations/zurich.html" title="Zurich"><h4>Zurich</h4><p>Switzerland</p></a>
-</li>
-<li>
-<a href="/about/our-locations/geneva.html" title="Geneva"><h4>Geneva</h4><p>Switzerland</p></a>
-</li>
-<li>
-<a href="/about/our-locations/lugano.html" title="Lugano"><h4>Lugano</h4><p>Switzerland</p></a>
-</li>
-<li>
-<a href="/about/our-locations/lausanne.html" title="Lausanne"><h4>Lausanne</h4><p>Switzerland</p></a>
-</li>
-<li>
-<a href="/about/our-locations/locarno.html" title="Locarno"><h4>Locarno</h4><p>Switzerland</p></a>
-</li>
-<li>
-<a href="/about/our-locations/chiasso.html" title="Chiasso"><h4>Chiasso</h4><p>Switzerland</p></a>
-</li>
-</ul>
-</div>
-</div>
-<div>
-<a href="#" class="accordion-location-head">Europe</a>
-<div class="accordion-location-content">
-<ul class="location-link">
-<li>
-<a href="/about/our-locations/london.html" title="London"><h4>London</h4><p>United Kingdom</p></a>
-</li>
-<li>
-<a href="/about/our-locations/luxembourg.html" title="Luxembourg"><h4>Luxembourg</h4><p>Luxembourg</p></a>
-</li>
-<li>
-<a href="/about/our-locations/monaco.html" title="Monaco"><h4>Monaco</h4><p>Monaco</p></a>
-</li>
-<li>
-<a href="/about/our-locations/lisbon.html" title="Lisbon"><h4>Lisbon</h4><p>Portugal</p></a>
-</li>
-<li>
-<a href="/about/our-locations/athens.html" title="Athens"><h4>Athens</h4><p>Greece</p></a>
-</li>
-<li>
-<a href="/about/our-locations/birmingham.html" title="Birmingham"><h4>Birmingham</h4><p>United Kingdom</p></a>
-</li>
-<li>
-<a href="/about/our-locations/jersey.html" title="Jersey"><h4>Jersey</h4><p>Channel Islands</p></a>
-</li>
-<li>
-<a href="/about/our-locations/limassol.html" title="Limassol"><h4>Limassol</h4><p>Cyprus</p></a>
-</li>
-<li>
-<a href="/about/our-locations/nicosia.html" title="Nicosia"><h4>Nicosia</h4><p>Cyprus</p></a>
-</li>
-<li>
-<a href="/about/our-locations/ombersley.html" title="Ombersley"><h4>Ombersley</h4><p>United Kingdom</p></a>
-</li>
-<li>
-<a href="/about/our-locations/porto.html" title="Porto"><h4>Porto</h4><p>Portugal</p></a>
-</li>
-<li>
-<a href="/about/our-locations/shrewsbury.html" title="Shrewsbury"><h4>Shrewsbury</h4><p>United Kingdom</p></a>
-</li>
-<li>
-<a href="/about/our-locations/vaduz.html" title="Vaduz"><h4>Vaduz</h4><p>Liechtenstein</p></a>
-</li>
-</ul>
-</div>
-</div>
-<div>
-<a href="#" class="accordion-location-head">Asia Pacific</a>
-<div class="accordion-location-content">
-<ul class="location-link">
-<li>
-<a href="/about/our-locations/hong-kong.html" title="Hong Kong"><h4>Hong Kong</h4><p>Hong Kong</p></a>
-</li>
-<li>
-<a href="/about/our-locations/singapore.html" title="Singapore"><h4>Singapore</h4><p>Singapore</p></a>
-</li>
-<li>
-<a href="/about/our-locations/adelaide.html" title="Adelaide"><h4>Adelaide</h4><p>Australia</p></a>
-</li>
-<li>
-<a href="/about/our-locations/brisbane.html" title="Brisbane"><h4>Brisbane</h4><p>Australia</p></a>
-</li>
-<li>
-<a href="/about/our-locations/canberra.html" title="Canberra"><h4>Canberra</h4><p>Australia</p></a>
-</li>
-<li>
-<a href="/about/our-locations/melbourne.html" title="Melbourne"><h4>Melbourne</h4><p>Australia</p></a>
-</li>
-<li>
-<a href="/about/our-locations/perth.html" title="Perth"><h4>Perth</h4><p>Australia</p></a>
-</li>
-<li>
-<a href="/about/our-locations/shanghai.html" title="Shanghai"><h4>Shanghai</h4><p>China</p></a>
-</li>
-<li>
-<a href="/about/our-locations/sydney.html" title="Sydney"><h4>Sydney</h4><p>Australia</p></a>
-</li>
-</ul>
-</div>
-</div>
-<div>
-<a href="#" class="accordion-location-head">Americas</a>
-<div class="accordion-location-content">
-<ul class="location-link">
-<li>
-<a href="/about/our-locations/miami.html" title="Miami"><h4>Miami</h4><p>United States</p></a>
-</li>
-<li>
-<a href="/about/our-locations/nassau.html" title="Nassau"><h4>Nassau</h4><p>Bahamas</p></a>
-</li>
-<li>
-<a href="/about/our-locations/george-town.html" title="George Town"><h4>George Town</h4><p>Cayman Islands </p></a>
-</li>
-<li>
-<a href="/about/our-locations/bogota.html" title="Bogotá "><h4>Bogotá </h4><p>Colombia</p></a>
-</li>
-<li>
-<a href="/about/our-locations/lima.html" title="Lima"><h4>Lima</h4><p>Peru</p></a>
-</li>
-<li>
-<a href="/about/our-locations/montevideo.html" title="Montevideo"><h4>Montevideo</h4><p>Uruguay</p></a>
-</li>
-<li>
-<a href="/about/our-locations/punta-del-este.html" title="Punta del Este"><h4>Punta del Este</h4><p>Uruguay</p></a>
-</li>
-<li>
-<a href="/about/our-locations/portland.html" title="Portland"><h4>Portland</h4><p>United States</p></a>
-</li>
-<li>
-<a href="/about/our-locations/rio-de-janeiro.html" title="Rio de Janeiro"><h4>Rio de Janeiro</h4><p>Brazil</p></a>
-</li>
-<li>
-<a href="/about/our-locations/sao-paulo.html" title="São Paulo"><h4>São Paulo</h4><p>Brazil</p></a>
-</li>
-</ul>
-</div>
-</div>
-<div>
-<a href="#" class="accordion-location-head">Middle East</a>
-<div class="accordion-location-content">
-<ul class="location-link">
-<li>
-<a href="/about/our-locations/bahrain.html" title="Bahrain"><h4>Bahrain</h4><p>Middle East</p></a>
-</li>
-<li>
-<a href="/about/our-locations/dubai.html" title="Dubai"><h4>Dubai</h4><p>UAE</p></a>
-</li>
-<li>
-<a href="/about/our-locations/tel-aviv.html" title="Tel Aviv"><h4>Tel Aviv</h4><p>Israel</p></a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section><section>
-<div class="container">
-<div class="row section-headline mb-med">
-<div class="col-12 col-lg-8 col-xl-11 offset-xl-1">
-<h2>Get in touch</h2>
-</div>
-</div>
-<div class="row">
-<div class="col-12 col-xl-10 mx-auto">
-<div class="teaser-wrapper-block teaser1">
-<article class="teaser above">
-<a href="/contact/international-directory.html" title="Our international directory">
-<picture class="image">
-<source data-srcset="/.imaging/mte/efg-revamp/670x600/dam/efg/EFG_2021/batch4/Contact/International_Directory/International_Directory_Bar_Image_1680x541_72dpi.png/jcr:content/International_Directory_Bar_Image_1680x541_72dpi.png" media="(max-width: 575px)">
-<source data-srcset="/.imaging/mte/efg-revamp/670x800/dam/efg/EFG_2021/batch4/Contact/International_Directory/International_Directory_Bar_Image_1680x541_72dpi.png/jcr:content/International_Directory_Bar_Image_1680x541_72dpi.png" media="(max-width: 768px)">
-<source data-srcset="/.imaging/mte/efg-revamp/1096x400/dam/efg/EFG_2021/batch4/Contact/International_Directory/International_Directory_Bar_Image_1680x541_72dpi.png/jcr:content/International_Directory_Bar_Image_1680x541_72dpi.png" media="(max-width: 1439px)">
-<source data-srcset="/.imaging/mte/efg-revamp/1396x400/dam/efg/EFG_2021/batch4/Contact/International_Directory/International_Directory_Bar_Image_1680x541_72dpi.png/jcr:content/International_Directory_Bar_Image_1680x541_72dpi.png">
-<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/1396x400/dam/efg/EFG_2021/batch4/Contact/International_Directory/International_Directory_Bar_Image_1680x541_72dpi.png/jcr:content/International_Directory_Bar_Image_1680x541_72dpi.png" width="1396" height="400" class="lazyload" alt="Our international directory" />
-</picture>
-<div class="content">
-<h3>Our international directory</h3>
-<p>Need to call one of our offices? Find the number you need. </p>
-<span class="link-btn">Get number</span>
-</div>
-</a>
-</article>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="overlying">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<div class="contact-box">
-<div class="content">
-<h3>It all starts with a conversation</h3>
-<p>Let&#039;s start ours and build something valuable today. </p>
-<a href="/modal-form.html" title="" class="btn form-panel-open">Contact us</a>
-<ul>
-<li><i class="icon-efg-pin"></i>EFG Bank AG<br>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</li>
-<li><i class="icon-efg-phone"></i>+41 44 226 17 17 </li>
-</ul>
-</div>
-<div class="image lazyload" data-sizes="auto" data-bgset="/.imaging/mte/efg-revamp/688x372/dam/efg/EFG_2021/About_Pages/About_Us/About_Us_Success_688x515_72dpi.png/jcr:content/About_Us_Success_688x515_72dpi.png [(max-width: 1599px)] | /.imaging/mte/efg-revamp/688x372/dam/efg/EFG_2021/About_Pages/About_Us/About_Us_Success_688x515_72dpi.png/jcr:content/About_Us_Success_688x515_72dpi.png"></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="bkg-dark mt-0 pt-more">
-<div class="container">
-<div class="row section-headline">
-<div class="col-12 col-lg-10 mx-auto text-md-center">
-<h2>Discover more </h2>
-<p>From our unique philosophy to our solutions, find out how we can help you achieve your goals today. </p>
-</div>
-</div>
-<div class="row teaser-wrapper">
-<div class="col-12 col-lg-4">
-<article class="teaser bottom">
-<a href="/about/our-philosophy.html" title="Bringing entrepreneurial thinking to Swiss private banking">
-<span class="label">Our Philosophy</span>
-<picture class="image">
-<source data-srcset="/.imaging/mte/efg-revamp/548x280/dam/efg/about/1920x680-efg-signs.jpg/jcr:content/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg">
-<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/about/1920x680-efg-signs.jpg/jcr:content/20210427_EFGI_Web_Signage_ZH_1920x680px.jpg" width="548" height="280" class="lazyload" alt="Bringing entrepreneurial thinking to Swiss private banking" />
-</picture>
-<div class="content">
-<h4>Bringing entrepreneurial thinking to Swiss private banking</h4>
-<span class="link-btn">Learn more</span>
-</div>
-</a>
-</article>
-</div>
-<div class="col-12 col-lg-4">
-<article class="teaser bottom">
-<a href="/private-banking.html" title="Comprehensive investment, wealth and credit solutions for private and institutional clients">
-<span class="label">Private Banking</span>
-<picture class="image">
-<source data-srcset="/.imaging/mte/efg-revamp/548x280/dam/efg/private-banking/wealth-1920x680.jpg/jcr:content/wealth-1920x680.jpg">
-<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/private-banking/wealth-1920x680.jpg/jcr:content/wealth-1920x680.jpg" width="548" height="280" class="lazyload" alt="Comprehensive investment, wealth and credit solutions for private and institutional clients" />
-</picture>
-<div class="content">
-<h4>Comprehensive investment, wealth and credit solutions for private and institutional clients</h4>
-<span class="link-btn">Learn more </span>
-</div>
-</a>
-</article>
-</div>
-<div class="col-12 col-lg-4">
-<article class="teaser bottom">
-<a href="/asset-management.html" title="Asset management solutions for intermediaries and institutions">
-<span class="label">Asset management</span>
-<picture class="image">
-<source data-srcset="/.imaging/mte/efg-revamp/548x280/dam/efg/asset-management/Asset_Management_Bar_Image_1680x541px_72dpi.png/jcr:content/Asset_Management_Bar_Image_1680x541px_72dpi.png">
-<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/asset-management/Asset_Management_Bar_Image_1680x541px_72dpi.png/jcr:content/Asset_Management_Bar_Image_1680x541px_72dpi.png" width="548" height="280" class="lazyload" alt="Asset management solutions for intermediaries and institutions" />
-</picture>
-<div class="content">
-<h4>Asset management solutions for intermediaries and institutions</h4>
-<span class="link-btn">Learn more</span>
-</div>
-</a>
-</article>
-</div>
-</div>
-</div>
-</section>
-</div>{% endblock %}
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-xl-10 mx-auto">
+        <div class="map-component">
+          <div class="map" id="gMap1"></div>
+          <script>
+            var contactsMap1 = new Array();
+            $(function(){
+              var jsonStr1 = "{\"lat\":\"46.0041158\",\"lng\":\"8.952514500000006\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"Via Magatti 2, Lugano\"}";
+              startPoint1 = readGoogleMapPoint(jsonStr1);
+              jsonStr0 = "{\"lat\":\"46.0041158\",\"lng\":\"8.952514500000006\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"Via Magatti 2, Lugano\"}";
+              var contact0 = new Object();
+              contact0.jsonStr = readGoogleMapPoint(jsonStr0);
+              contact0.html = "<h5>EFG Bank AG<\/h5><p>Via Magatti 2 - 6900 Lugano<br>Tel. +41 58 809 31 11 / Fax +41 58 809 45 87<br><\/p>";
+                contact0.icon = 'default';
+                contactsMap1.push(contact0);
+                jsonStr1 = "{\"lat\":\"46.2049826\",\"lng\":\"6.134895000000029\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"quai du seujet 24, geneva\"}";
+                var contact1 = new Object();
+                contact1.jsonStr = readGoogleMapPoint(jsonStr1);
+                contact1.html = "<h5>EFG Asset Management (Switzerland) SA<\/h5><p>24 Quai du Seujet<br>P.O. Box 2391 - CH-1211 Geneva 2<br>Tel. +41 22 918 71 71<br><\/p>";
+                  contact1.icon = 'default';
+                  contactsMap1.push(contact1);
+                  jsonStr2 = "{\"lat\":\"47.36886\",\"lng\":\"8.53751490000002\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"Bleicherweg 8, Zurich\"}";
+                  var contact2 = new Object();
+                  contact2.jsonStr = readGoogleMapPoint(jsonStr2);
+                  contact2.html = "<h5>EFG Asset Management (Switzerland) SA<\/h5><p>Bleicherweg 8<br>P.O. Box 6012 - CH-8022 Zurich<br>Tel. +41 44 226 18 50<br><\/p>";
+                    contact2.icon = 'default';
+                    contactsMap1.push(contact2);
+                    jsonStr3 = "{\"lat\":\"45.8333652\",\"lng\":\"9.031564600000024\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"corso san gottardo 20, chiasso\"}";
+                    var contact3 = new Object();
+                    contact3.jsonStr = readGoogleMapPoint(jsonStr3);
+                    contact3.html = "<h5>EFG Bank AG<\/h5><p>Corso S. Gottardo 20 - CH-6830 Chiasso<br>Tel. +41 58 809 61 11 / Fax +41 58 809 62 39<br>Opening hours: 8.30-12.30, 13.30-16.30<br><\/p>";
+                      contact3.icon = 'default';
+                      contactsMap1.push(contact3);
+                      jsonStr4 = "{\"lat\":\"46.5178623\",\"lng\":\"6.638485299999957\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"avenue de rumine 3, Lausanne\"}";
+                      var contact4 = new Object();
+                      contact4.jsonStr = readGoogleMapPoint(jsonStr4);
+                      contact4.html = "<h5>EFG Bank AG<\/h5><p>3, Avenue de Rumine - CH-1005 Lausanne<br>Tel. +41 58 809 41 41 / Fax +41 58 809 41 43<br>Opening hours: 09.00-12.30, 13.30-16.30<br><\/p>";
+                        contact4.icon = 'default';
+                        contactsMap1.push(contact4);
+                        jsonStr6 = "{\"lat\":\"46.003899\",\"lng\":\"8.951993899999934\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"Via Canova 6, lugano\"}";
+                        var contact6 = new Object();
+                        contact6.jsonStr = readGoogleMapPoint(jsonStr6);
+                        contact6.html = "<h5>EFG Bank AG<\/h5><p>Via Canova 6 - 6900 Lugano<br>Tel. +41 58 809 31 11 / Fax +41 58 809 45 87<br><\/p>";
+                          contact6.icon = 'default';
+                          contactsMap1.push(contact6);
+                          jsonStr7 = "{\"lat\":\"47.3677763\",\"lng\":\"8.535713399999963\",\"zoom\":\"13\",\"mapTypeId\":\"roadmap\",\"address\":\"Bleicherweg 19, Zurich\"}";
+                          var contact7 = new Object();
+                          contact7.jsonStr = readGoogleMapPoint(jsonStr7);
+                          contact7.html = "<h5>EFG Bank AG - Administrative offices<\/h5><p>Bleicherweg 19 - CH-8002 Zurich<br>Tel. +41 58 809 81 11<br><\/p>";
+                            contact7.icon = 'default';
+                            contactsMap1.push(contact7);
+                            jsonStr8 = "{\"lat\":\"46.003899\",\"lng\":\"8.951994000000013\",\"zoom\":\"18\",\"mapTypeId\":\"roadmap\",\"address\":\"via Canova 6Canova 6, 6901 Lugano\"}";
+                            var contact8 = new Object();
+                            contact8.jsonStr = readGoogleMapPoint(jsonStr8);
+                            contact8.html = "<h5>Patrimony 1873 SA<\/h5><p>Via Canova 6 - CH-6901 Lugano<br>Tel. +41 91 912 72 72 / Fax +41 91 912 72 70<br><\/p>";
+                              contact8.icon = 'default';
+                              contactsMap1.push(contact8);
+                              jsonStr9 = "{\"lat\":\"47.36886\",\"lng\":\"8.53751490000002\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"Bleicherweg 8, Zurich\"}";
+                              var contact9 = new Object();
+                              contact9.jsonStr = readGoogleMapPoint(jsonStr9);
+                              contact9.html = "<h5>EFG Wealth Solutions Holding AG<\/h5><p>Bleicherweg 8<br>P.O. Box 6012 - CH-8022 Zurich<br>Tel. +41 44 226 17 17<br><\/p>";
+                                contact9.icon = 'default';
+                                contactsMap1.push(contact9);
+                                jsonStr10 = "{\"lat\":\"46.0090764\",\"lng\":\"8.953699599999936\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"Viale Stefano Franscini 8, lugano\"}";
+                                var contact10 = new Object();
+                                contact10.jsonStr = readGoogleMapPoint(jsonStr10);
+                                contact10.html = "<h5>EFG Bank AG<\/h5><p>Viale Stefano Franscini 8 - 6900 Lugano<br>Tel. +41 58 809 31 11 / Fax +41 58 809 45 87<br>Opening hours: Business hours: 08.30-16.30\nCounter service: 08.30-12.30, 14.00-16.30<br><\/p>";
+                                  contact10.icon = 'default';
+                                  contactsMap1.push(contact10);
+                                  jsonStr11 = "{\"lat\":\"46.1692764\",\"lng\":\"8.795594800000003\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"piazza grande 7, locarno\"}";
+                                  var contact11 = new Object();
+                                  contact11.jsonStr = readGoogleMapPoint(jsonStr11);
+                                  contact11.html = "<h5>EFG Bank AG<\/h5><p>Piazza Grande 7 - CH-6600 Locarno<br>Tel. +41 58 809 63 11 / Fax +41 58 809 63 08<br>Opening hours: 08.30-12.00, 13.30-16.30<br><\/p>";
+                                    contact11.icon = 'default';
+                                    contactsMap1.push(contact11);
+                                    jsonStr12 = "{\"lat\":\"46.2049826\",\"lng\":\"6.134895000000029\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"quai du Seujet 24, geneva\"}";
+                                    var contact12 = new Object();
+                                    contact12.jsonStr = readGoogleMapPoint(jsonStr12);
+                                    contact12.html = "<h5>EFG Bank AG<\/h5><p>24 Quai du Seujet<br>P.O. Box 2391 - CH-1211 Geneva 2<br>Tel. +41 22 918 71 71<br>Opening hours: Business hours: 08.30-18.00\nCounter service: 08.30-12.30, 14.00-16.30<br><\/p>";
+                                      contact12.icon = 'default';
+                                      contactsMap1.push(contact12);
+                                      jsonStr13 = "{\"lat\":\"47.36886\",\"lng\":\"8.53751490000002\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"Bleicherweg 8, zurich\"}";
+                                      var contact13 = new Object();
+                                      contact13.jsonStr = readGoogleMapPoint(jsonStr13);
+                                      contact13.html = "<h5>EFG Bank AG<\/h5><p>Bleicherweg 8<br>P.O. Box 6012 - CH-8022 Zurich<br>Tel. +41 44 226 17 17 <br>Opening hours: 08.00-18.00<br><\/p>";
+                                        contact13.icon = 'default';
+                                        contactsMap1.push(contact13);
+                                        jsonStr14 = "{\"lat\":\"47.36886\",\"lng\":\"8.53751490000002\",\"zoom\":\"15\",\"mapTypeId\":\"roadmap\",\"address\":\"Bleicherweg 8, Zuerich\"}";
+                                        var contact14 = new Object();
+                                        contact14.jsonStr = readGoogleMapPoint(jsonStr14);
+                                        contact14.html = "<h5>EFG International AG<\/h5><p>Bleicherweg 8<br>P.O. Box 6012 - CH-8022 Zurich<br>Tel. +41 44 226 18 50<br><a target=\"_blank\" href=\"http://www.efginternational.com\">www.efginternational.com<\/a><br><\/p>";
+                                          contact14.icon = 'default';
+                                          contactsMap1.push(contact14);
+                                          try {
+                                            craeteGMap("gMap1", startPoint1, contactsMap1, true, true, true);
+                                          } catch (err){
+                                            alert ("Check GoogleMap parameters: " + err.description);
+                                          }
+                                          $( window ).resize(function() {
+                                            craeteGMap("gMap1", startPoint1, contactsMap1, true, true, true);
+                                          });
+                                        });
+                                      </script>
+                                      <div class="content">
+                                        <div>
+                                          <h3>EFG Bank AG</h3><ul class="side-contact"><li><i class="icon-efg-pin"></i>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</li><li><i class="icon-efg-phone"></i><a href="tel:+41442261717" class="phone">+41 44 226 17 17 </a></li><li><i class="icon-efg-time"></i>Business hours: 08.00-18.00</li></ul>
+                                          <a target="_black" class="btn" href="https://www.google.com/maps?f=d&dirflg=d&daddr=EFG Bank AG@47.36886,8.53751490000002" title="Get directions" class="btn">Get directions<i class="icon-efg-line-arrow-right"></i></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </section><section>
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-12 col-lg-10 mx-auto">
+                                    <div class="accordion-location">
+                                      <div class="open">
+                                        <a href="#" class="accordion-location-head">Switzerland</a>
+                                        <div class="accordion-location-content" style="display: block;">
+                                          <ul class="location-link">
+                                            <li>
+                                              <a href="/about/our-locations/zurich.html" title="Zurich"><h4>Zurich</h4><p>Switzerland</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/geneva.html" title="Geneva"><h4>Geneva</h4><p>Switzerland</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/lugano.html" title="Lugano"><h4>Lugano</h4><p>Switzerland</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/lausanne.html" title="Lausanne"><h4>Lausanne</h4><p>Switzerland</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/locarno.html" title="Locarno"><h4>Locarno</h4><p>Switzerland</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/chiasso.html" title="Chiasso"><h4>Chiasso</h4><p>Switzerland</p></a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <div>
+                                        <a href="#" class="accordion-location-head">Europe</a>
+                                        <div class="accordion-location-content">
+                                          <ul class="location-link">
+                                            <li>
+                                              <a href="/about/our-locations/london.html" title="London"><h4>London</h4><p>United Kingdom</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/luxembourg.html" title="Luxembourg"><h4>Luxembourg</h4><p>Luxembourg</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/monaco.html" title="Monaco"><h4>Monaco</h4><p>Monaco</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/lisbon.html" title="Lisbon"><h4>Lisbon</h4><p>Portugal</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/athens.html" title="Athens"><h4>Athens</h4><p>Greece</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/birmingham.html" title="Birmingham"><h4>Birmingham</h4><p>United Kingdom</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/jersey.html" title="Jersey"><h4>Jersey</h4><p>Channel Islands</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/limassol.html" title="Limassol"><h4>Limassol</h4><p>Cyprus</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/nicosia.html" title="Nicosia"><h4>Nicosia</h4><p>Cyprus</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/ombersley.html" title="Ombersley"><h4>Ombersley</h4><p>United Kingdom</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/porto.html" title="Porto"><h4>Porto</h4><p>Portugal</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/shrewsbury.html" title="Shrewsbury"><h4>Shrewsbury</h4><p>United Kingdom</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/vaduz.html" title="Vaduz"><h4>Vaduz</h4><p>Liechtenstein</p></a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <div>
+                                        <a href="#" class="accordion-location-head">Asia Pacific</a>
+                                        <div class="accordion-location-content">
+                                          <ul class="location-link">
+                                            <li>
+                                              <a href="/about/our-locations/hong-kong.html" title="Hong Kong"><h4>Hong Kong</h4><p>Hong Kong</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/singapore.html" title="Singapore"><h4>Singapore</h4><p>Singapore</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/adelaide.html" title="Adelaide"><h4>Adelaide</h4><p>Australia</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/brisbane.html" title="Brisbane"><h4>Brisbane</h4><p>Australia</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/canberra.html" title="Canberra"><h4>Canberra</h4><p>Australia</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/melbourne.html" title="Melbourne"><h4>Melbourne</h4><p>Australia</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/perth.html" title="Perth"><h4>Perth</h4><p>Australia</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/shanghai.html" title="Shanghai"><h4>Shanghai</h4><p>China</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/sydney.html" title="Sydney"><h4>Sydney</h4><p>Australia</p></a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <div>
+                                        <a href="#" class="accordion-location-head">Americas</a>
+                                        <div class="accordion-location-content">
+                                          <ul class="location-link">
+                                            <li>
+                                              <a href="/about/our-locations/miami.html" title="Miami"><h4>Miami</h4><p>United States</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/nassau.html" title="Nassau"><h4>Nassau</h4><p>Bahamas</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/george-town.html" title="George Town"><h4>George Town</h4><p>Cayman Islands </p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/bogota.html" title="Bogotá "><h4>Bogotá </h4><p>Colombia</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/lima.html" title="Lima"><h4>Lima</h4><p>Peru</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/montevideo.html" title="Montevideo"><h4>Montevideo</h4><p>Uruguay</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/punta-del-este.html" title="Punta del Este"><h4>Punta del Este</h4><p>Uruguay</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/portland.html" title="Portland"><h4>Portland</h4><p>United States</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/rio-de-janeiro.html" title="Rio de Janeiro"><h4>Rio de Janeiro</h4><p>Brazil</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/sao-paulo.html" title="São Paulo"><h4>São Paulo</h4><p>Brazil</p></a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <div>
+                                        <a href="#" class="accordion-location-head">Middle East</a>
+                                        <div class="accordion-location-content">
+                                          <ul class="location-link">
+                                            <li>
+                                              <a href="/about/our-locations/bahrain.html" title="Bahrain"><h4>Bahrain</h4><p>Middle East</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/dubai.html" title="Dubai"><h4>Dubai</h4><p>UAE</p></a>
+                                            </li>
+                                            <li>
+                                              <a href="/about/our-locations/tel-aviv.html" title="Tel Aviv"><h4>Tel Aviv</h4><p>Israel</p></a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </section><section>
+                              <div class="container">
+                                <div class="row section-headline mb-med">
+                                  <div class="col-12 col-lg-8 col-xl-11 offset-xl-1">
+                                    <h2>Get in touch</h2>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-12 col-xl-10 mx-auto">
+                                    <div class="teaser-wrapper-block teaser1">
+                                      <article class="teaser above">
+                                        <a href="/contact/international-directory.html" title="Our international directory">
+                                          <picture class="image">
+                                            <source data-srcset="/.imaging/mte/efg-revamp/670x600/dam/efg/EFG_2021/batch4/Contact/International_Directory/International_Directory_Bar_Image_1680x541_72dpi.png/jcr:content/International_Directory_Bar_Image_1680x541_72dpi.png" media="(max-width: 575px)">
+                                              <source data-srcset="/.imaging/mte/efg-revamp/670x800/dam/efg/EFG_2021/batch4/Contact/International_Directory/International_Directory_Bar_Image_1680x541_72dpi.png/jcr:content/International_Directory_Bar_Image_1680x541_72dpi.png" media="(max-width: 768px)">
+                                                <source data-srcset="/.imaging/mte/efg-revamp/1096x400/dam/efg/EFG_2021/batch4/Contact/International_Directory/International_Directory_Bar_Image_1680x541_72dpi.png/jcr:content/International_Directory_Bar_Image_1680x541_72dpi.png" media="(max-width: 1439px)">
+                                                  <source data-srcset="/.imaging/mte/efg-revamp/1396x400/dam/efg/EFG_2021/batch4/Contact/International_Directory/International_Directory_Bar_Image_1680x541_72dpi.png/jcr:content/International_Directory_Bar_Image_1680x541_72dpi.png">
+                                                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/1396x400/dam/efg/EFG_2021/batch4/Contact/International_Directory/International_Directory_Bar_Image_1680x541_72dpi.png/jcr:content/International_Directory_Bar_Image_1680x541_72dpi.png" width="1396" height="400" class="lazyload" alt="Our international directory" />
+                                                  </picture>
+                                                  <div class="content">
+                                                    <h3>Our international directory</h3>
+                                                    <p>Need to call one of our offices? Find the number you need. </p>
+                                                    <span class="link-btn">Get number</span>
+                                                  </div>
+                                                </a>
+                                              </article>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </section>
+                                    {% include 'itstart.html' %}{% endblock %}

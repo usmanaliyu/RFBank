@@ -17,7 +17,7 @@ Red Foret BANK
             <div>
               <h1>Entrepreneurial thinking. Private banking.</h1>
               <p>A global network of experts. A comprehensive range of first class investment, wealth and credit solutions for private and institutional clients. A leading Swiss private bank renowned for its unique client approach.</p>
-              <a href="/about.html" title="" class="btn">Find out more<i class="icon-efg-line-arrow-right"></i></a>
+              <a href="{% url 'RedForest:about' %}" title="" class="btn">Find out more<i class="icon-efg-line-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -35,10 +35,7 @@ Red Foret BANK
                 <h4 class="truncate" data-line="2" data-min-width="1200" data-title="">Giorgio Pradelli: “We delivered strong operating results in 2022 and maintained our growth momentum”</h4>
                 <span class="link-btn">Find out more</span>
               </div>
-              <picture class="image">
-                <source data-srcset="/doc/jcr:3fdbcb5a-20e7-40f9-93c0-2f1679b474f4/Insight_GP_PressConference_FY2022_548x280px.jpg/lang:en/Insight_GP_PressConference_FY2022_548x280px.jpg">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/doc/jcr:3fdbcb5a-20e7-40f9-93c0-2f1679b474f4/Insight_GP_PressConference_FY2022_548x280px.jpg/lang:en/Insight_GP_PressConference_FY2022_548x280px.jpg" width="548" height="280" class="lazyload" alt="Giorgio Pradelli: “We delivered strong operating results in 2022 and maintained our growth momentum”" />
-                </picture>
+
               </a>
             </article>
           </div>
@@ -81,14 +78,17 @@ Red Foret BANK
               <div class="col-12 col-xl-10 offset-xl-1">
                 <h2>Our services</h2>
                 <p>Our expert teams draw on global expertise to create tailored financial solutions that deliver on your individual aspirations.</p>
-                <a href="/private-banking.html" title="" class="btn">Find out more<i class="icon-efg-line-arrow-right"></i></a>
+                <a href="{% url 'RedForest:privatebanking' %}" title="" class="btn">Find out more<i class="icon-efg-line-arrow-right"></i></a>
               </div>
             </div>
             <div class="row">
               <div class="col-12">
                 <a href="/private-banking.html" class="side-component">
                   <div class="side-image order-lg-2">
-                    <div class="lazyload" data-sizes="auto" data-bgset="/.imaging/mte/efg-revamp/688x372/dam/efg/private-banking/wealth-1920x680.jpg/jcr:content/wealth-1920x680.jpg"></div>
+
+                    <div class="lazyload" data-sizes="auto" data-bgset="{% static 'images/homepage/privatebanking.jpg' %}">
+
+                    </div>
                   </div>
                   <div class="side-content order-lg-1">
                     <h3>Private Banking</h3>
@@ -96,9 +96,9 @@ Red Foret BANK
                     <span class="link-btn">Find out more</span>
                   </div>
                 </a>
-                <a href="/asset-management.html" class="side-component">
+                <a href="{% url 'RedForest:assetmanagement' %}" class="side-component">
                   <div class="side-image">
-                    <div class="lazyload" data-sizes="auto" data-bgset="/.imaging/mte/efg-revamp/688x372/dam/efg/asset-management/Asset_Management_Bar_Image_1680x541px_72dpi.png/jcr:content/Asset_Management_Bar_Image_1680x541px_72dpi.png"></div>
+                    <div class="lazyload" data-sizes="auto" data-bgset="{% static 'images/homepage/assetmanagement.jpg' %}"></div>
                   </div>
                   <div class="side-content">
                     <h3>Asset Management </h3>
@@ -117,7 +117,7 @@ Red Foret BANK
                   <p>Trends, news, analysis and insights from around the world, brought to you by our expert team.</p>
                 </div>
                 <div class="col-12 col-lg-4 col-xl-3 align-items-lg-end">
-                  <a href="/insights.html" title="Sign up today" class="btn mt-lg-0">Sign up today<i class="icon-efg-line-arrow-right"></i></a>
+                  <a href="{% url 'RedForest:insights' %}" title="Sign up today" class="btn mt-lg-0">Sign up today<i class="icon-efg-line-arrow-right"></i></a>
                 </div>
               </div>
               <div class="row teaser-wrapper insights">
@@ -138,11 +138,11 @@ Red Foret BANK
                         <p class="truncate" data-line="2" data-min-width="120">How inflation and economic growth unfold will be key issues for markets in 2023. While inflation is expected to decrease across major advanced economies next year, global growth will likely diverge between developed and emerging economies. </p>
                       </div>
                       <div class="author">
-                        <span style="background-image:url('/.imaging/mte/efg-revamp/160x160/dam/efg/insights/Authors/Moz-Illustration-Large.jpg/jcr:content/Moz Illustration-Large.jpg')"></span>
+                        <span style="background-image: url({% static 'images/person.jpg' %});"></span>
                         <p class="name">Mozamil Afzal</p>
                         <p>5 min read</p>
                       </div>
-                      <div class="image lazyload" data-sizes="auto" data-bgset="/.imaging/mte/efg-revamp/670x834/dam/efg/insights/2022/December/outlook_2023/EFG_Outlook-2023_Banner_530x295.jpg/jcr:content/EFG_Outlook-2023_Banner_530x295.jpg [(max-width: 767px)] | /.imaging/mte/efg-revamp/1376x834/dam/efg/insights/2022/December/outlook_2023/EFG_Outlook-2023_Banner_530x295.jpg/jcr:content/EFG_Outlook-2023_Banner_530x295.jpg [(max-width: 991px)] | /.imaging/mte/efg-revamp/873x427/dam/efg/insights/2022/December/outlook_2023/EFG_Outlook-2023_Banner_530x295.jpg/jcr:content/EFG_Outlook-2023_Banner_530x295.jpg [(max-width: 1439px)] | /.imaging/mte/efg-revamp/924x427/dam/efg/insights/2022/December/outlook_2023/EFG_Outlook-2023_Banner_530x295.jpg/jcr:content/EFG_Outlook-2023_Banner_530x295.jpg"></div>
+                      <div class="image lazyload" data-sizes="auto" data-bgset="{% static 'images/homepage/inflation.jpg' %}"></div>
                     </a>
                   </article>
                 </div>
@@ -163,7 +163,7 @@ Red Foret BANK
                         <p class="truncate" data-line="2" data-min-width="120">The latest Federal Open Market Committee (FOMC) minutes provide a window into the Fed’s thinking at its February meeting. In this Macro Flash Note, Sam Jochim examines the implied policy bias of the Fed with the help of EFGAM’s Fed Hawkishness Indicator.</p>
                       </div>
                       <div class="author">
-                        <span style="background-image:url('/.imaging/mte/efg-revamp/160x160/dam/efg/insights/Authors/JB-Large.jpg/jcr:content/JB-Large.jpg')"></span>
+                        <span style="background-image:url({% static 'images/person.jpg' %})"></span>
                         <p class="name">Sam Jochim</p>
                         <p>4 min read</p>
                       </div>
@@ -187,7 +187,7 @@ Red Foret BANK
                         <p class="truncate" data-line="2" data-min-width="120">The record-breaking 3rd leg of The Ocean Race from Cape Town to Itajaí, Brazil starts on Sunday, 26 February 2023. Covering 12,750 nautical miles (23,613 km), it is the longest leg in the 50-year history of The Ocean Race; a one month sailing marathon that many feel will go on to define the race.</p>
                       </div>
                       <div class="author">
-                        <span style="background-image:url('/.imaging/mte/efg-revamp/160x160/dam/efg/homepage/Home_GettyImages-941690384_Desktop_530x480px_72dpi.jpg/jcr:content/EFG_Logo.png')"></span>
+                        <span style="background-image:url({% static 'images/person.jpg' %})"></span>
                         <p class="name">Marketing & Communications</p>
                         <p>4 min read</p>
                       </div>
@@ -210,7 +210,7 @@ Red Foret BANK
                           <p class="truncate" data-line="2" data-min-width="120">Tight financial conditions are needed to restore price stability but constrain growth. Many commentators note that the recent bond and equity market rallies have eased financial conditions. However, central banks focus also on bank lending conditions as it is a critical source of financing, particularly in the eurozone. In this Macro Flash Note, GianLuigi Mandruzzato looks at loan officers' surveys and concludes that financial conditions have continued to tighten significantly.</p>
                         </div>
                         <div class="author">
-                          <span style="background-image:url('/.imaging/mte/efg-revamp/160x160/dam/efg/insights/2020/Going-below-zero/Gian-Illustration-Large.jpg/jcr:content/Gian Illustration-Large.jpg')"></span>
+                          <span style="background-image:url({% static 'images/person.jpg' %})"></span>
                           <p class="name">GianLuigi Mandruzzato</p>
                           <p>4 min read</p>
                         </div>
@@ -233,7 +233,7 @@ Red Foret BANK
                             <p class="truncate" data-line="2" data-min-width="120">In 2022, EFG achieved a record underlying net profit and has entered its new strategic cycle 2023-2025 from a position of strength.</p>
                           </div>
                           <div class="author">
-                            <span style="background-image:url('/.imaging/mte/efg-revamp/160x160/dam/efg/homepage/Home_GettyImages-941690384_Desktop_530x480px_72dpi.jpg/jcr:content/EFG_Logo.png')"></span>
+                            <span style="background-image:url({% static 'images/person.jpg' %})"></span>
                             <p class="name">Marketing & Communications</p>
                             <p>1 min read</p>
                           </div>
@@ -274,7 +274,7 @@ Red Foret BANK
                               <li><i class="icon-efg-phone"></i>+41 44 226 17 17 </li>
                             </ul>
                           </div>
-                          <div class="image lazyload" data-sizes="auto" data-bgset="/.imaging/mte/efg-revamp/688x372/dam/efg/EFG_2021/Private_Banking_Pages/Private_Banking/Private_Banking_Lets_Build_688x515_72dpi.png/jcr:content/Private_Banking_Lets_Build_688x515_72dpi.png [(max-width: 1599px)] | /.imaging/mte/efg-revamp/558x372/dam/efg/EFG_2021/Private_Banking_Pages/Private_Banking/Private_Banking_Lets_Build_688x515_72dpi.png/jcr:content/Private_Banking_Lets_Build_688x515_72dpi.png"></div>
+                          <div class="image lazyload" data-sizes="auto" data-bgset="{% static 'images/homepage/contact.jpg '%}"></div>
                         </div>
                       </div>
                     </div>
@@ -297,7 +297,7 @@ Red Foret BANK
                               <source data-srcset="" media="(max-width: 575px)">
                                 <source data-srcset="" media="(max-width: 991px)">
                                   <source data-srcset="" media="(max-width: 1599px)">
-                                    <source data-srcset="/.imaging/mte/efg-revamp/548x280/dam/efg/about/gettyimages-1164294780--media1920x680.jpg/jcr:content/barra-media.png">
+                                    <source data-srcset="{% static 'images/homepage/know.jpg' %}">
                                       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/about/gettyimages-1164294780--media1920x680.jpg/jcr:content/barra-media.png" width="548" height="280" class="lazyload" alt="Be in the know with the latest news and reports from EFG" />
                                     </picture>
                                     <div class="content">
@@ -309,13 +309,13 @@ Red Foret BANK
                               </div>
                               <div class="col-12 col-lg-4">
                                 <article class="teaser bottom">
-                                  <a href="/investors.html" title="Services and updates for investors, shareholders and analysts">
+                                  <a href="{% url 'RedForest:investors' %}" title="Services and updates for investors, shareholders and analysts">
                                     <span class="label">Investors</span>
                                     <picture class="image">
                                       <source data-srcset="" media="(max-width: 575px)">
                                         <source data-srcset="" media="(max-width: 991px)">
                                           <source data-srcset="" media="(max-width: 1599px)">
-                                            <source data-srcset="/.imaging/mte/efg-revamp/548x280/dam/efg/investors/investors/Analyst-coverage-1920x680.jpg/jcr:content/Analyst-coverage-1920x680.jpg">
+                                            <source data-srcset="{% static 'images/homepage/service.jpg' %}">
                                               <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/investors/investors/Analyst-coverage-1920x680.jpg/jcr:content/Analyst-coverage-1920x680.jpg" width="548" height="280" class="lazyload" alt="Services and updates for investors, shareholders and analysts" />
                                             </picture>
                                             <div class="content">
@@ -327,13 +327,13 @@ Red Foret BANK
                                       </div>
                                       <div class="col-12 col-lg-4">
                                         <article class="teaser bottom">
-                                          <a href="/about/careers.html" title="A culture that rewards individual talent and entrepreneurial spirit">
+                                          <a href="{% url 'RedForest:careers' %}" title="A culture that rewards individual talent and entrepreneurial spirit">
                                             <span class="label">Careers</span>
                                             <picture class="image">
                                               <source data-srcset="" media="(max-width: 575px)">
                                                 <source data-srcset="" media="(max-width: 991px)">
                                                   <source data-srcset="" media="(max-width: 1599px)">
-                                                    <source data-srcset="/.imaging/mte/efg-revamp/548x280/dam/efg/about/Careers_HEADER_GettyImages-1131724309_Desktop_1920x680px_72dpi.jpg/jcr:content/Careers_HEADER_GettyImages-1131724309_Desktop_1920x680px_72dpi.jpg">
+                                                    <source data-srcset="{% static 'images/homepage/individual.jpg' %}">
                                                       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/548x280/dam/efg/about/Careers_HEADER_GettyImages-1131724309_Desktop_1920x680px_72dpi.jpg/jcr:content/Careers_HEADER_GettyImages-1131724309_Desktop_1920x680px_72dpi.jpg" width="548" height="280" class="lazyload" alt="A culture that rewards individual talent and entrepreneurial spirit" />
                                                     </picture>
                                                     <div class="content">
