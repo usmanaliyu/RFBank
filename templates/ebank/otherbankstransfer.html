@@ -1,0 +1,102 @@
+{% extends 'ebank/ebase.html' %}
+{% load static %}
+{% block title %}RFB| Other Banks Transfer {% endblock %}
+{% block content %}
+
+<div class="" data-select2-id="10">
+          <div class="" data-select2-id="9">
+            <div class="page-header">
+              <h3 class="page-title"> Other Banks Transfer </h3>
+
+            </div>
+            <div class="row" data-select2-id="8">
+              <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">New Recipient</h4>
+
+                    <form class="forms-sample">
+                      <div class="form-group">
+                        <label for="exampleInputUsername1">Amount</label>
+
+                        <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Enter An Amount">
+                      </div>
+
+                      <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">From</label>
+                            <div class="col-sm-9">
+                              <select class="form-control">
+                                <option>Savings $23,100</option>
+                                <option>Account1 $0.00</option>
+
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Currency</label>
+                                <div class="col-sm-9">
+                                  <select class="form-control">
+                                    <option>USD</option>
+                                    <option>NZD</option>
+
+                                  </select>
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Beneficiary Bank Account #</label>
+
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Beneficiary Bank Account Number">
+                              </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Beneficiary Name</label>
+
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Beneficiary Account">
+                      </div>
+
+                      <div class="form-group row">
+                            <label for="exampleInputEmail1">Beneficiary Bank</label>
+                            <div class="form-group">
+                              <select class="form-control">
+                                <option>Select Bank</option>
+                                <option>bank of america</option>
+                                <option>td bank</option>
+
+                              </select>
+                            </div>
+                          </div>
+
+
+                      <div class="form-check form-check-flat form-check-primary">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input"> Save Beneficiary <i class="input-helper"></i></label>
+                      </div>
+                      <button type="button" class="btn btn-primary btn-rounded btn-fw">Send</button>
+                      <button type="button" class="btn btn-dark btn-rounded btn-fw">Cancel</button>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-6 grid-margin ">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Saved Beneficiaries</h4>
+                    <p class="card-description"> No Beneficiaries Saved </p>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+
+
+{% endblock %}

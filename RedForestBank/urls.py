@@ -22,7 +22,9 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('', include(('RedForest.urls','RedForest'), namespace='RedForest'))
+    path('', include(('RedForest.urls','RedForest'), namespace='RedForest')),
+    path('',include(('ebank.urls','Ebank'), namespace='Ebank'))
+
 
 
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

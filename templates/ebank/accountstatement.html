@@ -1,0 +1,63 @@
+{% extends 'ebank/ebase.html' %}
+{% load static %}
+{% block title %}RFB|Account Statement{% endblock %}
+{% block content %}
+
+<div class=" grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Account Summary</h4>
+                    
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Date </th>
+                            <th>Money In</th>
+                            <th>Money Out</th>
+                            <th>Category</th>
+                            <th>To/From</th>
+                            <th>Status</th>
+                            <th>Balance</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+
+                          <tr>
+                            <td>1/1/2023</td>
+                            <td>$1,000</td>
+                            <td></td>
+                            <td></td>
+                            <td>Web Payment</td>
+                            <td><label class="badge badge-success">successful</label></td>
+                            <td>$1200</td>
+                          </tr>
+
+                          <td>1/1/2023</td>
+                          <td></td>
+                          <td>-$200</td>
+                          <td></td>
+                          <td>ATM withdrawl</td>
+                          <td><label class="badge badge-danger">pending</label></td>
+                          <td>$1200</td>
+                          <tr>
+
+                          </tr>
+                          <tr>
+                            <td>1/1/2023</td>
+                            <td>$100,000</td>
+                            <td></td>
+                            <td></td>
+                            <td>ATM withdrawl</td>
+                            <td><label class="badge badge-warning">pending</label></td>
+                            <td>$1200</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+{% endblock %}

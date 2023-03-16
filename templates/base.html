@@ -20,15 +20,18 @@
     <meta property="og:image:width" content="123" />
   <meta property="og:image:height" content="56" />
   <meta property="og:locale" content="English" />
-  <meta itemprop="name" content="EFG">
+  <meta itemprop="name" content="RFB">
   <meta itemprop="description" content="RED FOREST BANK International is a private bank offering private banking, asset management, and other financial services at 40 locations worldwide. ">
   <meta name="keywords" content="Private banking, wealth management, RFB, RED FOREST BANK International, Red Forest Bank, International bank, banking," />
   <meta name="description" content="RFB International is a private bank offering private banking, asset management, and other financial services at 40 locations worldwide. " />
-  <link rel="shortcut icon" href="/.resources/efg-templating-light/webresources/favicon.ico" />
+  <link rel="shortcut icon" href="{% static 'images/logoredicon.ico' %}" />
 
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'resources/efg-revamp/webresources/js/2023-02-23-16-42-48-000.js' %}" />
   <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" media="all" />
+
+  <link rel="stylesheet" type="text/css" href="{% static 'font/css/all.min.css' %}" media="all" />
+
   <script src="{% static 'resources/efg-revamp/webresources/js/vendor/2023-02-23-16-42-48-000.js' %}"></script>
   <script src="https://maps.google.com/maps/api/js?language=en&key=AIzaSyBmU-6CWKzXhBhXyYtivmCqd9htg_JXyfE"></script>
 
@@ -290,9 +293,7 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
                     </div>
                   </div>
                 </li>
-                <li>
-                  <a href="/insights.html" title="INSIGHTS">Insights</a>
-                </li>
+
                 <li>
                   <a href="{% url 'RedForest:about' %}" title="ABOUT">About</a>
                   <a class="icon-efg-triangle-down d-none"></a>
@@ -399,12 +400,7 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
                         </a>
                         <span class="d-none"></span>
                       </li>
-                      <li class="">
-                        <a href="{% url 'RedForest:shareinformation' %}" title="SHARE INFORMATION">
-                          Share Information
-                        </a>
-                        <span class="d-none"></span>
-                      </li>
+
                       <li class="">
                         <a href="{% url 'RedForest:annualgeneralmeeting' %}" title="ANNUAL GENERAL MEETING">
                           Annual General Meeting
@@ -423,12 +419,7 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
                         </a>
                         <span class="d-none"></span>
                       </li>
-                      <li class="">
-                        <a href="{% url 'RedForest:sharerepurchase' %}" title="SHARE REPURCHASE">
-                          Share repurchase
-                        </a>
-                        <span class="d-none"></span>
-                      </li>
+
                     </ul>
                     <div>
                     </div>
@@ -454,7 +445,7 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
                   <li class="text-uppercase">en</li>
                 </ul>
               </a>
-              <a href="https://ebanking.efginternational.com/" target="_blank" class="btn d-none d-xl-block" title="eBanking"><i class="icon-efg-bank"></i>eBanking</a>
+              <a href="{% url 'Ebank:login' %}" target="_blank" class="btn d-none d-xl-block" title="eBanking"><i class="icon-efg-bank"></i>eBanking</a>
             </div>
           </div>
         </div>
@@ -510,8 +501,11 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
                   <h6>Your regional contact:</h6>
                   <div class="address">
                     <ul>
-                      <li><i class="icon-efg-pin"></i>EFG Bank AG<br>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</li>
+                      <li><i class="icon-efg-pin"></i>RFB International<br>Uraniastrasse 21<br>P.O. Box 7803 - 8001 Zurich</li>
                       <li><i class="icon-efg-phone"></i>+41 44 226 17 17 </li>
+
+
+
                     </ul>
                   </div>
                 </div>
@@ -535,7 +529,7 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
             <div class="col-12 col-lg-8 col-xl-6 offset-xl-3 order-lg-2">
               <nav class="footer-nav">
                 <div>
-                  <h6><a title="{% url 'RedForest:about' %}" href="/about.html" title="About RFB International" class="txt-bronze text-decoration-none">About EFG International</a></h6>
+                  <h6><a title="{% url 'RedForest:about' %}" href="/about.html" title="About RFB International" class="txt-bronze text-decoration-none">About RFB International</a></h6>
                   <ul class="list-unstyled">
                     <li><a href="{% url 'RedForest:ourphilosophy' %}" title="Our philosophy">Our philosophy</a></li>
                     <li><a href="{% url 'RedForest:ourhistory' %}" title="Our history">Our history</a></li>
@@ -647,7 +641,8 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
                     <div class="footer-logo"><img src="{% static 'images/logored.svg' %}" alt="EFG" /></div>
                     <h6>Our headquarters:</h6>
                     <div class="address">
-                      <p>EFG International AG<br>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</p>
+
+                      <p>RFB International<br>Uraniastrasse 21<br>P.O. Box 7803 - 8001 Zurich</p>
                       <ul>
                         <li><i class="icon-efg-phone me-2"></i><a href="tel:+41 44 226 18 50" class="phone">+41 44 226 18 50</a></li>
                       </ul>
@@ -661,7 +656,8 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
                     </ul>
                     <h6 data-country-site="">Your regional contact:</h6>
                     <div class="address">
-                      <p>EFG Bank AG<br>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</p>
+                      <p>RFB International<br>Uraniastrasse 21<br>P.O. Box 7803 - 8001 Zurich</p>
+
                       <ul>
                         <li><i class="icon-efg-phone me-2"></i><a href="tel:+41 44 226 17 17 " class="phone">+41 44 226 17 17 </a></li>
                       </ul>
@@ -671,7 +667,7 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
               </div>
               <div class="row footer-bottom">
                 <div class="col-12 col-xl-6">
-                  <p>EFG International AG - All rights reserved. <img src="/.resources/efg-design/webresources/icone/copyright.svg" style="width: 12px !important;"> 2023</p>
+                  <p>RFB International AG - All rights reserved. ©  2023</p>
                 </div>
                 <div class="col-12 col-xl-6">
                   <nav class="footer-bottom-nav">
@@ -744,7 +740,9 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
                   <div class="group-contant">
                     <h6>Your regional contact:</h6>
                     <ul>
-                      <li><i class="icon-efg-pin"></i>EFG Bank AG<br>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</li>
+                      <li><i class="icon-efg-pin"></i>RFB International<br>Uraniastrasse 21<br>P.O. Box 7803 - 8001 Zurich</li>
+
+
                       <li><i class="icon-efg-phone"></i>+41 44 226 17 17 </li>
                     </ul>
                     <a href="#" class="btn group-layer-close">Close</a>
@@ -753,7 +751,7 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
               </div>
             </div>
           </div>
-          <nav style="display:none;" id="mobile-menu" data-country="Global" data-lang="EN" data-meta-btn="eBanking" data-meta-href="https://ebanking.efginternational.com/">
+          <nav style="display:none;" id="mobile-menu" data-country="Global" data-lang="EN" data-meta-btn="eBanking" data-meta-href="{% url 'Ebank:login' %}">
             <div>
               <ul>
                 <li class="sub">
@@ -876,11 +874,7 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
                     </li>
                   </ul>
                 </li>
-                <li class="">
-                  <a href="{% url 'RedForest:insights' %}" title="INSIGHTS">
-                    Insights
-                  </a>
-                </li>
+
                 <li class="sub">
                   <a href="{% url 'RedForest:about' %}" title="ABOUT">
                     About
@@ -994,11 +988,7 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
                       Presentations
                     </a>
                   </li>
-                  <li class="">
-                    <a href="{% url 'RedForest:shareinformation' %}" title="SHARE INFORMATION">
-                      Share Information
-                    </a>
-                  </li>
+
                   <li class="">
                     <a href="{% url 'RedForest:annualgeneralmeeting' %}" title="ANNUAL GENERAL MEETING">
                       Annual General Meeting
@@ -1014,11 +1004,7 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
                       Analyst coverage
                     </a>
                   </li>
-                  <li class="">
-                    <a href="{% url 'RedForest:sharerepurchase' %}" title="SHARE REPURCHASE">
-                      Share repurchase
-                    </a>
-                  </li>
+
                 </ul>
               </li>
               <li class="">
