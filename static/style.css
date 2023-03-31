@@ -62,6 +62,23 @@ Author URI: http://www.tinext.com
     --bs-body-color: #212529;
     --bs-body-bg: #fff
 }
+@font-face {
+    font-family: "Material Design Icons";
+    src: url("../fonts/materialdesignicons-webfont.eot?v=3.9.97");
+    src: url("../fonts/materialdesignicons-webfont.eot?#iefix&v=3.9.97") format("embedded-opentype"),url("../fonts/materialdesignicons-webfont.woff2?v=3.9.97") format("woff2"),url("../fonts/materialdesignicons-webfont.woff?v=3.9.97") format("woff"),url("../fonts/materialdesignicons-webfont.ttf?v=3.9.97") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+.mdi:before,.mdi-set {
+    display: inline-block;
+    font: normal normal normal 24px/1 "Material Design Icons";
+    font-size: inherit;
+    text-rendering: auto;
+    line-height: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
 
 *,:after,:before {
     box-sizing: border-box
@@ -11888,7 +11905,7 @@ a.phone {
 }
 
 .icon-efg-document:before {
-    content: ""
+    
 }
 
 .icon-efg-alert:before {
@@ -11920,7 +11937,7 @@ a.phone {
 }
 
 .icon-efg-line-arrow-right:before {
-    content: "f0c9"
+    content: "→"
 }
 
 .icon-efg-menu:before {
@@ -13901,7 +13918,7 @@ body.panel-open {
 
 .mm-menu .mm-panels>.mm-panel .mm-navbar .mm-btn:after {
     border-radius: 50%;
-    content: "";
+    content: "←";
     position: absolute;
     left: 4px;
     top: 50%;
@@ -14013,7 +14030,7 @@ body.panel-open {
 }
 
 .mm-menu .mm-panels>.mm-panel>.mm-listview>.mm-listitem>a.mm-btn_next:after {
-    content: "";
+    content: "→";
     position: absolute;
     left: 0;
     top: 50%;
@@ -19248,7 +19265,7 @@ button.swiper-pagination-bullet {
 }
 
 .link-btn:after {
-    content: "";
+    content: "→";
     position: absolute;
     right: 0;
     top: 50%;
@@ -30318,3 +30335,6 @@ img.mfp-img {
     content: "\e905";
     margin-left: 5px
 }
+
+
+/*# sourceMappingURL=materialdesignicons.css.map */

@@ -134,3 +134,10 @@ def sharerepurchase(request):
 
 def contact(request):
     return render(request,'contact.html')
+
+
+########## ARTICLES #############
+def easttowest(request):
+    return render(request,'easttowest.html')
+def bankofengland(request):
+    return render(request,'bankofengland.html')

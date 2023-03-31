@@ -23,6 +23,9 @@ urlpatterns = [
     path('requestcard', views.requestcard, name='requestcard'),
     path('stopcard', views.stopcard, name='stopcard'),
     path('selfservice', views.selfservice, name='selfservice'),
+    path('Information-Update', views.informationupdate, name='informationupdate'),
+    path('Password-Settings', views.passwordsettings, name='passwordsettings'),
+
 
 
 

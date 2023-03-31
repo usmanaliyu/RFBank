@@ -1,0 +1,92 @@
+{% extends 'ebank/ebase.html' %}
+{% load static %}
+{% block title %}RFB| Pre-Confirm Cheque {% endblock %}
+{% block content %}
+
+<div class="" data-select2-id="10">
+          <div class="" data-select2-id="9">
+            <div class="page-header">
+              <h3 class="page-title">Card Request </h3>
+
+            </div>
+            <div class="row" data-select2-id="8">
+              <div class="col-md-8 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+
+
+                    <form class="forms-sample">
+
+                      <div class="form-group row">
+                            <label for="exampleInputEmail1">Account</label>
+                            <div class="form-group">
+                              <select class="form-control">
+                                <option>Savings</option>
+                                <option>current</option>
+
+
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                                <label for="exampleInputEmail1">Card Product</label>
+                                <div class="form-group">
+                                  <select class="form-control">
+                                    <option>Savings</option>
+                                    <option>current</option>
+
+
+                                  </select>
+                                </div>
+                              </div>
+
+                              <div class="form-group row">
+                                    <label for="exampleInputEmail1">Card Type</label>
+                                    <div class="form-group">
+                                      <select class="form-control">
+                                        <option>Savings</option>
+                                        <option>current</option>
+
+
+                                      </select>
+                                    </div>
+                                  </div>
+
+                      <div class="form-group">
+                        <label for="exampleInputUsername1">Name on card</label>
+
+                        <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Enter Cheque Number">
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      <button type="button" class="btn btn-primary btn-rounded btn-fw">Order Card</button>
+                      <button type="button" class="btn btn-dark btn-rounded btn-fw">Cancel</button>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+            </div>
+          </div>
+
+
+{% endblock %}

@@ -72,4 +72,7 @@ urlpatterns = [
 
     path('contact', views.contact, name='contact'),
 
+    path('easttowest', views.easttowest, name='easttowest'),
+    path('bank-of-england-rate-hikes', views.bankofengland, name='bankofengland'),
+
 ]

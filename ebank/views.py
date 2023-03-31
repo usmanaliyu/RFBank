@@ -38,7 +38,7 @@ def westernunioun(request):
     return render(request,'ebank/westernunioun.html')
 
 def loansummarry(request):
-    return render(request,'ebank/loansummarry.html')
+    return render(request,'ebank/loansummary.html')
 
 def requestloan(request):
     return render(request,'ebank/requestloan.html')
@@ -69,3 +69,9 @@ def stopcard(request):
 
 def selfservice(request):
     return render(request,'ebank/selfservice.html')
+
+def informationupdate(request):
+    return render(request,'ebank/informationupdate.html')
+
+def passwordsettings(request):
+    return render(request,'ebank/passwordsettings.html')

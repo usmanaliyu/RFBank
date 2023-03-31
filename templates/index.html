@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-Red Foret BANK
+Red Forest BANK
 {% endblock %}
 
 {% block content %}
@@ -29,10 +29,12 @@ Red Foret BANK
       <div class="row teaser-wrapper">
         <div class="col-12 col-lg-4">
           <article class="teaser">
-            <a href="/insights/2023/giorgio_pradelli_we_delivered_strong_operating_results_in_2022_and_maintained_our_growth_momentum.html" title="Giorgio Pradelli: “We delivered strong operating results in 2022 and maintained our growth momentum”">
-              <span class="label">News and Interviews</span>
+            <a href="{% url 'RedForest:ourphilosophy' %}" title="
+Bringing entrepreneurial thinking to Swiss private banking">
+              <span class="label">our philosopy</span>
               <div class="content">
-                <h4 class="truncate" data-line="2" data-min-width="1200" data-title="">Giorgio Pradelli: “We delivered strong operating results in 2022 and maintained our growth momentum”</h4>
+                <h4 class="truncate" data-line="2" data-min-width="1200" data-title="">
+Bringing entrepreneurial thinking to Swiss private banking</h4>
                 <span class="link-btn">Find out more</span>
               </div>
 
@@ -41,10 +43,10 @@ Red Foret BANK
           </div>
           <div class="col-12 col-lg-4">
             <article class="teaser">
-              <a href="/about/our-sponsorships/sailing/the-ocean-race-2023.html" title="Follow Boris Herrmann and Team Malizia on The Ocean Race 2023">
-                <span class="label">Beyond Banking</span>
+              <a href="{% url 'RedForest:wealthservices' %}" title="Helping you develop, protect and pass on your wealth">
+                <span class="label">wealth services</span>
                 <div class="content">
-                  <h4 class="truncate" data-line="2" data-min-width="1200" data-title="">Follow Boris Herrmann and Team Malizia on The Ocean Race 2023</h4>
+                  <h4 class="truncate" data-line="2" data-min-width="1200" data-title="">Helping you develop, protect and pass on your wealth</h4>
                   <span class="link-btn">Find out more</span>
                 </div>
                 <picture class="image">
@@ -56,10 +58,10 @@ Red Foret BANK
             </div>
             <div class="col-12 col-lg-4">
               <article class="teaser">
-                <a href="/insights/2023/fomc-minutes-ongoing-interest-rate-increases-to-be-expected.html" title="FOMC Minutes: Ongoing interest rate increases to be expected">
-                  <span class="label">Latest News and Insights</span>
+                <a href="{% url 'RedForest:independentassetmanagers' %}" title="FOMC Minutes: Ongoing interest rate increases to be expected">
+                  <span class="label">independent asset managers</span>
                   <div class="content">
-                    <h4 class="truncate" data-line="2" data-min-width="1200" data-title="">FOMC Minutes: Ongoing interest rate increases to be expected</h4>
+                    <h4 class="truncate" data-line="2" data-min-width="1200" data-title="">Independent Asset Managers Services for professionals and intermediaries</h4>
                     <span class="link-btn">Find out more</span>
                   </div>
                   <picture class="image">
@@ -123,7 +125,7 @@ Red Foret BANK
               <div class="row teaser-wrapper insights">
                 <div class="col-12 col-lg-8">
                   <article class="teaser main">
-                    <a href="/insights/2022/2023_outlook.html" title="“East and West: From economies to markets, an asymmetric world?”">
+                    <a href="{% url 'RedForest:easttowest' %}" title="“East and West: From economies to markets, an asymmetric world?”">
                       <div class="info">
                         <p>
                           Investment Insights
@@ -148,7 +150,7 @@ Red Foret BANK
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                   <article class="teaser">
-                    <a href="/insights/2023/how-hawkish-is-the-fed.html" title="How hawkish is the Fed?">
+                    <a href="{% url 'RedForest:bankofengland' %}" title="How hawkish is the Fed?">
                       <div class="info">
                         <p>
                           Investment Insights
@@ -159,8 +161,8 @@ Red Foret BANK
                         <i class="icon-efg-document"></i>
                       </div>
                       <div class="content">
-                        <h4>How hawkish is the Fed?</h4>
-                        <p class="truncate" data-line="2" data-min-width="120">The latest Federal Open Market Committee (FOMC) minutes provide a window into the Fed’s thinking at its February meeting. In this Macro Flash Note, Sam Jochim examines the implied policy bias of the Fed with the help of EFGAM’s Fed Hawkishness Indicator.</p>
+                        <h4>Bank of England hikes rates to deal with persistent inflation</h4>
+                        <p class="truncate" data-line="2" data-min-width="120">Bank of England At its latest Monetary Policy Committee...</p>
                       </div>
                       <div class="author">
                         <span style="background-image:url({% static 'images/person.jpg' %})"></span>
@@ -173,7 +175,7 @@ Red Foret BANK
 
 
 
-                      
+
                       <script>
                         $(function() {
                           $( ".teaser-wrapper.insights .show-more" ).click(function() {
@@ -202,8 +204,8 @@ Red Foret BANK
                             <p>Let&#039;s start ours and build something valuable today.</p>
                             <a href="/modal-form.html" title="" class="btn form-panel-open">Contact us</a>
                             <ul>
-                              <li><i class="icon-efg-pin"></i>EFG Bank AG<br>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</li>
-                              <li><i class="icon-efg-phone"></i>+41 44 226 17 17 </li>
+                              <li><i class="mdi mdi-pin"></i>EFG Bank AG<br>Bleicherweg 8<br>P.O. Box 6012 - 8022 Zurich</li>
+                              <li><i class="mdi mdi-cellphone-basic"></i>+41 44 226 17 17 </li>
                             </ul>
                           </div>
                           <div class="image lazyload" data-sizes="auto" data-bgset="{% static 'images/homepage/contact.jpg '%}"></div>
