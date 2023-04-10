@@ -46,10 +46,11 @@
       &.brand-logo-mini {
         display: none;
         img {
-          width: calc(#{$sidebar-width-icon} - 50px );
-          max-width: 100%;
-          height: 28px;
-          margin: auto;
+          width: 9009px;
+          max-width: 250%;
+          height: 400px;
+          margin: -16px;
+          margin-top: 0px;
         }
       }
     }
@@ -61,7 +62,7 @@
     -ms-transition: width $action-transition-duration $action-transition-timing-function;
     box-shadow: $navbar-box-shadow;
     -webkit-box-shadow: $navbar-box-shadow;
-    -moz-box-shadow: $navbar-box-shadow;  
+    -moz-box-shadow: $navbar-box-shadow;
     color: $navbar-menu-color;
     padding-left: 15px;
     padding-right: 15px;
@@ -70,7 +71,7 @@
     .rtl & {
       box-shadow: $navbar-box-shadow-rtl;
     -webkit-box-shadow: $navbar-box-shadow-rtl;
-    -moz-box-shadow: $navbar-box-shadow-rtl;  
+    -moz-box-shadow: $navbar-box-shadow-rtl;
     }
     @media (max-width: 991px) {
       width: auto;
@@ -211,7 +212,7 @@
             border: none;
             @include border-radius(4px);
             &.navbar-dropdown {
-              position: absolute;            
+              position: absolute;
               font-size: 0.9rem;
               margin-top: 0;
               top: 48px;

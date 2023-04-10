@@ -469,62 +469,8 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
         <div class="container">
           <div class="row">
             <a href="#" class="btn group-layer-close">Close</a>
-            <div class="col-7">
-              <div class="group-customization">
-                <div>
-                  <h3>Personalise your content</h3>
-                  <p>Let us know where you’re located so we can tailor our information to make your experience more relevant.</p>
-                </div>
-                <form class="form-change-site">
-                  <fieldset>
-                    <div>
-                      <div class="form-field select site-country">
-                        <select name="content_experience_country" id="content_experience_country">
-                          <optgroup label="Countries">
-                            <option value="" selected>Global</option>
-                            <option value="CH">Switzerland</option>
-                            <option value="GB">United Kingdom</option>
-                            <option value="LU">Luxembourg</option>
-                            <option value="MC">Monaco</option>
-                            <option value="US">United States</option>
-                            <option value="BS">Bahamas</option>
-                            <option value="KY">Cayman Islands</option>
-                            <option value="LI">Liechtenstein</option>
-                            <option value="CY">Cyprus</option>
-                            <option value="HK">Hong Kong</option>
-                            <option value="SG">Singapore</option>
-                          </optgroup>
-                          <optgroup label="Group">
-                            <option value="https://www.efgha.com ">Harris Allday</option>
-                            <option value="https://www.newcapitalfunds.com">New Capital Funds</option>
-                            <option value="https://www.shawandpartners.com.au">Shaw and Partners </option>
-                          </optgroup>
-                        </select>
-                      </div>
-                      <div class="form-field select site-language">
-                        <select name="content_experience_lang" id="content_experience_lang">
-                          <option value="/" selected> English </option><option value="/it/"> Italiano </option><option value="/de/"> Deutsch </option><option value="/fr/"> Français </option> </select>
-                        </div>
-                      </div>
-                      <button type="submit" class="btn btn-square">Submit<i class="icon-efg-line-arrow-right"></i></button>
-                    </fieldset>
-                  </form>
-                </div>
-              </div>
-              <div class="col-5">
-                <div class="group-contant">
-                  <h6>Your regional contact:</h6>
-                  <div class="address">
-                    <ul>
-                      <li><i class="icon-efg-pin"></i>RFB International<br>Uraniastrasse 21<br>P.O. Box 7803 - 8001 Zurich</li>
-                      <li><i class="mdi mdi-cellphone-basic"></i>+41 44 226 17 17 </li>
 
 
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -551,8 +497,7 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
                     <li><a href="{% url 'RedForest:ourorganization' %}" title="Our organisation">Our organisation</a></li>
                     <li><a href="{% url 'RedForest:ourlocations' %}" title="Our locations">Our locations</a></li>
                     <li><a href="{% url 'RedForest:oursponsorships' %}" title="Our sponsorships">Our sponsorships</a></li>
-                    <li><a href="/about/careers.html" title="Careers">Careers</a></li>
-                    <li><a href="/about/sustainability.html" title="Sustainability">Sustainability</a></li>
+                    
                   </ul>
                 </div>
                 <div>
@@ -574,83 +519,9 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
                   </ul>
                 </div>
               </nav>
-              <div class="footer-customization d-none d-lg-block">
-                <h6>Personalise your content:</h6>
-                <form class="form-change-site">
-                  <fieldset>
-                    <div>
-                      <div class="form-field select site-country">
-                        <select name="footer_experience_country" id="footer_experience_country">
-                          <optgroup label="Countries">
-                            <option value="" selected>Global</option>
-                            <option value="CH">Switzerland</option>
-                            <option value="GB">United Kingdom</option>
-                            <option value="LU">Luxembourg</option>
-                            <option value="MC">Monaco</option>
-                            <option value="US">United States</option>
-                            <option value="BS">Bahamas</option>
-                            <option value="KY">Cayman Islands</option>
-                            <option value="LI">Liechtenstein</option>
-                            <option value="CY">Cyprus</option>
-                            <option value="HK">Hong Kong</option>
-                            <option value="SG">Singapore</option>
-                          </optgroup>
-                          <optgroup label="Group">
-                            <option value="https://www.efgha.com ">Harris Allday</option>
-                            <option value="https://www.newcapitalfunds.com">New Capital Funds</option>
-                            <option value="https://www.shawandpartners.com.au">Shaw and Partners </option>
-                          </optgroup>
-                        </select>
-                      </div>
-                      <div class="form-field select site-language">
-                        <select name="footer_experience_lang" id="footer_experience_lang">
-                          <option value="/" selected> English </option><option value="/it/"> Italiano </option><option value="/de/"> Deutsch </option><option value="/fr/"> Français </option> </select>
-                        </div>
-                      </div>
-                      <button type="submit" class="btn btn-square">Submit<i class="icon-efg-line-arrow-right"></i></button>
-                    </fieldset>
-                  </form>
-                </div>
+
               </div>
-              <div class="col-12 col-md-6 col-lg-8 col-xl-6 offset-xl-3 order-md-3 d-lg-none">
-                <div class="footer-customization">
-                  <h6>Personalise your content:</h6>
-                  <form class="form-change-site">
-                    <fieldset>
-                      <div>
-                        <div class="form-field select site-country">
-                          <select name="footer_m_experience_country" id="footer_m_experience_country">
-                            <optgroup label="Countries">
-                              <option value="" selected>Global</option>
-                              <option value="CH">Switzerland</option>
-                              <option value="GB">United Kingdom</option>
-                              <option value="LU">Luxembourg</option>
-                              <option value="MC">Monaco</option>
-                              <option value="US">United States</option>
-                              <option value="BS">Bahamas</option>
-                              <option value="KY">Cayman Islands</option>
-                              <option value="LI">Liechtenstein</option>
-                              <option value="CY">Cyprus</option>
-                              <option value="HK">Hong Kong</option>
-                              <option value="SG">Singapore</option>
-                            </optgroup>
-                            <optgroup label="Group">
-                              <option value="https://www.efgha.com ">Harris Allday</option>
-                              <option value="https://www.newcapitalfunds.com">New Capital Funds</option>
-                              <option value="https://www.shawandpartners.com.au">Shaw and Partners </option>
-                            </optgroup>
-                          </select>
-                        </div>
-                        <div class="form-field select site-language">
-                          <select name="footer_m_experience_lang" id="footer_m_experience_lang">
-                            <option value="/" selected> English </option><option value="/it/"> Italiano </option><option value="/de/"> Deutsch </option><option value="/fr/"> Français </option> </select>
-                          </div>
-                        </div>
-                        <button type="submit" class="btn btn-square">Submit<i class="icon-efg-line-arrow-right"></i></button>
-                      </fieldset>
-                    </form>
-                  </div>
-                </div>
+
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3 order-md-2 order-lg-1">
                   <div class="footer-company">
                     <div class="footer-logo"><img src="{% static 'images/logored.svg' %}" alt="EFG" /></div>
@@ -662,21 +533,8 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
                         <li><i class="mdi mdi-cellphone-basic me-2"></i><a href="tel:+41 44 226 18 50" class="phone">+41 44 226 18 50</a></li>
                       </ul>
                     </div>
-                    <ul class="social">
-                      <ul class="social">
-                        <li><a title="Linkedin" href="https://www.linkedin.com/company/efg-bank/" target="_blank"><i class="icon-efg-social-linkedin"></i></a></li>
-                        <li><a title="Twitter" href="https://www.twitter.com/efgint" target="_blank"><i class="icon-efg-social-twitter"></i></a></li>
-                        <li><a title="Facebook" href="https://www.facebook.com/EFGInternational" target="_blank"><i class="icon-efg-social-facebook"></i></a></li>
-                      </ul>
-                    </ul>
-                    <h6 data-country-site="">Your regional contact:</h6>
-                    <div class="address">
-                      <p>RFB International<br>Uraniastrasse 21<br>P.O. Box 7803 - 8001 Zurich</p>
 
-                      <ul>
-                        <li><i class="mdi mdi-cellphone-basic me-2"></i><a href="tel:+41 44 226 17 17 " class="phone">+41 44 226 17 17 </a></li>
-                      </ul>
-                    </div>
+
                   </div>
                 </div>
               </div>
@@ -684,17 +542,7 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
                 <div class="col-12 col-xl-6">
                   <p>RFB International AG - All rights reserved. ©  2023</p>
                 </div>
-                <div class="col-12 col-xl-6">
-                  <nav class="footer-bottom-nav">
-                    <ul class="d-block">
-                      <li><a href="/contact.html" title="Contact us">Contact us</a></li>
-                      <li><a href="/legal.html" title="Legal">Legal</a></li>
-                      <li><a href="/disclaimer.html" title="Disclaimer">Disclaimer</a></li>
-                      <li><a href="/data-privacy-documents.html" title="Data Privacy">Data Privacy</a></li>
-                      <li><a href="/legal/cookie-policy.html" title="Cookie settings">Cookie settings</a></li>
-                    </ul>
-                  </nav>
-                </div>
+
                 <div class="col-12 mt-4">
                   <p class="txt-text-2 mt-2 fw-normal">
                     <span class="efg-note">Certain product, services and information on this EFG website may not be available for residents and/or nationals of certain jurisdictions and countries. Viewers are asked to consult the sales restrictions relating to product and services for further information.</span>
@@ -710,58 +558,10 @@ b.src = "{% static 'insight.min.js' %}"; s.parentNode.insertBefore(b, s);})();
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <div class="group-customization">
-                  <div>
-                    <h3>Personalise your content</h3>
-                    <p>Let us know where you’re located so we can tailor our information to make your experience more relevant.</p>
-                  </div>
-                  <form class="form-change-site">
-                    <fieldset>
-                      <div>
-                        <div class="form-field select site-country">
-                          <select name="content_experience_country_m" id="content_experience_country_m">
-                            <optgroup label="Countries">
-                              <option value="" selected>Global</option>
-                              <option value="CH">Switzerland</option>
-                              <option value="GB">United Kingdom</option>
-                              <option value="LU">Luxembourg</option>
-                              <option value="MC">Monaco</option>
-                              <option value="US">United States</option>
-                              <option value="BS">Bahamas</option>
-                              <option value="KY">Cayman Islands</option>
-                              <option value="LI">Liechtenstein</option>
-                              <option value="CY">Cyprus</option>
-                              <option value="HK">Hong Kong</option>
-                              <option value="SG">Singapore</option>
-                            </optgroup>
-                            <optgroup label="Group">
-                              <option value="https://www.efgha.com ">Harris Allday</option>
-                              <option value="https://www.newcapitalfunds.com">New Capital Funds</option>
-                              <option value="https://www.shawandpartners.com.au">Shaw and Partners </option>
-                            </optgroup>
-                          </select>
-                        </div>
-                        <div class="form-field select site-language">
-                          <select name="content_experience_lang_m" id="content_experience_lang_m">
-                            <option value="/" selected> English </option><option value="/it/"> Italiano </option><option value="/de/"> Deutsch </option><option value="/fr/"> Français </option> </select>
-                          </div>
-                        </div>
-                        <button type="submit" class="btn btn-square">Submit<i class="icon-efg-line-arrow-right"></i></button>
-                      </fieldset>
-                    </form>
-                  </div>
+
                 </div>
                 <div class="col-12">
-                  <div class="group-contant">
-                    <h6>Your regional contact:</h6>
-                    <ul>
-                      <li><i class="icon-efg-pin"></i>RFB International<br>Uraniastrasse 21<br>P.O. Box 7803 - 8001 Zurich</li>
 
-
-                      <li><i class="mdi mdi-cellphone-basic"></i>+41 44 226 17 17 </li>
-                    </ul>
-                    <a href="#" class="btn group-layer-close">Close</a>
-                  </div>
                 </div>
               </div>
             </div>

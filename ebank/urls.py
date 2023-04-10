@@ -1,11 +1,15 @@
 from django.urls import path
+from django.contrib.auth import views as auth_views
+from .forms import RememberMeAuthenticationForm
 from . import views
+from .views import CustomerCreateView
 
 urlpatterns = [
-    path('login', views.login, name='login'),
+    path('login', auth_views.LoginView.as_view(authentication_form=RememberMeAuthenticationForm), name='login'),
+
     path('dashboard', views.dashboard, name='dashboard'),
-    path('my-accounts',views.myaccounts,name='myaccounts'),
-    path('account-statement',views.accountstatement, name='accountstatement'),
+    path('my-accounts',views.myaccounts,name='#myaccounts'),
+    path('account-statement',views.accountstatement, name='#accountstatement'),
     path('RFB-Transfer',views.rfbtransfer,name='rfbtransfer'),
     path('other-banks-transfer',views.otherbankstransfer,name='otherbankstransfer'),
     path('International-Transfer',views.internationaltransfer,name='internationaltransfer'),
@@ -26,8 +30,12 @@ urlpatterns = [
     path('Information-Update', views.informationupdate, name='informationupdate'),
     path('Password-Settings', views.passwordsettings, name='passwordsettings'),
 
+    path('register', views.register, name='register'),
+    path('open-account/', CustomerCreateView.as_view(), name='open_account'),
+    path('logout/', views.logout_view, name='logout'),
 
-
+    path('bank-accounts/', views.bank_accounts, name='myaccounts'),
+    path('transaction-history/', views.transaction_history, name='accountstatement'),
 
 
 

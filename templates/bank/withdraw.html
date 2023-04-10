@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Withdraw from {{ account.account_number }}</h1>
+  {% if account.status %}
+    <p>Sorry, your account is restricted and you cannot make withdrawals at this time.</p>
+  {% else %}
+
+  
+
+<form method="POST">
+{% csrf_token %}
+<label for="account">Select account:</label>
+<select name="account" id="account">
+{% for account in accounts %}
+  <option value="{{ account.id }}">{{ account.currency }} - {{ account.account_number }}</option>
+{% endfor %}
+</select><br><br>
+<label for="amount">Amount:</label>
+<input type="number" name="amount" id="amount" min="0" step="0.01" required><br><br>
+<input type="submit" value="Withdraw">
+</form>
+    <br>
+    <a href="{% url 'account_detail' account.pk %}">Back to Account Detail</a>
+    <div id="withdraw-message"></div>
+    <script>
+      const form = document.getElementById('withdraw-form');
+      const withdrawBtn = document.getElementById('withdraw-btn');
+      const message = document.getElementById('withdraw-message');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const amount = document.getElementById('amount').value;
+        const account_id = document.getElementsByName('account_id')[0].value;
+        fetch("{% url 'withdraw' %}", {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': '{{ csrf_token }}'
+          },
+          body: JSON.stringify({
+            amount: amount,
+            account_id: account_id
+          })
+        })
+        .then(response => response.json())
+        .then(data => {
+          message.innerHTML = '';
+          if (data.success) {
+            message.innerHTML = `<p style="color:green;">${data.message}</p>`;
+            form.reset();
+          } else {
+            message.innerHTML = `<p style="color:red;">${data.message}</p>`;
+          }
+        })
+        .catch(error => {
+          message.innerHTML = `<p style="color:red;">${error.message}</p>`;
+        });
+      });
+    </script>
+  {% endif %}
+{% endblock %}

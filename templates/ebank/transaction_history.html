@@ -1,0 +1,46 @@
+
+{% extends 'ebank/ebase.html' %}
+{% load static %}
+{% block title %}RFB|Account Statement{% endblock %}
+{% block content %}
+
+<div class=" grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h2>Your Transaction History</h2>
+
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Transaction ID</th>
+                            <th>Account Number</th>
+                            <th>Transaction Type</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+
+                          {% for transaction in transactions %}
+                            <tr>
+                              <td>{{ transaction.id }}</td>
+                              <td>{{ transaction.account.account_number }}</td>
+                              <td>{{ transaction.get_transaction_type_display }}</td>
+                              <td>{{ transaction.amount }}</td>
+                              <td>{{ transaction.date }}</td>
+                            </tr>
+                          {% empty %}
+                            <tr>
+                              <td colspan="5">You don't have any transactions yet.</td>
+                            </tr>
+                          {% endfor %}
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+
+
+
+
+{% extends 'ebank/ebase.html' %}
+{% load static %}
+
+{% block title %} RFG|My Accounts {% endblock %}
+{% block content %}
+<h2 align="center">Your Bank Accounts</h2>
+<div class="row">
+            {% for account in bank_accounts %}
+              <div class="col-sm-4 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h5>{{ account.currency }}</h5>
+                    <div class="row">
+                      <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                        <div class="d-flex d-sm-block d-md-flex align-items-center">
+                          <h2 class="mb-0">${{ account.balance }}</h2>
+
+                        </div>
+                        <h6 class="text-muted font-weight-normal">{{ account.account_number }}</h6>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% empty %}
+
+                  <P>You don't have any bank accounts yet.<P>
+
+              {% endfor %}
+
+
+            </div>
+{% endblock %}

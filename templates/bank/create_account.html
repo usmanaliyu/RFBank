@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Create Account</h1>
+  {% if not user.useraccount.status %}
+    <p>You cannot create a new account at this time.</p>
+  {% else %}
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Create Account</button>
+    </form>
+  {% endif %}
+{% endblock %}
